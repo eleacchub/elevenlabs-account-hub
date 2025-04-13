@@ -413,11 +413,29 @@
             <div class="header-content">
                 <a href="#" class="logo">ElevenLabs Account Hub</a>
                 <ul class="nav-menu">
-                    <li><a href="#features">Tính năng</a></li>
-                    <li><a href="#benefits">Lợi ích</a></li>
-                    <li><a href="#contact">Liên hệ</a></li>
+                    <li><a href="#features" class="lang-features">Tính năng</a></li>
+                    <li><a href="#benefits" class="lang-benefits">Lợi ích</a></li>
+                    <li><a href="#contact" class="lang-contact">Liên hệ</a></li>
                 </ul>
-                <a href="#download" class="btn btn-outline">Tải ngay</a>
+                <div style="display: flex; align-items: center;">
+                    <a href="#download" class="btn btn-outline lang-download">Tải ngay</a>
+                    <div class="language-selector">
+                        <button class="language-btn" id="languageToggle">
+                            <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0OCIgaGVpZ2h0PSI0OCIgdmlld0JveD0iMCAwIDQ4IDQ4Ij48cGF0aCBmaWxsPSIjZmZmIiBkPSJNNDggMjRIMHYyNGg0OFYyNHoiLz48cGF0aCBmaWxsPSIjRDgwMDI3IiBkPSJNNDggMEgwdjI0aDQ4VjB6Ii8+PC9zdmc+" alt="Tiếng Việt" />
+                            <span class="current-language">VI</span>
+                        </button>
+                        <div class="language-dropdown" id="languageDropdown">
+                            <div class="language-option" data-lang="vi">
+                                <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0OCIgaGVpZ2h0PSI0OCIgdmlld0JveD0iMCAwIDQ4IDQ4Ij48cGF0aCBmaWxsPSIjZmZmIiBkPSJNNDggMjRIMHYyNGg0OFYyNHoiLz48cGF0aCBmaWxsPSIjRDgwMDI3IiBkPSJNNDggMEgwdjI0aDQ4VjB6Ii8+PC9zdmc+" alt="Tiếng Việt" />
+                                <span>Tiếng Việt</span>
+                            </div>
+                            <div class="language-option" data-lang="en">
+                                <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2MCAzMCI+PHJlY3Qgd2lkdGg9IjYwIiBoZWlnaHQ9IjMwIiBmaWxsPSIjMDAyNDdkIi8+PHBhdGggZD0iTTAsMGw2MCwzMG0wLTMwTDAsIzAiIHN0cm9rZT0iI2ZmZiIgc3Ryb2tlLXdpZHRoPSI2Ii8+PHBhdGggZD0iTTAsMGw2MCwzMG0wLTMwTDAsIzAiIGNsaXAtcGF0aD0idXJsKCNjKSIgc3Ryb2tlPSIjY2YxNDJiIiBzdHJva2Utd2lkdGg9IjQiLz48cGF0aCBkPSJNMzAsMHYzME0wLDE1aDYwIiBzdHJva2U9IiNmZmYiIHN0cm9rZS13aWR0aD0iMTAiLz48cGF0aCBkPSJNMzAsMHYzME0wLDE1aDYwIiBzdHJva2U9IiNjZjE0MmIiIHN0cm9rZS13aWR0aD0iNiIvPjwvc3ZnPg==" alt="English" />
+                                <span>English</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </header>
@@ -436,15 +454,15 @@
     <section class="section" id="challenges">
         <div class="container">
             <div class="section-title">
-                <h2>Thách Thức Khi Dùng Nhiều Tài Khoản?</h2>
-                <p>Phải chuyển đổi liên tục giữa các tài khoản? Khó theo dõi credit còn lại trên từng tài khoản miễn phí? Mất thời gian khi cần tạo giọng nói cho nhiều nội dung? Rủi ro bị khóa tài khoản khi sử dụng quá nhiều?</p>
-                <h2 style="margin-top: 30px;">ElevenLabs Account Hub Là Câu Trả Lời!</h2>
-                <p>Công cụ lý tưởng để quản lý <strong>tất cả tài khoản tập trung</strong>, theo dõi credit tổng thể và thực hiện <strong>xử lý TTS hàng loạt</strong> một cách thông minh với <strong>hệ thống proxy và delay random</strong>, giúp bạn tiết kiệm thời gian và đảm bảo an toàn cho tài khoản.</p>
+                <h2 class="lang-challenges-title">Thách Thức Khi Dùng Nhiều Tài Khoản?</h2>
+                <p class="lang-challenges-description">Phải chuyển đổi liên tục giữa các tài khoản? Khó theo dõi credit còn lại trên từng tài khoản miễn phí? Mất thời gian khi cần tạo giọng nói cho nhiều nội dung? Rủi ro bị khóa tài khoản khi sử dụng quá nhiều?</p>
+                <h2 style="margin-top: 30px;" class="lang-solution-title">ElevenLabs Account Hub Là Câu Trả Lời!</h2>
+                <p class="lang-solution-description">Công cụ lý tưởng để quản lý <strong>tất cả tài khoản tập trung</strong>, theo dõi credit tổng thể và thực hiện <strong>xử lý TTS hàng loạt</strong> một cách thông minh với <strong>hệ thống proxy và delay random</strong>, giúp bạn tiết kiệm thời gian và đảm bảo an toàn cho tài khoản.</p>
             </div>
 
             <div style="display: flex; justify-content: space-between; margin-top: 40px; flex-wrap: wrap;">
                 <div style="flex-basis: 48%; background-color: #f1f5f9; border-radius: 12px; padding: 25px; box-shadow: 0 5px 15px rgba(0,0,0,0.05);">
-                    <h3 style="color: #ef4444; font-size: 22px; margin-bottom: 20px; display: flex; align-items: center;">
+                    <h3 style="color: #ef4444; font-size: 22px; margin-bottom: 20px; display: flex; align-items: center;" class="lang-without-tool">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="#ef4444" style="margin-right: 10px;">
                             <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.42 0-8-3.58-8-8 0-1.85.63-3.55 1.69-4.9L16.9 18.31C15.55 19.37 13.85 20 12 20zm6.31-3.1L7.1 5.69C8.45 4.63 10.15 4 12 4c4.42 0 8 3.58 8 8 0 1.85-.63 3.55-1.69 4.9z"/>
                         </svg>
@@ -485,7 +503,7 @@
                 </div>
 
                 <div style="flex-basis: 48%; background-color: #f0fdf4; border-radius: 12px; padding: 25px; box-shadow: 0 5px 15px rgba(0,0,0,0.05);">
-                    <h3 style="color: #22c55e; font-size: 22px; margin-bottom: 20px; display: flex; align-items: center;">
+                    <h3 style="color: #22c55e; font-size: 22px; margin-bottom: 20px; display: flex; align-items: center;" class="lang-with-tool">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="#22c55e" style="margin-right: 10px;">
                             <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
                         </svg>
@@ -531,8 +549,8 @@
     <section class="section" id="features">
         <div class="container">
             <div class="section-title">
-                <h2>Tính năng nổi bật</h2>
-                <p>ElevenLabs Account Hub cung cấp đầy đủ công cụ để quản lý và tận dụng tối đa tài khoản ElevenLabs của bạn</p>
+                <h2 class="lang-features-title">Tính năng nổi bật</h2>
+                <p class="lang-features-description">ElevenLabs Account Hub cung cấp đầy đủ công cụ để quản lý và tận dụng tối đa tài khoản ElevenLabs của bạn</p>
             </div>
             <div class="features">
                 <div class="feature-card">
@@ -624,8 +642,8 @@
     <section class="section benefits" id="benefits">
         <div class="container">
             <div class="section-title">
-                <h2>Lợi ích vượt trội</h2>
-                <p>Tận Dụng Tối Đa Credit Miễn Phí & Nâng Cao Hiệu Suất với ElevenLabs Account Hub</p>
+                <h2 class="lang-benefits-title">Lợi ích vượt trội</h2>
+                <p class="lang-benefits-description">Tận Dụng Tối Đa Credit Miễn Phí & Nâng Cao Hiệu Suất với ElevenLabs Account Hub</p>
             </div>
             <div class="benefits-grid">
                 <div class="benefit-item">
@@ -633,36 +651,36 @@
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                             <path d="M21.41 11.58l-9-9C12.05 2.22 11.55 2 11 2H4c-1.1 0-2 .9-2 2v7c0 .55.22 1.05.59 1.42l9 9c.36.36.86.58 1.41.58.55 0 1.05-.22 1.41-.59l7-7c.37-.36.59-.86.59-1.41 0-.55-.23-1.06-.59-1.42zM5.5 7C4.67 7 4 6.33 4 5.5S4.67 4 5.5 4 7 4.67 7 5.5 6.33 7 5.5 7z"/>
                         </svg>
-                        Tối đa hóa tài khoản miễn phí
+                        <span class="lang-benefit1-title">Tối đa hóa tài khoản miễn phí</span>
                     </h3>
-                    <p>Khai thác 100% credit từ mỗi tài khoản miễn phí, tổng hợp sức mạnh của hàng chục hoặc hàng trăm tài khoản để xử lý hàng loạt mà không tốn chi phí đăng ký gói trả phí.</p>
+                    <p class="lang-benefit1-description">Khai thác 100% credit từ mỗi tài khoản miễn phí, tổng hợp sức mạnh của hàng chục hoặc hàng trăm tài khoản để xử lý hàng loạt mà không tốn chi phí đăng ký gói trả phí.</p>
                 </div>
                 <div class="benefit-item">
                     <h3>
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                             <path d="M15 1H9v2h6V1zm-4 13h2V8h-2v6zm8.03-6.61l1.42-1.42c-.43-.51-.9-.99-1.41-1.41l-1.42 1.42C16.07 4.74 14.12 4 12 4c-4.97 0-9 4.03-9 9s4.02 9 9 9 9-4.03 9-9c0-2.12-.74-4.07-1.97-5.61zM12 20c-3.87 0-7-3.13-7-7s3.13-7 7-7 7 3.13 7 7-3.13 7-7 7z"/>
                         </svg>
-                        Tiết kiệm thời gian
+                        <span class="lang-benefit2-title">Tiết kiệm thời gian</span>
                     </h3>
-                    <p>Chấm dứt việc phải đăng nhập/đăng xuất liên tục giữa các tài khoản. Quản lý tất cả từ một giao diện duy nhất, tự động chuyển đổi giữa các tài khoản khi cần thiết.</p>
+                    <p class="lang-benefit2-description">Chấm dứt việc phải đăng nhập/đăng xuất liên tục giữa các tài khoản. Quản lý tất cả từ một giao diện duy nhất, tự động chuyển đổi giữa các tài khoản khi cần thiết.</p>
                 </div>
                 <div class="benefit-item">
                     <h3>
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                             <path d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V6c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2z"/>
                         </svg>
-                        Bảo vệ tài khoản
+                        <span class="lang-benefit3-title">Bảo vệ tài khoản</span>
                     </h3>
-                    <p>Hệ thống proxy và delay random thông minh giúp bảo vệ các tài khoản miễn phí khỏi việc bị khóa hoặc hạn chế do sử dụng quá nhiều trong thời gian ngắn.</p>
+                    <p class="lang-benefit3-description">Hệ thống proxy và delay random thông minh giúp bảo vệ các tài khoản miễn phí khỏi việc bị khóa hoặc hạn chế do sử dụng quá nhiều trong thời gian ngắn.</p>
                 </div>
                 <div class="benefit-item">
                     <h3>
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                             <path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"/>
                         </svg>
-                        Xử lý thông minh
+                        <span class="lang-benefit4-title">Xử lý thông minh</span>
                     </h3>
-                    <p>Tự động phân bổ tác vụ TTS giữa các tài khoản dựa trên credit còn lại, tối ưu hóa việc sử dụng tài khoản miễn phí và tạo ra khối lượng lớn audio mà không bị gián đoạn.</p>
+                    <p class="lang-benefit4-description">Tự động phân bổ tác vụ TTS giữa các tài khoản dựa trên credit còn lại, tối ưu hóa việc sử dụng tài khoản miễn phí và tạo ra khối lượng lớn audio mà không bị gián đoạn.</p>
                 </div>
             </div>
         </div>
@@ -671,8 +689,8 @@
     <section class="section screenshot">
         <div class="container">
             <div class="section-title">
-                <h2>Quản lý hàng loạt tài khoản trong một giao diện</h2>
-                <p>ElevenLabs Account Hub với bảng điều khiển trực quan cho phép bạn quản lý tập trung hàng chục, hàng trăm tài khoản và xử lý TTS hàng loạt</p>
+                <h2 class="lang-screenshot-title">Quản lý hàng loạt tài khoản trong một giao diện</h2>
+                <p class="lang-screenshot-description">ElevenLabs Account Hub với bảng điều khiển trực quan cho phép bạn quản lý tập trung hàng chục, hàng trăm tài khoản và xử lý TTS hàng loạt</p>
             </div>
             <img src="/api/placeholder/800/500" alt="ElevenLabs Account Hub Interface" class="app-screenshot">
         </div>
@@ -680,17 +698,17 @@
     
     <section class="cta" id="download">
         <div class="container">
-            <h2>Quản Lý Hàng Loạt Tài Khoản ElevenLabs Ngay Hôm Nay!</h2>
-            <p>Ngừng lãng phí thời gian chuyển đổi tài khoản. Bắt đầu tận dụng tối đa credit miễn phí và nâng cao hiệu suất của bạn.</p>
-            <a href="#" class="btn">Tải xuống miễn phí</a>
+            <h2 class="lang-cta-title">Quản Lý Hàng Loạt Tài Khoản ElevenLabs Ngay Hôm Nay!</h2>
+            <p class="lang-cta-description">Ngừng lãng phí thời gian chuyển đổi tài khoản. Bắt đầu tận dụng tối đa credit miễn phí và nâng cao hiệu suất của bạn.</p>
+            <a href="#" class="btn lang-download-now">Tải xuống miễn phí</a>
         </div>
     </section>
     
     <section class="section contact" id="contact">
         <div class="container">
             <div class="section-title">
-                <h2>Liên hệ hỗ trợ</h2>
-                <p>Có câu hỏi hoặc cần trợ giúp? Liên hệ với chúng tôi qua các kênh sau</p>
+                <h2 class="lang-contact-title">Liên hệ hỗ trợ</h2>
+                <p class="lang-contact-description">Có câu hỏi hoặc cần trợ giúp? Liên hệ với chúng tôi qua các kênh sau</p>
             </div>
             
             <div class="contact-grid" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 30px; margin-top: 40px;">
@@ -713,7 +731,7 @@
                         </svg>
                     </div>
                     <div>
-                        <h3 style="font-size: 20px; margin-bottom: 8px; color: var(--dark);">Facebook Page</h3>
+                        <h3 style="font-size: 20px; margin-bottom: 8px; color: var(--dark);" class="lang-facebook-page">Facebook Page</h3>
                         <a href="https://www.facebook.com/iamcolinai" target="_blank" style="color: var(--primary); text-decoration: none; font-weight: 500; font-size: 16px;">facebook.com/iamcolinai</a>
                     </div>
                 </div>
@@ -725,7 +743,7 @@
                         </svg>
                     </div>
                     <div>
-                        <h3 style="font-size: 20px; margin-bottom: 8px; color: var(--dark);">Facebook Cá nhân</h3>
+                        <h3 style="font-size: 20px; margin-bottom: 8px; color: var(--dark);" class="lang-facebook-personal">Facebook Cá nhân</h3>
                         <a href="https://www.facebook.com/colin.214" target="_blank" style="color: var(--primary); text-decoration: none; font-weight: 500; font-size: 16px;">facebook.com/colin.214</a>
                     </div>
                 </div>
@@ -767,9 +785,150 @@
                         </svg>
                     </a>
                 </div>
-                <p style="margin-top: 20px;">* ElevenLabs Account Hub giúp bạn tận dụng tối đa credit từ các tài khoản miễn phí, tiết kiệm thời gian và nâng cao hiệu suất khi làm việc với lượng lớn nội dung TTS.</p>
+                <p style="margin-top: 20px;" class="lang-footer-note">* ElevenLabs Account Hub giúp bạn tận dụng tối đa credit từ các tài khoản miễn phí, tiết kiệm thời gian và nâng cao hiệu suất khi làm việc với lượng lớn nội dung TTS.</p>
             </div>
         </div>
     </footer>
+
+    <script>
+    // Bổ sung thêm từ điển cho các phần khác trong trang
+    const translations = {
+        'vi': {
+            'features': 'Tính năng',
+            'benefits': 'Lợi ích',
+            'contact': 'Liên hệ',
+            'download': 'Tải ngay',
+            'hero-title': 'Giải Phóng Sức Mạnh Quản Lý Hàng Loạt!',
+            'hero-description': 'Ngừng lãng phí thời gian chuyển đổi tài khoản. ElevenLabs Account Hub giúp quản lý tập trung <strong>hàng chục, hàng trăm tài khoản</strong> ElevenLabs, xử lý TTS hàng loạt và tận dụng tối đa credit <strong>miễn phí</strong> của bạn.',
+            'download-now': 'Tải xuống ngay',
+            'explore-features': 'Khám phá tính năng',
+            'challenges-title': 'Thách Thức Khi Dùng Nhiều Tài Khoản?',
+            'challenges-description': 'Phải chuyển đổi liên tục giữa các tài khoản? Khó theo dõi credit còn lại trên từng tài khoản miễn phí? Mất thời gian khi cần tạo giọng nói cho nhiều nội dung? Rủi ro bị khóa tài khoản khi sử dụng quá nhiều?',
+            'solution-title': 'ElevenLabs Account Hub Là Câu Trả Lời!',
+            'solution-description': 'Công cụ lý tưởng để quản lý <strong>tất cả tài khoản tập trung</strong>, theo dõi credit tổng thể và thực hiện <strong>xử lý TTS hàng loạt</strong> một cách thông minh với <strong>hệ thống proxy và delay random</strong>, giúp bạn tiết kiệm thời gian và đảm bảo an toàn cho tài khoản.',
+            'without-tool': 'Không Có ElevenLabs Account Hub',
+            'with-tool': 'Với ElevenLabs Account Hub',
+            'features-title': 'Tính năng nổi bật',
+            'features-description': 'ElevenLabs Account Hub cung cấp đầy đủ công cụ để quản lý và tận dụng tối đa tài khoản ElevenLabs của bạn',
+            'benefits-title': 'Lợi ích vượt trội',
+            'benefits-description': 'Tận Dụng Tối Đa Credit Miễn Phí & Nâng Cao Hiệu Suất với ElevenLabs Account Hub',
+            'benefit1-title': 'Tối đa hóa tài khoản miễn phí',
+            'benefit1-description': 'Khai thác 100% credit từ mỗi tài khoản miễn phí, tổng hợp sức mạnh của hàng chục hoặc hàng trăm tài khoản để xử lý hàng loạt mà không tốn chi phí đăng ký gói trả phí.',
+            'benefit2-title': 'Tiết kiệm thời gian',
+            'benefit2-description': 'Chấm dứt việc phải đăng nhập/đăng xuất liên tục giữa các tài khoản. Quản lý tất cả từ một giao diện duy nhất, tự động chuyển đổi giữa các tài khoản khi cần thiết.',
+            'benefit3-title': 'Bảo vệ tài khoản',
+            'benefit3-description': 'Hệ thống proxy và delay random thông minh giúp bảo vệ các tài khoản miễn phí khỏi việc bị khóa hoặc hạn chế do sử dụng quá nhiều trong thời gian ngắn.',
+            'benefit4-title': 'Xử lý thông minh',
+            'benefit4-description': 'Tự động phân bổ tác vụ TTS giữa các tài khoản dựa trên credit còn lại, tối ưu hóa việc sử dụng tài khoản miễn phí và tạo ra khối lượng lớn audio mà không bị gián đoạn.',
+            'screenshot-title': 'Quản lý hàng loạt tài khoản trong một giao diện',
+            'screenshot-description': 'ElevenLabs Account Hub với bảng điều khiển trực quan cho phép bạn quản lý tập trung hàng chục, hàng trăm tài khoản và xử lý TTS hàng loạt',
+            'cta-title': 'Quản Lý Hàng Loạt Tài Khoản ElevenLabs Ngay Hôm Nay!',
+            'cta-description': 'Ngừng lãng phí thời gian chuyển đổi tài khoản. Bắt đầu tận dụng tối đa credit miễn phí và nâng cao hiệu suất của bạn.',
+            'contact-title': 'Liên hệ hỗ trợ',
+            'contact-description': 'Có câu hỏi hoặc cần trợ giúp? Liên hệ với chúng tôi qua các kênh sau',
+            'facebook-page': 'Facebook Page',
+            'facebook-personal': 'Facebook Cá nhân',
+            'footer-note': '* ElevenLabs Account Hub giúp bạn tận dụng tối đa credit từ các tài khoản miễn phí, tiết kiệm thời gian và nâng cao hiệu suất khi làm việc với lượng lớn nội dung TTS.'
+        },
+        'en': {
+            'features': 'Features',
+            'benefits': 'Benefits',
+            'contact': 'Contact',
+            'download': 'Download',
+            'hero-title': 'Unleash the Power of Batch Management!',
+            'hero-description': 'Stop wasting time switching between accounts. ElevenLabs Account Hub helps you centrally manage <strong>dozens or hundreds of accounts</strong>, process TTS in batches and maximize your <strong>free</strong> credits.',
+            'download-now': 'Download Now',
+            'explore-features': 'Explore Features',
+            'challenges-title': 'Challenges When Using Multiple Accounts?',
+            'challenges-description': 'Constantly switching between accounts? Difficult to track remaining credits on each free account? Wasting time when creating voice for large content? Risk of account lockouts when overusing?',
+            'solution-title': 'ElevenLabs Account Hub Is The Answer!',
+            'solution-description': 'The ideal tool for managing <strong>all accounts centrally</strong>, monitoring total credits and performing <strong>batch TTS processing</strong> intelligently with <strong>proxy system and random delay</strong>, helping you save time and ensure account safety.',
+            'without-tool': 'Without ElevenLabs Account Hub',
+            'with-tool': 'With ElevenLabs Account Hub',
+            'features-title': 'Key Features',
+            'features-description': 'ElevenLabs Account Hub provides all the tools to manage and maximize your ElevenLabs accounts',
+            'benefits-title': 'Outstanding Benefits',
+            'benefits-description': 'Maximize Free Credits & Enhance Performance with ElevenLabs Account Hub',
+            'benefit1-title': 'Maximize Free Accounts',
+            'benefit1-description': 'Harness 100% of credits from each free account, combining the power of dozens or hundreds of accounts to process batches without paying for premium subscriptions.',
+            'benefit2-title': 'Save Time',
+            'benefit2-description': 'End the constant logging in and out between accounts. Manage everything from a single interface with automatic switching between accounts when needed.',
+            'benefit3-title': 'Protect Your Accounts',
+            'benefit3-description': 'Smart proxy system and random delay features help protect your free accounts from being locked or restricted due to overuse in short periods.',
+            'benefit4-title': 'Intelligent Processing',
+            'benefit4-description': 'Automatically distribute TTS tasks across accounts based on remaining credits, optimizing free account usage and producing large volumes of audio without interruption.',
+            'screenshot-title': 'Manage multiple accounts in one interface',
+            'screenshot-description': 'ElevenLabs Account Hub with its intuitive dashboard allows you to centrally manage dozens, hundreds of accounts and process TTS in batches',
+            'cta-title': 'Manage Your ElevenLabs Accounts In Bulk Today!',
+            'cta-description': 'Stop wasting time switching accounts. Start maximizing free credits and enhancing your productivity.',
+            'contact-title': 'Contact Support',
+            'contact-description': 'Have questions or need help? Contact us through these channels',
+            'facebook-page': 'Facebook Page',
+            'facebook-personal': 'Personal Facebook',
+            'footer-note': '* ElevenLabs Account Hub helps you maximize credits from free accounts, save time and enhance productivity when working with large amounts of TTS content.'
+        }
+    };
+
+    // Hàm chuyển đổi ngôn ngữ
+    function changeLanguage(lang) {
+        // Cập nhật các phần tử có class lang-*
+        document.querySelectorAll('[class*="lang-"]').forEach(element => {
+            const classes = Array.from(element.classList);
+            const langClass = classes.find(cls => cls.startsWith('lang-'));
+            if (langClass) {
+                const key = langClass.replace('lang-', '');
+                if (translations[lang] && translations[lang][key]) {
+                    if (element.tagName === 'INPUT' || element.tagName === 'TEXTAREA') {
+                        element.placeholder = translations[lang][key];
+                    } else if (key.includes('description') || key.includes('solution-description')) {
+                        element.innerHTML = translations[lang][key];
+                    } else {
+                        element.textContent = translations[lang][key];
+                    }
+                }
+            }
+        });
+
+        // Cập nhật nút chuyển đổi ngôn ngữ
+        document.querySelector('.current-language').textContent = lang.toUpperCase();
+        
+        // Lưu ngôn ngữ đã chọn vào localStorage
+        localStorage.setItem('selectedLanguage', lang);
+        
+        // Đóng dropdown
+        document.getElementById('languageDropdown').classList.remove('active');
+    }
+
+    // Khởi tạo
+    document.addEventListener('DOMContentLoaded', function() {
+        // Thiết lập sự kiện cho nút chuyển đổi ngôn ngữ
+        document.getElementById('languageToggle').addEventListener('click', function() {
+            document.getElementById('languageDropdown').classList.toggle('active');
+        });
+
+        // Thiết lập sự kiện cho các tùy chọn ngôn ngữ
+        document.querySelectorAll('.language-option').forEach(option => {
+            option.addEventListener('click', function() {
+                const lang = this.getAttribute('data-lang');
+                changeLanguage(lang);
+            });
+        });
+
+        // Kiểm tra ngôn ngữ đã lưu
+        const savedLanguage = localStorage.getItem('selectedLanguage');
+        if (savedLanguage) {
+            changeLanguage(savedLanguage);
+        }
+
+        // Đóng dropdown khi click bên ngoài
+        document.addEventListener('click', function(event) {
+            const dropdown = document.getElementById('languageDropdown');
+            const toggle = document.getElementById('languageToggle');
+            if (!toggle.contains(event.target) && !dropdown.contains(event.target)) {
+                dropdown.classList.remove('active');
+            }
+        });
+    });
+    </script>
 </body>
 </html>
