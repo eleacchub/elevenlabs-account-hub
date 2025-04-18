@@ -3,74 +3,257 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Thông báo Nâng cấp VIP</title>
+    <title>ELEVENLABS ACCOUNT HUB</title>
     <style>
-        /* CSS đơn giản để định dạng cơ bản */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
         body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background: linear-gradient(135deg, #f5f7fa 0%, #e4e8f0 100%);
+            color: #212529;
             line-height: 1.6;
-            padding: 20px; /* Thêm khoảng trống xung quanh nội dung */
-            background-color: #f8f9fa; /* Màu nền nhẹ */
-            color: #333; /* Màu chữ chính */
-            margin: 0; /* Bỏ margin mặc định của body */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
         }
-        h3 {
-            color: #0056b3; /* Màu tiêu đề */
-            border-bottom: 1px solid #eee; /* Đường gạch chân nhẹ */
-            padding-bottom: 5px;
+        
+        .container {
+            background-color: white;
+            border-radius: 16px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            padding: 50px;
+            max-width: 650px;
+            width: 100%;
+            text-align: center;
+            transform: translateY(0);
+            transition: transform 0.3s ease;
         }
-        ul {
-            list-style-type: none; /* Bỏ dấu chấm đầu dòng mặc định */
-            padding-left: 0;
+        
+        .container:hover {
+            transform: translateY(-5px);
         }
-        li {
-            margin-bottom: 8px; /* Khoảng cách giữa các mục */
+        
+        .logo {
+            margin-bottom: 25px;
+            font-size: 3.5rem;
+            color: #5533FF;
         }
-        a {
-            color: #007bff; /* Màu link */
-            text-decoration: none; /* Bỏ gạch chân link */
+        
+        h1 {
+            color: #5533FF;
+            margin-bottom: 15px;
+            font-size: 2.5rem;
+            letter-spacing: -0.5px;
         }
-        a:hover {
-            text-decoration: underline; /* Thêm gạch chân khi di chuột qua link */
+        
+        h2 {
+            color: #343a40;
+            margin-bottom: 35px;
+            font-size: 1.5rem;
+            font-weight: 500;
+            position: relative;
+            display: inline-block;
         }
-        b {
-            font-weight: 600; /* Tăng độ đậm cho chữ bôi đậm */
+        
+        h2::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 10%;
+            width: 80%;
+            height: 3px;
+            background: linear-gradient(90deg, transparent, rgba(85, 51, 255, 0.5), transparent);
         }
-        /* Thêm icon check màu xanh */
-        li::before {
-            content: '✅'; /* Emoji check mark */
-            margin-right: 8px;
-            color: green;
+        
+        p {
+            margin-bottom: 25px;
+            font-size: 1.1rem;
+            color: #495057;
         }
-        /* Riêng cho các mục liên hệ, không dùng icon check */
-        ul.contact-list li::before {
-            content: ''; /* Bỏ icon check */
-            margin-right: 0;
+        
+        .contact-info {
+            text-align: left;
+            margin-top: 40px;
+            padding-top: 25px;
+            border-top: 1px solid #e9ecef;
         }
-        ul.contact-list li {
-             margin-left: 15px; /* Thụt lề cho mục liên hệ */
+        
+        .contact-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 18px;
+            padding: 12px 15px;
+            border-radius: 10px;
+            transition: all 0.3s ease;
+            background-color: #f8f9fa;
         }
-
+        
+        .contact-item:hover {
+            background-color: #f0f0ff;
+            transform: translateX(5px);
+            box-shadow: 0 4px 10px rgba(85, 51, 255, 0.1);
+        }
+        
+        .contact-icon {
+            width: 40px;
+            text-align: center;
+            font-size: 1.5rem;
+            color: #5533FF;
+            margin-right: 15px;
+        }
+        
+        .contact-label {
+            font-weight: 600;
+            color: #343a40;
+            width: 150px;
+        }
+        
+        .contact-link {
+            flex: 1;
+        }
+        
+        .contact-link a {
+            color: #5533FF;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.2s;
+            display: inline-block;
+            padding: 3px 0;
+            position: relative;
+        }
+        
+        .contact-link a::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            bottom: 0;
+            left: 0;
+            background-color: #5533FF;
+            transform: scaleX(0);
+            transform-origin: bottom right;
+            transition: transform 0.3s;
+        }
+        
+        .contact-link a:hover {
+            color: #4422ee;
+        }
+        
+        .contact-link a:hover::after {
+            transform: scaleX(1);
+            transform-origin: bottom left;
+        }
+        
+        .priority {
+            margin-left: 10px;
+            padding: 3px 8px;
+            background-color: #5533FF;
+            color: white;
+            border-radius: 12px;
+            font-size: 0.8rem;
+            font-weight: 600;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 35px 25px;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+            
+            h2 {
+                font-size: 1.2rem;
+            }
+            
+            .contact-item {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            
+            .contact-icon {
+                margin-bottom: 5px;
+            }
+            
+            .contact-label {
+                width: 100%;
+                margin-bottom: 5px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.8rem;
+            }
+            
+            .container {
+                padding: 25px 15px;
+            }
+            
+            .logo {
+                font-size: 2.5rem;
+            }
+        }
     </style>
 </head>
 <body>
-
-    <h3>Nâng cấp VIP - Trải nghiệm không giới hạn!</h3>
-
-    <p>Nhận VIP MIỄN PHÍ để sử dụng đầy đủ các tính năng cao cấp:</p>
-    <ul>
-        <li>Tạo audio không giới hạn từ văn bản (TTS).</li>
-        <li>Xử lý hàng loạt file văn bản thành audio.</li>
-        <li>Sử dụng tính năng Proxy tích hợp.</li>
-        <li>Tùy chỉnh Delay Random giữa các yêu cầu.</li>
-        <li>Ưu tiên hỗ trợ và cập nhật tính năng mới nhất.</li>
-    </ul>
-
-    <p><b>Liên hệ ngay để được KÍCH HOẠT MIỄN PHÍ:</b></p>
-    <ul class="contact-list"> <li>Fanpage: <a href="https://facebook.com/iamcolinai" target="_blank" rel="noopener noreferrer">facebook.com/iamcolinai</a></li>
-        <li>Telegram: @colin2104</li>
-        <li>Zalo: 070.883.8307</li>
-    </ul>
-
+    <div class="container">
+        <div class="logo">
+            🤖
+        </div>
+        <h1>ELEVENLABS ACCOUNT HUB</h1>
+        <h2>Bản Thử Nghiệm - Kích Hoạt VIP Miễn Phí</h2>
+        <p>Hãy đăng nhập và gửi mail để team kích hoạt tài khoản</p>
+        
+        <div class="contact-info">
+            <div class="contact-item">
+                <div class="contact-icon">
+                    📱
+                </div>
+                <div class="contact-label">Facebook Page:</div>
+                <div class="contact-link">
+                    <a href="https://facebook.com/iamcolinai" target="_blank">facebook.com/iamcolinai</a>
+                    <span class="priority">ưu tiên</span>
+                </div>
+            </div>
+            
+            <div class="contact-item">
+                <div class="contact-icon">
+                    ✈️
+                </div>
+                <div class="contact-label">Telegram:</div>
+                <div class="contact-link">
+                    <a href="https://t.me/colin2104" target="_blank">@colin2104</a>
+                </div>
+            </div>
+            
+            <div class="contact-item">
+                <div class="contact-icon">
+                    👤
+                </div>
+                <div class="contact-label">Facebook Cá nhân:</div>
+                <div class="contact-link">
+                    <a href="https://facebook.com/colin.214" target="_blank">facebook.com/colin.214</a>
+                </div>
+            </div>
+            
+            <div class="contact-item">
+                <div class="contact-icon">
+                    ✉️
+                </div>
+                <div class="contact-label">Email:</div>
+                <div class="contact-link">
+                    <a href="mailto:colin.dmme@gmail.com">colin.dmme@gmail.com</a>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
