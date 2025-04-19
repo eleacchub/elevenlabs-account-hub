@@ -25,10 +25,11 @@
             background: none;
             border: 1px solid white;
             color: white;
-            padding: 5px 10px;
+            padding: 5px 8px; /* Adjusted padding */
             border-radius: 4px;
             cursor: pointer;
-            font-size: 14px;
+            font-size: 18px; /* Increased font size for emoji */
+            line-height: 1; /* Ensure consistent height */
             transition: background-color 0.3s, color 0.3s;
         }
 
@@ -441,9 +442,10 @@
                     <li><a href="#contact" data-translate="navContact">Liên hệ</a></li>
                 </ul>
                 <div class="lang-selector">
-                     <button id="lang-vi" class="lang-button" data-lang="vi" data-translate="langVi">Tiếng Việt</button>
-                     <button id="lang-en" class="lang-button" data-lang="en" data-translate="langEn">English</button>
-                     <button id="lang-ko" class="lang-button" data-lang="ko" data-translate="langKo">한국어</button>
+                     <button id="lang-vi" class="lang-button" data-lang="vi" title="Tiếng Việt">🇻🇳</button>
+                     <button id="lang-en" class="lang-button" data-lang="en" title="English">🇺🇸</button>
+                     <button id="lang-ko" class="lang-button" data-lang="ko" title="한국어">🇰🇷</button>
+                     <button id="lang-th" class="lang-button" data-lang="th" title="ภาษาไทย">🇹🇭</button> <!-- Added Thai Button -->
                 </div>
                 <a href="#download" class="btn btn-outline" data-translate="headerButton">Tải ngay</a>
             </div>
