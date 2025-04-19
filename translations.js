@@ -15,6 +15,7 @@ const translations = {
         langVi: "Vietnamese",
         langEn: "English",
         langKo: "Korean",
+        langTh: "Thai", // Added Thai button label placeholder
 
         // New from index.html
         navFeatures: "Features",
@@ -93,7 +94,7 @@ const translations = {
         discountTag: "SALE",
         tier1Name: "Experience",
         tier1OriginalPrice: "$10 / month",
-        tier1PromoPrice: "0đ", // Keep currency symbol consistent
+        tier1PromoPrice: "$0", // Changed to $0
         tier1TrialNote: "For trial period",
         tier1Feature1: "Manage up to <strong>10</strong> accounts",
         tier1Feature2: "Basic bulk TTS processing",
@@ -104,7 +105,7 @@ const translations = {
         tier2Popular: "Popular",
         tier2Name: "Professional",
         tier2OriginalPrice: "$50 / lifetime",
-        tier2PromoPrice: "0đ", // Keep currency symbol consistent
+        tier2PromoPrice: "$0", // Changed to $0
         tier2TrialNote: "For trial period",
         tier2Feature1: "Manage <strong>unlimited</strong> accounts",
         tier2Feature2: "<strong>Advanced</strong> bulk TTS processing",
@@ -212,7 +213,7 @@ const translations = {
         discountTag: "세일",
         tier1Name: "체험",
         tier1OriginalPrice: "$10 / 월",
-        tier1PromoPrice: "0đ", // Keep currency symbol consistent
+        tier1PromoPrice: "$0", // Changed to $0
         tier1TrialNote: "체험 기간 동안",
         tier1Feature1: "최대 <strong>10</strong>개 계정 관리",
         tier1Feature2: "기본 대량 TTS 처리",
@@ -223,7 +224,7 @@ const translations = {
         tier2Popular: "인기",
         tier2Name: "전문가",
         tier2OriginalPrice: "$50 / 평생",
-        tier2PromoPrice: "0đ", // Keep currency symbol consistent
+        tier2PromoPrice: "$0", // Changed to $0
         tier2TrialNote: "체험 기간 동안",
         tier2Feature1: "<strong>무제한</strong> 계정 관리",
         tier2Feature2: "<strong>고급</strong> 대량 TTS 처리",
@@ -236,6 +237,112 @@ const translations = {
         tier2Feature9: "우선 지원",
         tier2Button: "체험 시작",
         pricingUpdatesNote: "그리고 더 많은 기능들이 지속적으로 업데이트되고 있습니다..."
+    },
+    th: { // Added Thai placeholder object
+        // TODO: Add Thai translations here when provided
+        pageTitle: "ElevenLabs Account Hub - การจัดการ API ของ ElevenLabs อย่างมีประสิทธิภาพ", // Placeholder
+        navFeatures: "คุณสมบัติ", // Placeholder
+        navBenefits: "ประโยชน์", // Placeholder
+        navPricing: "ราคา", // Placeholder
+        navContact: "ติดต่อ", // Placeholder
+        headerButton: "ดาวน์โหลดเดี๋ยวนี้", // Placeholder
+        heroTitle: "ปลดปล่อยพลังแห่งการจัดการจำนวนมาก!", // Placeholder
+        heroSubtitle: "หยุดเสียเวลาสลับบัญชี ElevenLabs Account Hub ช่วยจัดการ<strong>บัญชีหลายสิบ หลายร้อยบัญชี</strong>จากส่วนกลาง ประมวลผล TTS จำนวนมาก และใช้เครดิต<strong>ฟรี</strong>ของคุณให้เกิดประโยชน์สูงสุด", // Placeholder
+        heroBtnDownload: "ดาวน์โหลดเดี๋ยวนี้", // Placeholder
+        heroBtnExplore: "สำรวจคุณสมบัติ", // Placeholder
+        challengesTitle1: "ความท้าทายในการใช้หลายบัญชี?", // Placeholder
+        challengesP1: "ต้องสลับบัญชีตลอดเวลาหรือไม่? ติดตามเครดิตที่เหลือในแต่ละบัญชีฟรีได้ยากหรือไม่? เสียเวลาสร้างเสียงพากย์สำหรับเนื้อหาหลายรายการหรือไม่? เสี่ยงต่อการถูกระงับบัญชีเนื่องจากการใช้งานมากเกินไปหรือไม่?", // Placeholder
+        challengesTitle2: "ElevenLabs Account Hub คือคำตอบ!", // Placeholder
+        challengesP2: "เครื่องมือในอุดมคติสำหรับ<strong>จัดการบัญชีทั้งหมดจากส่วนกลาง</strong> ติดตามเครดิตโดยรวม และดำเนินการ<strong>ประมวลผล TTS จำนวนมาก</strong>อย่างชาญฉลาดด้วย<strong>ระบบพร็อกซีและการหน่วงเวลาแบบสุ่ม</strong> ช่วยประหยัดเวลาและรับประกันความปลอดภัยของบัญชี", // Placeholder
+        challengesBox1Title: "หากไม่มี ElevenLabs Account Hub", // Placeholder
+        challengesBox1Li1: "เข้าสู่ระบบ/ออกจากระบบระหว่างบัญชีอย่างต่อเนื่อง", // Placeholder
+        challengesBox1Li2: "ติดตามเครดิตที่เหลือด้วยตนเองต่อบัญชี", // Placeholder
+        challengesBox1Li3: "บัญชีถูกระงับได้ง่ายเนื่องจากการใช้งานมากเกินไป", // Placeholder
+        challengesBox1Li4: "กระบวนการหยุดลงเมื่อบัญชีหนึ่งเครดิตหมด", // Placeholder
+        challengesBox1Li5: "ไม่ได้ใช้เครดิตฟรีอย่างเต็มที่", // Placeholder
+        challengesBox2Title: "ด้วย ElevenLabs Account Hub", // Placeholder
+        challengesBox2Li1: "จัดการบัญชี<strong>ไม่จำกัด</strong>จากส่วนกลางจากอินเทอร์เฟซเดียว", // Placeholder
+        challengesBox2Li2: "ติดตามเครดิตที่เหลือโดยอัตโนมัติและมองเห็นได้", // Placeholder
+        challengesBox2Li3: "ปกป้องบัญชีด้วยระบบพร็อกซีและการหน่วงเวลาแบบสุ่ม", // Placeholder
+        challengesBox2Li4: "สลับไปยังบัญชีอื่นโดยอัตโนมัติเมื่อเครดิตหมด", // Placeholder
+        challengesBox2Li5: "<strong>เพิ่มประสิทธิภาพการใช้เครดิตฟรี 100%</strong> จากแต่ละบัญชี", // Placeholder
+        featuresTitle: "คุณสมบัติหลัก", // Placeholder
+        featuresSubtitle: "ElevenLabs Account Hub มีเครื่องมือที่ครอบคลุมเพื่อจัดการและใช้ประโยชน์สูงสุดจากบัญชี ElevenLabs ของคุณ", // Placeholder
+        feature1Title: "การจัดการบัญชีจำนวนมาก", // Placeholder
+        feature1Desc: "จัดเก็บบัญชี ElevenLabs <strong>ไม่จำกัด</strong>อย่างปลอดภัย เพิ่ม ตั้งชื่อ แก้ไข ตรวจสอบ และจัดการทั้งหมดได้จากที่เดียว", // Placeholder
+        feature2Title: "การประมวลผลข้อความเป็นคำพูดจำนวนมาก", // Placeholder
+        feature2Desc: "กระจายงาน TTS ไปยังหลายบัญชีโดยอัตโนมัติ <span style=\"color: #4338ca; font-weight: bold;\">เพิ่มประสิทธิภาพการใช้เครดิตฟรี</span> เพื่อประมวลผลข้อความจำนวนมากอย่างมีประสิทธิภาพ", // Placeholder
+        feature3Title: "การติดตามเครดิตโดยรวม", // Placeholder
+        feature3Desc: "แสดงจำนวนอักขระที่เหลือในแต่ละบัญชีฟรีอย่างชัดเจน ช่วยให้คุณจัดสรรทรัพยากรได้อย่างมีประสิทธิภาพสูงสุด", // Placeholder
+        feature4Title: "การวิเคราะห์และการวางแผน", // Placeholder
+        feature4Desc: "วิเคราะห์ข้อความอินพุต ประเมินค่าใช้จ่าย และวางแผนการจัดสรรทรัพยากรก่อนการประมวลผลจำนวนมากเพื่อประสิทธิภาพสูงสุด", // Placeholder
+        feature5Title: "การหมุนเวียนบัญชีอัตโนมัติ", // Placeholder
+        feature5Desc: "สลับไปยังบัญชีอื่นอย่างชาญฉลาดเมื่อเครดิตหมด ทำให้การประมวลผลของคุณไม่หยุดชะงักและเพิ่มการใช้งานบัญชีฟรีให้สูงสุด", // Placeholder
+        feature6Title: "ระบบพร็อกซีที่ปลอดภัย", // Placeholder
+        feature6Desc: "ตั้งค่าพร็อกซีเฉพาะสำหรับแต่ละบัญชี ช่วยป้องกันการจำกัดการเข้าถึงและรับประกันความปลอดภัยเมื่อใช้หลายบัญชีพร้อมกัน", // Placeholder
+        feature7Title: "การหน่วงเวลาแบบสุ่มอัจฉริยะ", // Placeholder
+        feature7Desc: "สร้างการหน่วงเวลาแบบสุ่มระหว่างคำขอ API เพื่อจำลองพฤติกรรมของผู้ใช้จริง หลีกเลี่ยงการตรวจจับบอท และปกป้องความปลอดภัยของบัญชี", // Placeholder
+        feature8Title: "การกำหนดค่าอัจฉริยะ", // Placeholder
+        feature8Desc: "ตั้งค่า TTS แยกต่างหาก (เสียง โมเดล พารามิเตอร์) สำหรับแต่ละบัญชี ช่วยให้คุณสามารถดำเนินโครงการอิสระหลายโครงการพร้อมกันได้", // Placeholder
+        feature9Title: "แดชบอร์ดแบบรวมศูนย์", // Placeholder
+        feature9Desc: "อินเทอร์เฟซมัลติฟังก์ชั่นช่วยให้คุณจัดการบัญชีทั้งหมด ติดตามเครดิต และดำเนินการประมวลผล TTS จำนวนมากได้จากหน้าจอเดียว", // Placeholder
+        benefitsTitle: "ประโยชน์ที่โดดเด่น", // Placeholder
+        benefitsSubtitle: "เพิ่มเครดิตฟรีสูงสุด & เพิ่มประสิทธิภาพด้วย ElevenLabs Account Hub", // Placeholder
+        benefit1Title: "เพิ่มบัญชีฟรีสูงสุด", // Placeholder
+        benefit1Desc: "ใช้เครดิต 100% จากแต่ละบัญชีฟรี รวมพลังของบัญชีหลายสิบหรือหลายร้อยบัญชีสำหรับการประมวลผลจำนวนมากโดยไม่มีค่าใช้จ่ายในการสมัครสมาชิกแบบชำระเงิน", // Placeholder
+        benefit2Title: "ประหยัดเวลา", // Placeholder
+        benefit2Desc: "ยุติความยุ่งยากในการเข้าสู่ระบบ/ออกจากระบบอย่างต่อเนื่อง จัดการทุกอย่างจากอินเทอร์เฟซเดียว สลับบัญชีโดยอัตโนมัติเมื่อจำเป็น", // Placeholder
+        benefit3Title: "ปกป้องบัญชี", // Placeholder
+        benefit3Desc: "ระบบพร็อกซีอัจฉริยะและการหน่วงเวลาแบบสุ่มช่วยปกป้องบัญชีฟรีจากการถูกระงับหรือจำกัดเนื่องจากการใช้งานหนักในช่วงเวลาสั้นๆ", // Placeholder
+        benefit4Title: "การประมวลผลอัจฉริยะ", // Placeholder
+        benefit4Desc: "จัดสรรงาน TTS โดยอัตโนมัติตามเครดิตที่เหลือ เพิ่มประสิทธิภาพการใช้บัญชีฟรี และสร้างเสียงจำนวนมากโดยไม่หยุดชะงัก", // Placeholder
+        screenshotTitle: "จัดการบัญชีจำนวนมากในอินเทอร์เฟซเดียว", // Placeholder
+        screenshotSubtitle: "ElevenLabs Account Hub พร้อมแดชบอร์ดที่ใช้งานง่ายช่วยให้คุณจัดการบัญชีหลายสิบ หลายร้อยบัญชีจากส่วนกลางและประมวลผล TTS จำนวนมาก", // Placeholder
+        ctaTitle: "จัดการบัญชี ElevenLabs จำนวนมากวันนี้!", // Placeholder
+        ctaSubtitle: "หยุดเสียเวลาสลับบัญชี เริ่มต้นใช้เครดิตฟรีให้เกิดประโยชน์สูงสุดและเพิ่มประสิทธิภาพของคุณ", // Placeholder
+        ctaButton: "ดาวน์โหลดฟรี", // Placeholder
+        contactTitle: "ติดต่อฝ่ายสนับสนุน", // Placeholder
+        contactSubtitle: "มีคำถามหรือต้องการความช่วยเหลือ? ติดต่อเราผ่านช่องทางต่อไปนี้", // Placeholder
+        contactTelegramTitle: "Telegram", // Placeholder
+        contactFbPageTitle: "เพจ Facebook", // Placeholder
+        contactFbPersonalTitle: "Facebook ส่วนตัว", // Placeholder
+        contactEmailTitle: "อีเมล", // Placeholder
+        footerRights: "© 2025 ElevenLabs Account Hub สงวนลิขสิทธิ์", // Placeholder
+        footerDevelopedBy: "พัฒนาโดย Colin AI", // Placeholder
+        footerDisclaimer: "* ElevenLabs Account Hub ช่วยให้คุณใช้เครดิตจากบัญชีฟรีให้เกิดประโยชน์สูงสุด ประหยัดเวลา และเพิ่มประสิทธิภาพเมื่อทำงานกับเนื้อหา TTS จำนวนมาก", // Placeholder
+        pricingTitle: "ราคาที่ยืดหยุ่น", // Placeholder
+        pricingSubtitle: "เลือกแผนที่เหมาะกับความต้องการของคุณ ปัจจุบันฟรีในช่วงทดลองใช้งาน!", // Placeholder
+        discountTag: "ลดราคา", // Placeholder
+        tier1Name: "ประสบการณ์", // Placeholder
+        tier1OriginalPrice: "$10 / เดือน", // Placeholder
+        tier1PromoPrice: "$0", // Changed to $0
+        tier1TrialNote: "สำหรับช่วงทดลองใช้งาน", // Placeholder
+        tier1Feature1: "จัดการบัญชีสูงสุด <strong>10</strong> บัญชี", // Placeholder
+        tier1Feature2: "การประมวลผล TTS จำนวนมากขั้นพื้นฐาน", // Placeholder
+        tier1Feature3: "การติดตามเครดิตโดยรวม", // Placeholder
+        tier1Feature4: "แดชบอร์ดแบบรวมศูนย์", // Placeholder
+        tier1Feature5: "การสนับสนุนจากชุมชน", // Placeholder
+        tier1Button: "เริ่มทดลองใช้งาน", // Placeholder
+        tier2Popular: "ยอดนิยม", // Placeholder
+        tier2Name: "มืออาชีพ", // Placeholder
+        tier2OriginalPrice: "$50 / ตลอดชีพ", // Placeholder
+        tier2PromoPrice: "$0", // Changed to $0
+        tier2TrialNote: "สำหรับช่วงทดลองใช้งาน", // Placeholder
+        tier2Feature1: "จัดการบัญชี<strong>ไม่จำกัด</strong>", // Placeholder
+        tier2Feature2: "การประมวลผล TTS จำนวนมาก<strong>ขั้นสูง</strong>", // Placeholder
+        tier2Feature3: "การติดตามเครดิตโดยรวม", // Placeholder
+        tier2Feature4: "การวิเคราะห์และการวางแผน", // Placeholder
+        tier2Feature5: "การหมุนเวียนบัญชีอัตโนมัติ", // Placeholder
+        tier2Feature6: "ระบบพร็อกซีและการหน่วงเวลาแบบสุ่ม", // Placeholder
+        tier2Feature7: "การกำหนดค่าอัจฉริยะ", // Placeholder
+        tier2Feature8: "แดชบอร์ดแบบรวมศูนย์", // Placeholder
+        tier2Feature9: "การสนับสนุนลำดับความสำคัญ", // Placeholder
+        tier2Button: "เริ่มทดลองใช้งาน", // Placeholder
+        pricingUpdatesNote: "และคุณสมบัติอื่นๆ อีกมากมายกำลังได้รับการอัปเดตอย่างต่อเนื่อง...", // Placeholder
+        langVi: "เวียดนาม", // Placeholder
+        langEn: "อังกฤษ", // Placeholder
+        langKo: "เกาหลี", // Placeholder
+        langTh: "ไทย" // Placeholder
     },
     vi: {
         // Existing
@@ -253,6 +360,7 @@ const translations = {
         langVi: "Tiếng Việt",
         langEn: "Tiếng Anh",
         langKo: "Tiếng Hàn",
+        langTh: "Tiếng Thái", // Added Thai button label
 
         // New from index.html
         navFeatures: "Tính năng",
@@ -386,9 +494,11 @@ const translationKeys = [
     "contactTelegramTitle", "contactFbPageTitle", "contactFbPersonalTitle", "contactEmailTitle",
     "footerRights", "footerDevelopedBy", "footerDisclaimer",
     // Keys for language buttons themselves
-    "langVi", "langEn", "langKo"
+    "langVi", "langEn", "langKo", "langTh" // Added langTh
     // Note: Keys like mainHeading, subHeading, description etc. from the original file are assumed not to need translation based on context, but can be added here if needed.
 ];
+
+const supportedLanguages = ['en', 'ko', 'vi', 'th']; // Added 'th'
 
 function setLanguage(lang) {
     document.documentElement.lang = lang;
@@ -422,10 +532,10 @@ function setLanguage(lang) {
     const langButtons = document.querySelectorAll('.lang-button');
     langButtons.forEach(button => {
         const buttonLang = button.getAttribute('data-lang');
-        const buttonKey = `lang${buttonLang.charAt(0).toUpperCase() + buttonLang.slice(1)}`;
-        if (translations[lang][buttonKey]) {
-             button.textContent = translations[lang][buttonKey];
-        }
+        // const buttonKey = `lang${buttonLang.charAt(0).toUpperCase() + buttonLang.slice(1)}`;
+        // if (translations[lang][buttonKey]) {
+        //      button.textContent = translations[lang][buttonKey]; // Commented out: Buttons now use emojis
+        // }
          // Highlight active language
         if (buttonLang === lang) {
             button.classList.add('active');
@@ -435,16 +545,35 @@ function setLanguage(lang) {
     });
 }
 
+// Function to get the best match for browser language
+function getBrowserLanguage() {
+    const browserLangs = navigator.languages || [navigator.language || navigator.userLanguage];
+    for (const lang of browserLangs) {
+        const baseLang = lang.split('-')[0].toLowerCase(); // Get base language (e.g., 'en' from 'en-US')
+        if (supportedLanguages.includes(baseLang)) {
+            return baseLang;
+        }
+    }
+    return 'vi'; // Default to Vietnamese if no match found
+}
+
+
 document.addEventListener('DOMContentLoaded', () => {
-    const preferredLanguage = localStorage.getItem('preferredLanguage') || 'vi'; // Default to Vietnamese
-    setLanguage(preferredLanguage);
+    // 1. Check localStorage
+    // 2. If not found, detect browser language
+    // 3. If no match, default to Vietnamese ('vi')
+    const savedLanguage = localStorage.getItem('preferredLanguage');
+    const initialLanguage = savedLanguage || getBrowserLanguage();
+    setLanguage(initialLanguage);
 
     // Add event listeners if buttons exist
     const btnVi = document.getElementById('lang-vi');
     const btnEn = document.getElementById('lang-en');
     const btnKo = document.getElementById('lang-ko');
+    const btnTh = document.getElementById('lang-th'); // Added Thai button listener
 
     if (btnVi) btnVi.addEventListener('click', () => setLanguage('vi'));
     if (btnEn) btnEn.addEventListener('click', () => setLanguage('en'));
     if (btnKo) btnKo.addEventListener('click', () => setLanguage('ko'));
+    if (btnTh) btnTh.addEventListener('click', () => setLanguage('th')); // Added Thai button listener
 });
