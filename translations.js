@@ -93,7 +93,7 @@ const translations = {
         pricingSubtitle: "Choose the plan that suits your needs. Currently free during the trial period!",
         discountTag: "SALE",
         tier1Name: "Experience",
-        tier1OriginalPrice: "$10 / month",
+        tier1OriginalPrice: "$9.9 / month",
         tier1PromoPrice: "$0", // Changed to $0
         tier1TrialNote: "For trial period",
         tier1Feature1: "Manage up to <strong>10</strong> accounts",
@@ -104,7 +104,7 @@ const translations = {
         tier1Button: "Start Trial",
         tier2Popular: "Popular",
         tier2Name: "Professional",
-        tier2OriginalPrice: "$50 / lifetime",
+        tier2OriginalPrice: "$150 / lifetime",
         tier2PromoPrice: "$0", // Changed to $0
         tier2TrialNote: "For trial period",
         tier2Feature1: "Manage <strong>unlimited</strong> accounts",
@@ -212,7 +212,7 @@ const translations = {
         pricingSubtitle: "귀하의 필요에 맞는 플랜을 선택하십시오. 현재 체험 기간 동안 무료입니다!",
         discountTag: "세일",
         tier1Name: "체험",
-        tier1OriginalPrice: "$10 / 월",
+        tier1OriginalPrice: "$9.9 / 월",
         tier1PromoPrice: "$0", // Changed to $0
         tier1TrialNote: "체험 기간 동안",
         tier1Feature1: "최대 <strong>10</strong>개 계정 관리",
@@ -223,7 +223,7 @@ const translations = {
         tier1Button: "체험 시작",
         tier2Popular: "인기",
         tier2Name: "전문가",
-        tier2OriginalPrice: "$50 / 평생",
+        tier2OriginalPrice: "$150 / 평생",
         tier2PromoPrice: "$0", // Changed to $0
         tier2TrialNote: "체험 기간 동안",
         tier2Feature1: "<strong>무제한</strong> 계정 관리",
@@ -314,7 +314,7 @@ const translations = {
         pricingSubtitle: "เลือกแผนที่เหมาะกับความต้องการของคุณ ปัจจุบันฟรีในช่วงทดลองใช้งาน!", // Placeholder
         discountTag: "ลดราคา", // Placeholder
         tier1Name: "ประสบการณ์", // Placeholder
-        tier1OriginalPrice: "$10 / เดือน", // Placeholder
+        tier1OriginalPrice: "$9.9 / เดือน", // Placeholder
         tier1PromoPrice: "$0", // Changed to $0
         tier1TrialNote: "สำหรับช่วงทดลองใช้งาน", // Placeholder
         tier1Feature1: "จัดการบัญชีสูงสุด <strong>10</strong> บัญชี", // Placeholder
@@ -325,7 +325,7 @@ const translations = {
         tier1Button: "เริ่มทดลองใช้งาน", // Placeholder
         tier2Popular: "ยอดนิยม", // Placeholder
         tier2Name: "มืออาชีพ", // Placeholder
-        tier2OriginalPrice: "$50 / ตลอดชีพ", // Placeholder
+        tier2OriginalPrice: "$150 / ตลอดชีพ", // Placeholder
         tier2PromoPrice: "$0", // Changed to $0
         tier2TrialNote: "สำหรับช่วงทดลองใช้งาน", // Placeholder
         tier2Feature1: "จัดการบัญชี<strong>ไม่จำกัด</strong>", // Placeholder
@@ -438,7 +438,7 @@ const translations = {
         pricingSubtitle: "Chọn gói phù hợp với nhu cầu của bạn. Hiện đang miễn phí trong giai đoạn thử nghiệm!",
         discountTag: "GIẢM GIÁ",
         tier1Name: "Trải nghiệm",
-        tier1OriginalPrice: "10$ / tháng",
+        tier1OriginalPrice: "9.9$ / tháng",
         tier1PromoPrice: "$0", // Keep currency symbol consistent
         tier1TrialNote: "Cho giai đoạn thử nghiệm",
         tier1Feature1: "Quản lý tối đa <strong>10</strong> tài khoản",
@@ -449,7 +449,7 @@ const translations = {
         tier1Button: "Bắt đầu dùng thử",
         tier2Popular: "ĐƯỢC ƯA CHUỘNG",
         tier2Name: "Chuyên nghiệp",
-        tier2OriginalPrice: "50$ / vĩnh viễn",
+        tier2OriginalPrice: "150$ / vĩnh viễn",
         tier2PromoPrice: "$0", // Keep currency symbol consistent
         tier2TrialNote: "Cho giai đoạn thử nghiệm",
         tier2Feature1: "Quản lý <strong>không giới hạn</strong> tài khoản",
