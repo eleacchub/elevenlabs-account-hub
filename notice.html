@@ -10,10 +10,11 @@
             padding: 0;
             box-sizing: border-box;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            user-select: none;
         }
         
         body {
-            background: linear-gradient(135deg, #f5f7fa 0%, #e4e8f0 100%);
+            background-color: #ffffff;
             color: #212529;
             line-height: 1.5;
             display: flex;
@@ -26,7 +27,7 @@
         .container {
             background-color: white;
             border-radius: 12px;
-            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.05);
             padding: 25px 20px;
             max-width: 600px;
             width: 100%;
@@ -76,16 +77,13 @@
             display: flex;
             align-items: center;
             margin-bottom: 10px;
-            padding: 8px 12px;
+            padding: 14px;
             border-radius: 8px;
-            transition: all 0.2s ease;
             background-color: #f8f9fa;
         }
         
         .contact-item:hover {
             background-color: #f0f0ff;
-            transform: translateX(3px);
-            box-shadow: 0 2px 8px rgba(85, 51, 255, 0.1);
         }
         
         .contact-icon {
@@ -99,7 +97,7 @@
         .contact-label {
             font-weight: 600;
             color: #343a40;
-            width: 130px;
+            width: 120px;
             font-size: 0.95rem;
         }
         
@@ -111,14 +109,8 @@
             color: #5533FF;
             text-decoration: none;
             font-weight: 500;
-            transition: color 0.2s;
             display: inline-block;
             font-size: 0.95rem;
-        }
-        
-        .contact-link a:hover {
-            color: #4422ee;
-            text-decoration: underline;
         }
         
         .priority {
@@ -145,11 +137,11 @@
             }
             
             .contact-item {
-                padding: 8px 10px;
+                padding: 10px;
             }
             
             .contact-label {
-                width: 110px;
+                width: 100px;
                 font-size: 0.9rem;
             }
             
@@ -184,7 +176,7 @@
         }
     </style>
 </head>
-<body>
+<body oncontextmenu="return false;">
     <div class="container">
         <h1>ELEVENLABS ACCOUNT HUB</h1>
         <h2>Bản Thử Nghiệm - Kích Hoạt VIP Miễn Phí</h2>
@@ -193,11 +185,11 @@
         <div class="contact-info">
             <div class="contact-item">
                 <div class="contact-icon">
-                    📱
+                    💠
                 </div>
                 <div class="contact-label">FanPage:</div>
                 <div class="contact-link">
-                    <a href="https://facebook.com/iamcolinai" target="_blank">facebook.com/iamcolinai</a>
+                    <a href="https://facebook.com/iamcolinai" target="_blank">Colin AI (facebook.com/iamcolinai)</a>
                     <span class="priority">ưu tiên</span>
                 </div>
             </div>
@@ -218,13 +210,13 @@
                 </div>
                 <div class="contact-label">Facebook:</div>
                 <div class="contact-link">
-                    <a href="https://facebook.com/colin.214" target="_blank">facebook.com/colin.214</a>
+                    <a href="https://facebook.com/colin.214" target="_blank">Colin (facebook.com/colin.214)</a>
                 </div>
             </div>
             
             <div class="contact-item">
                 <div class="contact-icon">
-                    ✉️
+                    📩
                 </div>
                 <div class="contact-label">Email:</div>
                 <div class="contact-link">
@@ -233,5 +225,24 @@
             </div>
         </div>
     </div>
+    
+    <script>
+        // Chặn click chuột phải
+        document.addEventListener('contextmenu', event => event.preventDefault());
+        
+        // Chặn phím tắt và các phím chức năng
+        document.addEventListener('keydown', function(e) {
+            // Chặn F12, Ctrl+Shift+I, Ctrl+Shift+J, Ctrl+U
+            if (
+                e.keyCode === 123 || 
+                (e.ctrlKey && e.shiftKey && e.keyCode === 73) || 
+                (e.ctrlKey && e.shiftKey && e.keyCode === 74) || 
+                (e.ctrlKey && e.keyCode === 85)
+            ) {
+                e.preventDefault();
+                return false;
+            }
+        });
+    </script>
 </body>
 </html>
