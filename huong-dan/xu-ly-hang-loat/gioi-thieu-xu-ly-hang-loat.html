@@ -1,1 +1,174 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giới thiệu Xử lý Hàng loạt - Hướng dẫn ElevenLabs Account Hub</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <div class="logo-container">
+                <h2>ElevenLabs Hub Guide</h2>
+            </div>
+            <nav class="navigation-menu">
+                <h3>Mục lục</h3>
+                <ul>
+                    <li><a href="../index.html">Trang chủ</a></li>
+                    <li>
+                        <a href="#bat-dau" class="menu-toggle">Bắt đầu</a>
+                        <ul class="submenu">
+                            <li><a href="../bat-dau/cai-dat-va-khoi-dong.html">Cài đặt & Khởi động</a></li>
+                            <li><a href="../bat-dau/tong-quan-giao-dien.html">Tổng quan Giao diện</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#quan-ly-api" class="menu-toggle">Quản lý Khóa API</a>
+                        <ul class="submenu">
+                            <li><a href="../quan-ly-api/them-sua-xoa-api-key.html">Thêm/Sửa/Xóa Khóa API</a></li>
+                            <li><a href="../quan-ly-api/kiem-tra-tin-dung.html">Kiểm tra Tín dụng</a></li>
+                            <li><a href="../quan-ly-api/cau-hinh-proxy-cho-api-key.html">Cấu hình Proxy</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#chuc-nang-tts" class="menu-toggle">Chức năng TTS</a>
+                        <ul class="submenu">
+                            <li><a href="../chuc-nang-tts/tao-giong-noi-co-ban.html">Tạo Giọng nói Cơ bản</a></li>
+                            <li><a href="../chuc-nang-tts/tuy-chinh-tham-so-tts.html">Tùy chỉnh Tham số TTS</a></li>
+                            <li><a href="../chuc-nang-tts/luu-ho-so-cai-dat-tts.html">Lưu Hồ sơ Cài đặt</a></li>
+                            <li><a href="../chuc-nang-tts/quan-ly-lich-su-tts.html">Quản lý Lịch sử TTS</a></li>
+                        </ul>
+                    </li>
+                     <li>
+                        <a href="#xu-ly-hang-loat" class="menu-toggle open">Xử lý Hàng loạt</a>
+                        <ul class="submenu" style="display: block;">
+                            <li><a href="gioi-thieu-xu-ly-hang-loat.html" class="active">Giới thiệu</a></li>
+                            <li><a href="su-dung-xu-ly-hang-loat.html">Cách sử dụng</a></li>
+                            <li><a href="nhap-hang-loat-api-key.html">Nhập hàng loạt Khóa API</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#proxy-pool" class="menu-toggle">Proxy Pool Chung</a>
+                        <ul class="submenu">
+                            <li><a href="../proxy-pool/gioi-thieu-proxy-pool.html">Giới thiệu</a></li>
+                            <li><a href="../proxy-pool/quan-ly-proxy-pool.html">Quản lý Proxy Pool</a></li>
+                            <li><a href="../proxy-pool/su-dung-proxy-pool-khi-tts.html">Sử dụng với TTS</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#quan-ly-giong-noi" class="menu-toggle">Quản lý Giọng nói</a>
+                        <ul class="submenu">
+                            <li><a href="../quan-ly-giong-noi/my-voices.html">My Voices</a></li>
+                            <li><a href="../quan-ly-giong-noi/voice-library.html">Voice Library</a></li>
+                            <li><a href="../quan-ly-giong-noi/su-dung-giong-noi-thu-vien-trong-tts.html">Sử dụng Giọng nói Thư viện</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#tai-khoan" class="menu-toggle">Tài khoản & VIP</a>
+                        <ul class="submenu">
+                            <li><a href="../tai-khoan/dang-nhap-dang-xuat.html">Đăng nhập/Đăng xuất</a></li>
+                            <li><a href="../tai-khoan/thong-tin-tai-khoan-vip.html">Thông tin VIP</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#cai-dat-chung" class="menu-toggle">Cài đặt Chung</a>
+                        <ul class="submenu">
+                            <li><a href="../cai-dat-chung/thay-doi-thu-muc-luu-mac-dinh.html">Thư mục Lưu trữ</a></li>
+                            <li><a href="../cai-dat-chung/thay-doi-ngon-ngu.html">Ngôn ngữ</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#sao-luu-phuc-hoi" class="menu-toggle">Sao lưu & Phục hồi</a>
+                        <ul class="submenu">
+                            <li><a href="../sao-luu-phuc-hoi/sao-luu-du-lieu.html">Sao lưu Dữ liệu</a></li>
+                            <li><a href="../sao-luu-phuc-hoi/phuc-hoi-du-lieu.html">Phục hồi Dữ liệu</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="../faq.html">Câu hỏi Thường gặp (FAQ)</a></li>
+                    <li><a href="../ho-tro.html">Hỗ trợ</a></li>
+                </ul>
+            </nav>
+        </aside>
+        <main class="content">
+            <header class="main-header">
+                <h1>Giới thiệu Tính năng Xử lý Hàng loạt (Batch Processing)</h1>
+            </header>
+            <section id="muc-dich">
+                <h2>Mục đích của Xử lý Hàng loạt</h2>
+                <p>Tính năng Xử lý Hàng loạt (Batch Processing) trong ElevenLabs Account Hub là một công cụ mạnh mẽ được thiết kế để giúp bạn tự động hóa việc tạo giọng nói cho một số lượng lớn các đoạn văn bản hoặc nhiều tệp văn bản cùng một lúc. Thay vì phải thực hiện từng tác vụ Text-to-Speech (TTS) một cách thủ công, bạn có thể định cấu hình một lô các tác vụ và để phần mềm tự động xử lý chúng.</p>
+                <p>Điều này đặc biệt hữu ích trong các trường hợp sau:</p>
+                <ul>
+                    <li><strong>Sản xuất Nội dung Lớn:</strong> Khi bạn cần tạo giọng đọc cho nhiều chương của một cuốn sách, một loạt bài báo, các mô-đun của một khóa học trực tuyến, hoặc bất kỳ dự án nào có nhiều phần nội dung riêng biệt.</li>
+                    <li><strong>Chuyển đổi Hàng loạt Tệp:</strong> Nếu bạn có nhiều tệp văn bản (ví dụ: <code>.txt</code>, <code>.srt</code> cho phụ đề) và muốn chuyển đổi tất cả chúng thành các tệp âm thanh tương ứng.</li>
+                    <li><strong>Tối ưu hóa Sử dụng Tín dụng:</strong> Khi bạn sở hữu nhiều tài khoản ElevenLabs (đặc biệt là các tài khoản miễn phí với giới hạn tín dụng) và muốn phân phối các tác vụ TTS một cách thông minh qua các tài khoản đó để tận dụng tối đa lượng tín dụng có sẵn.</li>
+                    <li><strong>Thử nghiệm Giọng nói/Cài đặt:</strong> Tạo nhanh nhiều phiên bản âm thanh của cùng một nội dung với các giọng nói hoặc cài đặt TTS khác nhau để so sánh và lựa chọn.</li>
+                </ul>
+                <p>Về cơ bản, Xử lý Hàng loạt cho phép bạn định cấu hình một lần và để phần mềm tự động làm việc, giúp tiết kiệm đáng kể thời gian và công sức so với việc xử lý từng tác vụ một.</p>
+            </section>
 
+            <section id="loi-ich-chinh">
+                <h2>Lợi ích Chính của Xử lý Hàng loạt</h2>
+                <ul>
+                    <li><strong>Tiết kiệm Thời gian Tối đa:</strong> Tự động hóa hoàn toàn quá trình tạo hàng trăm hoặc thậm chí hàng ngàn tệp âm thanh từ các nguồn văn bản khác nhau.</li>
+                    <li><strong>Tối ưu hóa Sử dụng Tín dụng (Credit Optimization):</strong> Phần mềm có khả năng phân phối các yêu cầu TTS một cách thông minh qua nhiều Khóa API dựa trên lượng tín dụng còn lại của mỗi khóa. Điều này đặc biệt giá trị khi bạn muốn tận dụng tối đa các tài khoản miễn phí.</li>
+                    <li><strong>Luân chuyển Tài khoản Tự động (Automatic Account Rotation):</strong> Khi một Khóa API được sử dụng trong lô xử lý hết tín dụng, phần mềm có thể tự động chuyển sang sử dụng Khóa API tiếp theo trong danh sách (mà bạn đã cấu hình) còn tín dụng để tiếp tục quá trình mà không bị gián đoạn.</li>
+                    <li><strong>Tăng cường Bảo vệ Tài khoản:</strong>
+                        <ul>
+                            <li><strong>Sử dụng Proxy:</strong> Tích hợp khả năng sử dụng proxy (từ <a href="../proxy-pool/gioi-thieu-proxy-pool.html">Proxy Pool chung</a> hoặc proxy riêng đã cấu hình cho từng Khóa API) cho các yêu cầu API, giúp thay đổi địa chỉ IP và giảm nguy cơ bị giới hạn.</li>
+                            <li><strong>Delay Ngẫu nhiên (Random Delay):</strong> Cho phép thiết lập khoảng thời gian trễ ngẫu nhiên giữa các yêu cầu API liên tiếp, giúp mô phỏng hành vi người dùng tự nhiên hơn và tránh bị các hệ thống phát hiện bot chặn.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Xử lý Đa dạng Nguồn Đầu vào:</strong> Hỗ trợ nhập liệu từ việc dán trực tiếp danh sách văn bản hoặc từ việc chọn nhiều tệp văn bản cùng lúc.</li>
+                    <li><strong>Theo dõi Tiến trình Chi tiết:</strong> Cung cấp một giao diện trực quan để bạn theo dõi tiến trình xử lý của từng tác vụ trong lô, bao gồm trạng thái (đang chờ, đang xử lý, hoàn thành, lỗi), thông tin tệp đầu ra, và các thông báo lỗi (nếu có).</li>
+                    <li><strong>Quản lý Tác vụ Linh hoạt:</strong> Cho phép bạn thêm, xóa, hoặc sắp xếp lại các tác vụ trong lô trước và trong quá trình xử lý (tùy thuộc vào các tính năng cụ thể của phiên bản).</li>
+                </ul>
+            </section>
+
+            <section id="khi-nao-su-dung">
+                <h2>Khi nào bạn nên Sử dụng Tính năng Xử lý Hàng loạt?</h2>
+                <p>Hãy cân nhắc sử dụng tính năng mạnh mẽ này nếu bạn đang đối mặt với một trong các tình huống sau:</p>
+                <ul>
+                    <li>Bạn có một danh sách dài các câu, đoạn văn, hoặc các mẩu tin nhắn cần được chuyển đổi thành giọng nói riêng biệt.</li>
+                    <li>Bạn có một thư mục chứa nhiều tệp văn bản (ví dụ: các chương của một cuốn sách, các bài viết blog, các tệp phụ đề) và muốn tạo tệp âm thanh cho từng tệp.</li>
+                    <li>Bạn muốn tạo nhiều phiên bản âm thanh của cùng một nội dung nhưng với các giọng nói khác nhau hoặc các cài đặt TTS (tốc độ, độ ổn định) khác nhau để so sánh.</li>
+                    <li>Bạn sở hữu và quản lý nhiều tài khoản ElevenLabs (đặc biệt là tài khoản miễn phí) và muốn phân bổ công việc tạo TTS một cách hiệu quả để không lãng phí tín dụng.</li>
+                    <li>Bạn muốn tự động hóa quy trình tạo giọng nói để tập trung vào các công việc sáng tạo khác.</li>
+                </ul>
+                <p>Để tìm hiểu chi tiết về cách thiết lập và chạy một lô xử lý, vui lòng xem mục <a href="su-dung-xu-ly-hang-loat.html">Cách sử dụng Xử lý Hàng loạt</a>.</p>
+            </section>
+        </main>
+    </div>
+    <script>
+        document.querySelectorAll('.menu-toggle').forEach(item => {
+            item.addEventListener('click', event => {
+                event.preventDefault();
+                const submenu = item.nextElementSibling;
+                if (submenu && submenu.classList.contains('submenu')) {
+                    const isOpening = submenu.style.display !== 'block';
+                    document.querySelectorAll('.submenu').forEach(sm => sm.style.display = 'none'); // Close all
+                    document.querySelectorAll('.menu-toggle').forEach(mt => mt.classList.remove('open')); // Remove open class from all
+                    if (isOpening) {
+                        submenu.style.display = 'block';
+                        item.classList.add('open');
+                    }
+                }
+            });
+        });
+        // Ensure the current page's submenu is open on load
+        document.addEventListener('DOMContentLoaded', () => {
+            const activeLink = document.querySelector('.sidebar .active');
+            if (activeLink) {
+                let parent = activeLink.closest('.submenu');
+                if (parent) {
+                    parent.style.display = 'block';
+                    const toggle = parent.previousElementSibling;
+                    if (toggle && toggle.classList.contains('menu-toggle')) {
+                        toggle.classList.add('open');
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+</html>

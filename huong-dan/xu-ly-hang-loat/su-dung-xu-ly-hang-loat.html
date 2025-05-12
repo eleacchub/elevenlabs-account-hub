@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cách sử dụng Xử lý Hàng loạt - Hướng dẫn ElevenLabs Account Hub</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <div class="logo-container">
+                <h2>ElevenLabs Hub Guide</h2>
+            </div>
+            <nav class="navigation-menu">
+                <h3>Mục lục</h3>
+                <ul>
+                    <li><a href="../index.html">Trang chủ</a></li>
+                    <li>
+                        <a href="#bat-dau" class="menu-toggle">Bắt đầu</a>
+                        <ul class="submenu">
+                            <li><a href="../bat-dau/cai-dat-va-khoi-dong.html">Cài đặt & Khởi động</a></li>
+                            <li><a href="../bat-dau/tong-quan-giao-dien.html">Tổng quan Giao diện</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#quan-ly-api" class="menu-toggle">Quản lý Khóa API</a>
+                        <ul class="submenu">
+                            <li><a href="../quan-ly-api/them-sua-xoa-api-key.html">Thêm/Sửa/Xóa Khóa API</a></li>
+                            <li><a href="../quan-ly-api/kiem-tra-tin-dung.html">Kiểm tra Tín dụng</a></li>
+                            <li><a href="../quan-ly-api/cau-hinh-proxy-cho-api-key.html">Cấu hình Proxy</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#chuc-nang-tts" class="menu-toggle">Chức năng TTS</a>
+                        <ul class="submenu">
+                            <li><a href="../chuc-nang-tts/tao-giong-noi-co-ban.html">Tạo Giọng nói Cơ bản</a></li>
+                            <li><a href="../chuc-nang-tts/tuy-chinh-tham-so-tts.html">Tùy chỉnh Tham số TTS</a></li>
+                            <li><a href="../chuc-nang-tts/luu-ho-so-cai-dat-tts.html">Lưu Hồ sơ Cài đặt</a></li>
+                            <li><a href="../chuc-nang-tts/quan-ly-lich-su-tts.html">Quản lý Lịch sử TTS</a></li>
+                        </ul>
+                    </li>
+                     <li>
+                        <a href="#xu-ly-hang-loat" class="menu-toggle open">Xử lý Hàng loạt</a>
+                        <ul class="submenu" style="display: block;">
+                            <li><a href="gioi-thieu-xu-ly-hang-loat.html">Giới thiệu</a></li>
+                            <li><a href="su-dung-xu-ly-hang-loat.html" class="active">Cách sử dụng</a></li>
+                            <li><a href="nhap-hang-loat-api-key.html">Nhập hàng loạt Khóa API</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#proxy-pool" class="menu-toggle">Proxy Pool Chung</a>
+                        <ul class="submenu">
+                            <li><a href="../proxy-pool/gioi-thieu-proxy-pool.html">Giới thiệu</a></li>
+                            <li><a href="../proxy-pool/quan-ly-proxy-pool.html">Quản lý Proxy Pool</a></li>
+                            <li><a href="../proxy-pool/su-dung-proxy-pool-khi-tts.html">Sử dụng với TTS</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#quan-ly-giong-noi" class="menu-toggle">Quản lý Giọng nói</a>
+                        <ul class="submenu">
+                            <li><a href="../quan-ly-giong-noi/my-voices.html">My Voices</a></li>
+                            <li><a href="../quan-ly-giong-noi/voice-library.html">Voice Library</a></li>
+                            <li><a href="../quan-ly-giong-noi/su-dung-giong-noi-thu-vien-trong-tts.html">Sử dụng Giọng nói Thư viện</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#tai-khoan" class="menu-toggle">Tài khoản & VIP</a>
+                        <ul class="submenu">
+                            <li><a href="../tai-khoan/dang-nhap-dang-xuat.html">Đăng nhập/Đăng xuất</a></li>
+                            <li><a href="../tai-khoan/thong-tin-tai-khoan-vip.html">Thông tin VIP</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#cai-dat-chung" class="menu-toggle">Cài đặt Chung</a>
+                        <ul class="submenu">
+                            <li><a href="../cai-dat-chung/thay-doi-thu-muc-luu-mac-dinh.html">Thư mục Lưu trữ</a></li>
+                            <li><a href="../cai-dat-chung/thay-doi-ngon-ngu.html">Ngôn ngữ</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#sao-luu-phuc-hoi" class="menu-toggle">Sao lưu & Phục hồi</a>
+                        <ul class="submenu">
+                            <li><a href="../sao-luu-phuc-hoi/sao-luu-du-lieu.html">Sao lưu Dữ liệu</a></li>
+                            <li><a href="../sao-luu-phuc-hoi/phuc-hoi-du-lieu.html">Phục hồi Dữ liệu</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="../faq.html">Câu hỏi Thường gặp (FAQ)</a></li>
+                    <li><a href="../ho-tro.html">Hỗ trợ</a></li>
+                </ul>
+            </nav>
+        </aside>
+        <main class="content">
+            <header class="main-header">
+                <h1>Cách sử dụng Tính năng Xử lý Hàng loạt (Batch Processing)</h1>
+            </header>
+            <p>Cửa sổ Xử lý Hàng loạt (Batch Processing) của ElevenLabs Account Hub được thiết kế để bạn có thể dễ dàng thiết lập và chạy các tác vụ tạo giọng nói cho nhiều đoạn văn bản hoặc nhiều tệp một cách tự động. Dưới đây là hướng dẫn chi tiết các bước để sử dụng tính năng này:</p>
+
+            <section id="mo-cua-so">
+                <h2>1. Mở Cửa sổ Xử lý Hàng loạt</h2>
+                <p>Để bắt đầu, bạn cần mở cửa sổ Xử lý Hàng loạt từ giao diện chính của phần mềm:</p>
+                <ul>
+                    <li>Trên Thanh Menu, chọn "<strong>Batch Processing</strong>".</li>
+                    <li>Từ menu con xổ xuống, chọn "<strong>Mở Cửa sổ Xử lý Hàng loạt</strong>" (Open Batch Processing Window).</li>
+                </ul>
+                <img src="../assets/images/open-batch-processing-window-menu.png" alt="Menu để mở cửa sổ Xử lý Hàng loạt" class="screenshot">
+                <em>(Hình ảnh: Vị trí menu để mở cửa sổ Xử lý Hàng loạt)</em>
+                <p>Sau khi chọn, cửa sổ "<strong>Batch Text-to-Speech Processing</strong>" sẽ xuất hiện. Đây là nơi bạn sẽ thực hiện tất cả các thao tác liên quan đến xử lý hàng loạt.</p>
+                <img src="../assets/images/batch-processing-window-overview.png" alt="Giao diện chính của cửa sổ Xử lý Hàng loạt" class="screenshot">
+                <em>(Hình ảnh: Giao diện tổng quan của cửa sổ Xử lý Hàng loạt)</em>
+            </section>
+
+            <section id="nhap-lieu">
+                <h2>2. Chuẩn bị Dữ liệu Văn bản Đầu vào</h2>
+                <p>Bạn có hai phương thức chính để cung cấp các đoạn văn bản cần chuyển đổi thành giọng nói:</p>
+                <h3>a. Nhập Trực tiếp vào Bảng (Add Task Manually)</h3>
+                <ol>
+                    <li>Trong cửa sổ Xử lý Hàng loạt, tìm đến bảng "<strong>Danh sách Tác vụ</strong>" (Task List).</li>
+                    <li>Nhấn nút "<strong>Thêm Tác vụ</strong>" (Add Task).</li>
+                    <li>Một hàng mới sẽ được thêm vào cuối bảng. Bạn có thể nhấp đúp vào ô trong cột "<strong>Văn bản</strong>" (Text) của hàng mới này để nhập hoặc dán trực tiếp đoạn văn bản bạn muốn xử lý.</li>
+                    <li>Lặp lại bước này để thêm nhiều đoạn văn bản khác nhau, mỗi đoạn sẽ là một tác vụ riêng biệt trong lô.</li>
+                </ol>
+                <h3>b. Nhập từ Tệp (Import from Files)</h3>
+                <p>Đây là cách hiệu quả nếu bạn có nhiều văn bản được lưu trong các tệp riêng biệt.</p>
+                <ol>
+                    <li>Nhấn nút "<strong>Nhập từ Tệp</strong>" (Import from Files).</li>
+                    <li>Một hộp thoại chọn tệp của hệ điều hành sẽ xuất hiện.</li>
+                    <li>Duyệt đến thư mục chứa các tệp văn bản của bạn. Bạn có thể chọn một hoặc nhiều tệp cùng lúc (ví dụ: các tệp <code>.txt</code>).
+                        <div class="note">
+                            <strong>Định dạng tệp được hỗ trợ:</strong> Hiện tại, phần mềm hỗ trợ tốt nhất cho các tệp văn bản thuần túy (<code>.txt</code>). Mỗi dòng trong tệp <code>.txt</code> thường sẽ được coi là một tác vụ TTS riêng biệt. Hỗ trợ cho các định dạng khác như <code>.srt</code> (phụ đề) có thể được thêm vào trong các phiên bản tương lai.
+                        </div>
+                    </li>
+                    <li>Sau khi chọn các tệp và nhấn "Open", nội dung từ các tệp đó sẽ được phân tích và thêm vào bảng "Danh sách Tác vụ".</li>
+                </ol>
+                <img src="../assets/images/batch-import-files.png" alt="Nhập văn bản từ tệp cho xử lý hàng loạt" class="screenshot">
+                <em>(Hình ảnh: Minh họa việc chọn tệp để nhập vào danh sách tác vụ)</em>
+            </section>
+
+            <section id="cau-hinh-tts">
+                <h2>3. Cấu hình Các Thông số TTS cho Lô Xử lý</h2>
+                <p>Sau khi đã có danh sách các tác vụ văn bản, bạn cần cấu hình các cài đặt Text-to-Speech sẽ được áp dụng cho toàn bộ lô. Các cài đặt này thường nằm trong một khu vực riêng biệt trên cửa sổ Xử lý Hàng loạt, ví dụ như "<strong>Cài đặt Chung cho Lô</strong>" (Batch Settings).</p>
+                
+                <h3>a. Lựa chọn Khóa API (API Key Selection Strategy)</h3>
+                <ul>
+                    <li><strong>Sử dụng một Khóa API cố định:</strong>
+                        <ul>
+                            <li>Trong phần cài đặt, bạn sẽ thấy một danh sách thả xuống "<strong>Chọn Khóa API</strong>" (Select API Key).</li>
+                            <li>Chọn một Khóa API cụ thể từ danh sách này. Tất cả các tác vụ trong lô sẽ được thực hiện bằng Khóa API này.</li>
+                            <li>Nếu khóa này hết tín dụng giữa chừng, quá trình xử lý có thể bị dừng hoặc các tác vụ còn lại sẽ thất bại.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Tự động Luân chuyển Khóa API (Auto-rotate API Keys):</strong>
+                        <ul>
+                            <li>Đánh dấu vào ô tùy chọn "<strong>Tự động luân chuyển Khóa API khi hết credit</strong>" (Auto-rotate API Key on credit exhaustion).</li>
+                            <li>Khi tùy chọn này được bật, phần mềm sẽ tự động chọn các Khóa API từ danh sách các khóa bạn đã thêm vào ứng dụng (trong cửa sổ chính). Nó sẽ ưu tiên các khóa còn nhiều tín dụng.</li>
+                            <li>Nếu một Khóa API đang sử dụng hết tín dụng trong quá trình xử lý lô, phần mềm sẽ tự động chuyển sang sử dụng một Khóa API khác còn tín dụng để tiếp tục các tác vụ còn lại.</li>
+                            <li><div class="tip"><strong>Mẹo:</strong> Đây là tính năng cực kỳ hữu ích để tối đa hóa việc sử dụng tín dụng từ nhiều tài khoản ElevenLabs miễn phí hoặc các tài khoản có giới hạn tín dụng nhỏ.</div></li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <h3>b. Cài đặt Giọng nói (Voice) và Mô hình (Model)</h3>
+                <p>Bạn cần chọn giọng nói và mô hình AI sẽ được sử dụng cho tất cả các tác vụ trong lô:</p>
+                <ul>
+                    <li><strong>Giọng nói (Voice):</strong> Chọn một giọng nói từ danh sách thả xuống. Danh sách này có thể bao gồm các giọng nói từ Khóa API được chọn (nếu bạn chọn một khóa cố định) hoặc một danh sách tổng hợp nếu bạn sử dụng chế độ luân chuyển. Bạn cũng có thể chọn giọng nói từ <a href="../quan-ly-giong-noi/su-dung-giong-noi-thu-vien-trong-tts.html">Thư viện Cục bộ</a>.</li>
+                    <li><strong>Mô hình (Model):</strong> Chọn mô hình AI của ElevenLabs (ví dụ: <code>eleven_multilingual_v2</code>).</li>
+                </ul>
+
+                <h3>c. Tùy chỉnh các Tham số TTS Khác</h3>
+                <p>Tương tự như khi tạo TTS đơn lẻ, bạn có thể điều chỉnh các thanh trượt cho <strong>Tốc độ (Speed)</strong>, <strong>Độ ổn định (Stability)</strong>, <strong>Độ tương đồng (Similarity Boost)</strong>, và <strong>Kiểu cách (Style)</strong>. Các cài đặt này sẽ được áp dụng đồng nhất cho tất cả các tác vụ trong lô.</p>
+                <p>Đánh dấu hoặc bỏ đánh dấu ô <strong>Speaker Boost</strong> nếu cần.</p>
+
+                <h3>d. Cấu hình Proxy và Độ trễ (Delay)</h3>
+                <ul>
+                    <li><strong>Sử dụng Proxy Pool:</strong> Đánh dấu vào ô "<strong>Sử dụng Proxy Pool</strong>" nếu bạn muốn các yêu cầu API trong lô này được thực hiện thông qua các proxy trong <a href="../proxy-pool/quan-ly-proxy-pool.html">Proxy Pool Chung</a> của bạn. Điều này giúp tăng cường khả năng luân chuyển IP.</li>
+                    <li><strong>Delay giữa các yêu cầu (Delay between requests):</strong>
+                        <ul>
+                            <li>Thiết lập khoảng thời gian trễ (tính bằng giây, ví dụ: từ 1 đến 5 giây) giữa mỗi lần gọi API tạo giọng nói.</li>
+                            <li>Có thể có tùy chọn "<strong>Delay Ngẫu nhiên</strong>" (Random Delay) trong một khoảng (ví dụ: từ 2 đến 7 giây). Việc này giúp các yêu cầu trông tự nhiên hơn và giảm nguy cơ bị hệ thống của ElevenLabs phát hiện là hoạt động bot.</li>
+                        </ul>
+                    </li>
+                </ul>
+                <img src="../assets/images/batch-settings-panel.png" alt="Bảng cài đặt cho lô xử lý hàng loạt" class="screenshot">
+                <em>(Hình ảnh: Khu vực cài đặt chung cho lô xử lý hàng loạt)</em>
+            </section>
+
+            <section id="thu-muc-luu">
+                <h2>4. Chọn Thư mục Lưu trữ Đầu ra</h2>
+                <ol>
+                    <li>Trước khi bắt đầu xử lý, bạn cần chỉ định thư mục trên máy tính nơi các tệp âm thanh được tạo ra sẽ được lưu.</li>
+                    <li>Nhấn nút "<strong>Chọn Thư mục Lưu</strong>" (Select Output Folder).</li>
+                    <li>Một hộp thoại sẽ xuất hiện, cho phép bạn duyệt và chọn thư mục mong muốn.</li>
+                </ol>
+            </section>
+
+            <section id="bat-dau-xu-ly">
+                <h2>5. Bắt đầu và Theo dõi Quá trình Xử lý</h2>
+                <ol>
+                    <li>Sau khi đã hoàn tất việc chuẩn bị dữ liệu đầu vào và cấu hình các thông số, nhấn nút "<strong>Bắt đầu Xử lý</strong>" (Start Batch Processing).</li>
+                    <li>Phần mềm sẽ bắt đầu thực hiện từng tác vụ trong "Danh sách Tác vụ" theo thứ tự.</li>
+                    <li><strong>Theo dõi Tiến trình:</strong>
+                        <ul>
+                            <li>Cột "<strong>Trạng thái</strong>" (Status) trong bảng sẽ cập nhật cho từng tác vụ: "Đang chờ" (Pending), "Đang xử lý" (Processing), "Hoàn thành" (Completed), "Lỗi" (Error).</li>
+                            <li>Nếu thành công, cột "<strong>Tệp Đầu ra</strong>" (Output File) sẽ hiển thị tên tệp âm thanh đã được tạo và lưu.</li>
+                            <li>Các thông tin khác như "Thời lượng" (Duration), "Tín dụng Sử dụng" (Credits Used) cũng sẽ được cập nhật.</li>
+                            <li>Một thanh tiến trình tổng thể cho toàn bộ lô có thể được hiển thị.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Dừng Xử lý:</strong> Trong quá trình xử lý, nút "Bắt đầu Xử lý" sẽ chuyển thành "<strong>Dừng Xử lý</strong>" (Stop Processing). Bạn có thể nhấn nút này bất cứ lúc nào để tạm dừng hoặc hủy bỏ toàn bộ lô tác vụ đang chạy.</li>
+                </ol>
+            </section>
+
+            <section id="ket-qua-va-quan-ly">
+                <h2>6. Xem Kết quả và Quản lý các Tệp Âm thanh</h2>
+                <ul>
+                    <li>Sau khi quá trình xử lý hoàn tất (hoặc được dừng), tất cả các tệp âm thanh đã được tạo thành công sẽ nằm trong thư mục lưu trữ bạn đã chọn ở Bước 4.</li>
+                    <li>Bảng "Danh sách Tác vụ" sẽ cung cấp một bản tóm tắt về kết quả của mỗi tác vụ.</li>
+                    <li>Bạn có thể có các tùy chọn để mở nhanh thư mục chứa tệp, nghe lại tệp, hoặc xóa các mục đã xử lý khỏi danh sách (tùy thuộc vào các nút chức năng được cung cấp trong cửa sổ Xử lý Hàng loạt).</li>
+                </ul>
+                <div class="note">
+                    <strong>Lưu ý:</strong>
+                    <ul>
+                        <li>Quá trình xử lý hàng loạt có thể mất nhiều thời gian, tùy thuộc vào số lượng và độ dài của các tác vụ, tốc độ của API ElevenLabs, chất lượng kết nối mạng và proxy (nếu sử dụng).</li>
+                        <li>Nếu gặp lỗi với một tác vụ cụ thể, thông tin lỗi thường sẽ được hiển thị trong cột "Trạng thái" hoặc một khu vực thông báo riêng.</li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script>
+        document.querySelectorAll('.menu-toggle').forEach(item => {
+            item.addEventListener('click', event => {
+                event.preventDefault();
+                const submenu = item.nextElementSibling;
+                if (submenu && submenu.classList.contains('submenu')) {
+                    const isOpening = submenu.style.display !== 'block';
+                    document.querySelectorAll('.submenu').forEach(sm => sm.style.display = 'none'); // Close all
+                    document.querySelectorAll('.menu-toggle').forEach(mt => mt.classList.remove('open')); // Remove open class from all
+                    if (isOpening) {
+                        submenu.style.display = 'block';
+                        item.classList.add('open');
+                    }
+                }
+            });
+        });
+        // Ensure the current page's submenu is open on load
+        document.addEventListener('DOMContentLoaded', () => {
+            const activeLink = document.querySelector('.sidebar .active');
+            if (activeLink) {
+                let parent = activeLink.closest('.submenu');
+                if (parent) {
+                    parent.style.display = 'block';
+                    const toggle = parent.previousElementSibling;
+                    if (toggle && toggle.classList.contains('menu-toggle')) {
+                        toggle.classList.add('open');
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+</html>

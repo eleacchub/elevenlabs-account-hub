@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nhập Hàng loạt Khóa API - Hướng dẫn ElevenLabs Account Hub</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <div class="logo-container">
+                <h2>ElevenLabs Hub Guide</h2>
+            </div>
+            <nav class="navigation-menu">
+                <h3>Mục lục</h3>
+                <ul>
+                    <li><a href="../index.html">Trang chủ</a></li>
+                    <li>
+                        <a href="#bat-dau" class="menu-toggle">Bắt đầu</a>
+                        <ul class="submenu">
+                            <li><a href="../bat-dau/cai-dat-va-khoi-dong.html">Cài đặt & Khởi động</a></li>
+                            <li><a href="../bat-dau/tong-quan-giao-dien.html">Tổng quan Giao diện</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#quan-ly-api" class="menu-toggle">Quản lý Khóa API</a>
+                        <ul class="submenu">
+                            <li><a href="../quan-ly-api/them-sua-xoa-api-key.html">Thêm/Sửa/Xóa Khóa API</a></li>
+                            <li><a href="../quan-ly-api/kiem-tra-tin-dung.html">Kiểm tra Tín dụng</a></li>
+                            <li><a href="../quan-ly-api/cau-hinh-proxy-cho-api-key.html">Cấu hình Proxy</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#chuc-nang-tts" class="menu-toggle">Chức năng TTS</a>
+                        <ul class="submenu">
+                            <li><a href="../chuc-nang-tts/tao-giong-noi-co-ban.html">Tạo Giọng nói Cơ bản</a></li>
+                            <li><a href="../chuc-nang-tts/tuy-chinh-tham-so-tts.html">Tùy chỉnh Tham số TTS</a></li>
+                            <li><a href="../chuc-nang-tts/luu-ho-so-cai-dat-tts.html">Lưu Hồ sơ Cài đặt</a></li>
+                            <li><a href="../chuc-nang-tts/quan-ly-lich-su-tts.html">Quản lý Lịch sử TTS</a></li>
+                        </ul>
+                    </li>
+                     <li>
+                        <a href="#xu-ly-hang-loat" class="menu-toggle open">Xử lý Hàng loạt</a>
+                        <ul class="submenu" style="display: block;">
+                            <li><a href="gioi-thieu-xu-ly-hang-loat.html">Giới thiệu</a></li>
+                            <li><a href="su-dung-xu-ly-hang-loat.html">Cách sử dụng</a></li>
+                            <li><a href="nhap-hang-loat-api-key.html" class="active">Nhập hàng loạt Khóa API</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#proxy-pool" class="menu-toggle">Proxy Pool Chung</a>
+                        <ul class="submenu">
+                            <li><a href="../proxy-pool/gioi-thieu-proxy-pool.html">Giới thiệu</a></li>
+                            <li><a href="../proxy-pool/quan-ly-proxy-pool.html">Quản lý Proxy Pool</a></li>
+                            <li><a href="../proxy-pool/su-dung-proxy-pool-khi-tts.html">Sử dụng với TTS</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#quan-ly-giong-noi" class="menu-toggle">Quản lý Giọng nói</a>
+                        <ul class="submenu">
+                            <li><a href="../quan-ly-giong-noi/my-voices.html">My Voices</a></li>
+                            <li><a href="../quan-ly-giong-noi/voice-library.html">Voice Library</a></li>
+                            <li><a href="../quan-ly-giong-noi/su-dung-giong-noi-thu-vien-trong-tts.html">Sử dụng Giọng nói Thư viện</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#tai-khoan" class="menu-toggle">Tài khoản & VIP</a>
+                        <ul class="submenu">
+                            <li><a href="../tai-khoan/dang-nhap-dang-xuat.html">Đăng nhập/Đăng xuất</a></li>
+                            <li><a href="../tai-khoan/thong-tin-tai-khoan-vip.html">Thông tin VIP</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#cai-dat-chung" class="menu-toggle">Cài đặt Chung</a>
+                        <ul class="submenu">
+                            <li><a href="../cai-dat-chung/thay-doi-thu-muc-luu-mac-dinh.html">Thư mục Lưu trữ</a></li>
+                            <li><a href="../cai-dat-chung/thay-doi-ngon-ngu.html">Ngôn ngữ</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#sao-luu-phuc-hoi" class="menu-toggle">Sao lưu & Phục hồi</a>
+                        <ul class="submenu">
+                            <li><a href="../sao-luu-phuc-hoi/sao-luu-du-lieu.html">Sao lưu Dữ liệu</a></li>
+                            <li><a href="../sao-luu-phuc-hoi/phuc-hoi-du-lieu.html">Phục hồi Dữ liệu</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="../faq.html">Câu hỏi Thường gặp (FAQ)</a></li>
+                    <li><a href="../ho-tro.html">Hỗ trợ</a></li>
+                </ul>
+            </nav>
+        </aside>
+        <main class="content">
+            <header class="main-header">
+                <h1>Nhập Hàng loạt Khóa API từ Tệp CSV</h1>
+            </header>
+            <p>Nếu bạn quản lý một số lượng lớn Khóa API ElevenLabs và muốn thêm chúng vào phần mềm một cách nhanh chóng và hiệu quả, tính năng "Nhập Hàng loạt Khóa API" (Batch API Key Import) từ tệp CSV là một giải pháp tối ưu. Thay vì phải <a href="../quan-ly-api/them-sua-xoa-api-key.html#them-api-key">thêm từng khóa một cách thủ công</a>, bạn có thể chuẩn bị một tệp dữ liệu và nhập tất cả cùng một lúc.</p>
+
+            <section id="chuan-bi-tep-csv">
+                <h2>1. Chuẩn bị Tệp CSV (Comma Separated Values)</h2>
+                <p>Bước đầu tiên và quan trọng nhất là chuẩn bị một tệp CSV chứa thông tin các Khóa API mà bạn muốn nhập. Tệp CSV này phải tuân theo một cấu trúc cột cụ thể để phần mềm có thể đọc và xử lý dữ liệu một cách chính xác.</p>
+                
+                <h3>Cấu trúc Cột trong Tệp CSV:</h3>
+                <p>Dòng đầu tiên của tệp CSV phải là dòng tiêu đề, chứa tên các cột. Các cột được hỗ trợ bao gồm:</p>
+                <ul>
+                    <li><strong><code>name</code></strong> (Bắt buộc): Tên gợi nhớ bạn muốn đặt cho Khóa API trong phần mềm. Tên này phải là duy nhất trong số các khóa đã có và các khóa đang được nhập.</li>
+                    <li><strong><code>key</code></strong> (Bắt buộc): Giá trị thực của Khóa API ElevenLabs. Đây là chuỗi ký tự mà bạn nhận được từ trang web ElevenLabs.</li>
+                    <li><strong><code>proxy_enabled</code></strong> (Tùy chọn): Điền <code>TRUE</code> (hoặc <code>1</code>) nếu muốn bật proxy cho khóa này, hoặc <code>FALSE</code> (hoặc <code>0</code>) nếu không. Nếu để trống, mặc định là <code>FALSE</code>.</li>
+                    <li><strong><code>proxy_type</code></strong> (Tùy chọn): Loại proxy. Các giá trị hợp lệ là <code>HTTP</code>, <code>HTTPS</code>, <code>SOCKS4</code>, <code>SOCKS5</code>. Chỉ cần thiết nếu <code>proxy_enabled</code> là <code>TRUE</code>.</li>
+                    <li><strong><code>proxy_host</code></strong> (Tùy chọn): Địa chỉ IP hoặc tên miền của máy chủ proxy. Chỉ cần thiết nếu <code>proxy_enabled</code> là <code>TRUE</code>.</li>
+                    <li><strong><code>proxy_port</code></strong> (Tùy chọn): Số cổng của máy chủ proxy. Chỉ cần thiết nếu <code>proxy_enabled</code> là <code>TRUE</code>.</li>
+                    <li><strong><code>proxy_auth_enabled</code></strong> (Tùy chọn): Điền <code>TRUE</code> (hoặc <code>1</code>) nếu proxy yêu cầu xác thực, hoặc <code>FALSE</code> (hoặc <code>0</code>) nếu không. Chỉ cần thiết nếu <code>proxy_enabled</code> là <code>TRUE</code>.</li>
+                    <li><strong><code>proxy_username</code></strong> (Tùy chọn): Tên người dùng cho proxy (nếu <code>proxy_auth_enabled</code> là <code>TRUE</code>).</li>
+                    <li><strong><code>proxy_password</code></strong> (Tùy chọn): Mật khẩu cho proxy (nếu <code>proxy_auth_enabled</code> là <code>TRUE</code>).</li>
+                </ul>
+
+                <h3>Ví dụ về Nội dung Tệp CSV:</h3>
+                <pre><code>name,key,proxy_enabled,proxy_type,proxy_host,proxy_port,proxy_auth_enabled,proxy_username,proxy_password
+TaiKhoanMienPhi_001,abcdef1234567890abcdef12345678,FALSE,,,,,,
+TaiKhoanMienPhi_002,ghijkl0987654321ghijkl09876543,TRUE,HTTP,192.168.1.100,8080,FALSE,,
+TaiKhoanVIP_Alpha,mnopqr1122334455mnopqr11223344,TRUE,SOCKS5,proxy.server.com,1080,TRUE,user_proxy,pass_for_proxy
+AccChinh,zxcvbnmasdfghjklqwertyuiop123456,FALSE,,,,,,</code></pre>
+                
+                <div class="note">
+                    <strong>Lưu ý Quan trọng khi Chuẩn bị Tệp CSV:</strong>
+                    <ul>
+                        <li><strong>Dòng Tiêu đề:</strong> Đảm bảo dòng đầu tiên của tệp CSV là dòng tiêu đề chính xác như mô tả ở trên.</li>
+                        <li><strong>Thứ tự Cột:</strong> Thứ tự các cột không quá quan trọng, miễn là tên cột (trong dòng tiêu đề) là chính xác và khớp với các tên cột được hỗ trợ.</li>
+                        <li><strong>Giá trị Trống:</strong> Nếu một Khóa API không sử dụng proxy hoặc một thông số proxy cụ thể không áp dụng, bạn có thể để trống ô tương ứng trong tệp CSV (ngoại trừ cột <code>name</code> và <code>key</code> là bắt buộc). Hoặc, đối với các trường boolean như <code>proxy_enabled</code>, bạn có thể điền <code>FALSE</code> hoặc <code>0</code>.</li>
+                        <li><strong>Mã hóa Tệp:</strong> Đảm bảo tệp CSV được lưu với mã hóa <strong>UTF-8</strong> để tránh các vấn đề liên quan đến ký tự đặc biệt, đặc biệt nếu tên khóa (<code>name</code>) của bạn có chứa ký tự tiếng Việt hoặc các ký tự không phải ASCII.</li>
+                        <li><strong>Tạo Tệp CSV:</strong> Bạn có thể tạo tệp CSV bằng một trình soạn thảo văn bản đơn giản (như Notepad, lưu với phần mở rộng <code>.csv</code>) hoặc sử dụng các phần mềm bảng tính như Microsoft Excel, Google Sheets, LibreOffice Calc (chọn "Save As" hoặc "Download As" và chọn định dạng CSV).</li>
+                    </ul>
+                </div>
+                <p>Phần mềm có thể cung cấp một nút "<strong>Tải CSV Mẫu</strong>" (Download Sample CSV) trong cửa sổ Nhập Hàng loạt để bạn có thể tải về một tệp mẫu với đúng cấu trúc cột, giúp việc chuẩn bị tệp dễ dàng hơn. (Ví dụ: tệp <code>sample_api_keys.csv</code> hoặc <code>sample_api_keys_public.csv</code> trong thư mục gốc dự án).</p>
+            </section>
+
+            <section id="thuc-hien-nhap">
+                <h2>2. Thực hiện Nhập Hàng loạt từ Tệp CSV</h2>
+                <ol>
+                    <li>Trong cửa sổ chính của phần mềm ElevenLabs Account Hub, điều hướng đến Thanh Menu và chọn "<strong>Batch Processing</strong>".</li>
+                    <li>Từ menu con xổ xuống, chọn "<strong>Nhập Hàng loạt Khóa API từ CSV</strong>" (Batch API Key Import from CSV).</li>
+                    <li>Cửa sổ "<strong>Nhập Hàng loạt Khóa API</strong>" (Batch API Key Import) sẽ xuất hiện.
+                        <img src="../assets/images/batch-api-key-import-dialog.png" alt="Cửa sổ Nhập Hàng loạt Khóa API" class="screenshot">
+                        <em>(Hình ảnh: Cửa sổ chức năng Nhập Hàng loạt Khóa API)</em>
+                    </li>
+                    <li>Nhấn nút "<strong>Chọn Tệp CSV</strong>" (Select CSV File).</li>
+                    <li>Một hộp thoại chọn tệp của hệ điều hành sẽ mở ra. Duyệt đến vị trí bạn đã lưu tệp CSV đã chuẩn bị ở Bước 1 và chọn tệp đó.</li>
+                    <li>Sau khi chọn tệp, tên của tệp CSV sẽ được hiển thị trong cửa sổ Nhập Hàng loạt.</li>
+                    <li><strong>Xử lý Tên Khóa API Trùng lặp (Handle Duplicates):</strong>
+                        <p>Phần mềm cung cấp các tùy chọn để xử lý trường hợp tên Khóa API trong tệp CSV của bạn đã tồn tại trong cơ sở dữ liệu của ứng dụng:</p>
+                        <ul>
+                            <li><strong>Bỏ qua (Skip):</strong> Nếu một tên Khóa API trong tệp CSV đã có trong phần mềm, Khóa API đó từ tệp CSV sẽ được bỏ qua và không được nhập hoặc cập nhật. Đây là tùy chọn an toàn nếu bạn chỉ muốn thêm các khóa mới.</li>
+                            <li><strong>Ghi đè (Overwrite):</strong> Nếu một tên Khóa API trong tệp CSV đã có trong phần mềm, thông tin của Khóa API đó trong phần mềm (bao gồm giá trị khóa và cài đặt proxy) sẽ được cập nhật hoàn toàn bằng thông tin từ tệp CSV. <strong>Hãy cẩn thận với tùy chọn này</strong> vì nó có thể ghi đè lên dữ liệu hiện có.</li>
+                        </ul>
+                        <p>Chọn tùy chọn xử lý trùng lặp phù hợp từ danh sách thả xuống được cung cấp.</p>
+                    </li>
+                    <li>Nhấn nút "<strong>Bắt đầu Nhập</strong>" (Start Import).</li>
+                    <li>Phần mềm sẽ bắt đầu đọc tệp CSV và thực hiện việc thêm mới hoặc cập nhật các Khóa API vào cơ sở dữ liệu. Một thanh tiến trình có thể xuất hiện để hiển thị quá trình nhập.</li>
+                    <li><strong>Xem Kết quả Nhập:</strong> Sau khi quá trình hoàn tất, một bảng tóm tắt kết quả thường sẽ được hiển thị ngay trong cửa sổ Nhập Hàng loạt. Bảng này sẽ cho bạn biết:
+                        <ul>
+                            <li>Số lượng Khóa API được nhập/cập nhật thành công.</li>
+                            <li>Số lượng Khóa API bị bỏ qua (nếu bạn chọn tùy chọn "Bỏ qua" và có tên trùng lặp).</li>
+                            <li>Danh sách các lỗi gặp phải trong quá trình nhập (ví dụ: dòng dữ liệu không hợp lệ, tên khóa bị thiếu, giá trị khóa bị thiếu).</li>
+                        </ul>
+                    </li>
+                    <li>Nhấn "<strong>Đóng</strong>" (Close) để thoát khỏi cửa sổ Nhập Hàng loạt.</li>
+                </ol>
+            </section>
+
+            <section id="ket-qua-va-kiem-tra">
+                <h2>3. Kiểm tra Kết quả sau khi Nhập</h2>
+                <ul>
+                    <li>Sau khi quá trình nhập hoàn tất, hãy quay lại cửa sổ chính của phần mềm và kiểm tra <strong>Danh sách Khóa API (Cột Trái)</strong>. Các Khóa API mới (hoặc đã được cập nhật) từ tệp CSV của bạn sẽ xuất hiện ở đây.</li>
+                    <li><strong>Quan trọng:</strong> Đối với các Khóa API mới được nhập, bạn nên thực hiện thao tác "<strong>Test Key & Fetch Info</strong>" cho từng khóa (hoặc sử dụng chức năng "Refresh All Credits") để xác minh tính hợp lệ của chúng và lấy thông tin tín dụng mới nhất từ ElevenLabs. Xem chi tiết tại <a href="kiem-tra-tin-dung.html">Kiểm tra Tín dụng</a>.</li>
+                </ul>
+                <div class="tip">
+                    <strong>Mẹo:</strong> Nếu bạn có một số lượng rất lớn Khóa API cần quản lý, việc sử dụng tính năng nhập hàng loạt này kết hợp với việc <a href="../sao-luu-phuc-hoi/sao-luu-du-lieu.html">sao lưu dữ liệu</a> thường xuyên sẽ giúp bạn quản lý hệ thống một cách hiệu quả và an toàn.
+                </div>
+            </section>
+        </main>
+    </div>
+    <script>
+        document.querySelectorAll('.menu-toggle').forEach(item => {
+            item.addEventListener('click', event => {
+                event.preventDefault();
+                const submenu = item.nextElementSibling;
+                if (submenu && submenu.classList.contains('submenu')) {
+                    const isOpening = submenu.style.display !== 'block';
+                    document.querySelectorAll('.submenu').forEach(sm => sm.style.display = 'none'); // Close all
+                    document.querySelectorAll('.menu-toggle').forEach(mt => mt.classList.remove('open')); // Remove open class from all
+                    if (isOpening) {
+                        submenu.style.display = 'block';
+                        item.classList.add('open');
+                    }
+                }
+            });
+        });
+        // Ensure the current page's submenu is open on load
+        document.addEventListener('DOMContentLoaded', () => {
+            const activeLink = document.querySelector('.sidebar .active');
+            if (activeLink) {
+                let parent = activeLink.closest('.submenu');
+                if (parent) {
+                    parent.style.display = 'block';
+                    const toggle = parent.previousElementSibling;
+                    if (toggle && toggle.classList.contains('menu-toggle')) {
+                        toggle.classList.add('open');
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+</html>
