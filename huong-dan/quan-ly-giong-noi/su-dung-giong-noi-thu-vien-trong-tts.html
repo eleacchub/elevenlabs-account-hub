@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sử dụng Giọng nói từ Thư viện Cục bộ - Hướng dẫn ElevenLabs Account Hub</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <div class="logo-container">
+                <h2>ElevenLabs Hub Guide</h2>
+            </div>
+            <nav class="navigation-menu">
+                <h3>Mục lục</h3>
+                <ul>
+                    <li><a href="../index.html">Trang chủ</a></li>
+                    <li>
+                        <a href="#bat-dau" class="menu-toggle">Bắt đầu</a>
+                        <ul class="submenu">
+                            <li><a href="../bat-dau/cai-dat-va-khoi-dong.html">Cài đặt & Khởi động</a></li>
+                            <li><a href="../bat-dau/tong-quan-giao-dien.html">Tổng quan Giao diện</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#quan-ly-api" class="menu-toggle">Quản lý Khóa API</a>
+                        <ul class="submenu">
+                            <li><a href="../quan-ly-api/them-sua-xoa-api-key.html">Thêm/Sửa/Xóa Khóa API</a></li>
+                            <li><a href="../quan-ly-api/kiem-tra-tin-dung.html">Kiểm tra Tín dụng</a></li>
+                            <li><a href="../quan-ly-api/cau-hinh-proxy-cho-api-key.html">Cấu hình Proxy</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#chuc-nang-tts" class="menu-toggle">Chức năng TTS</a>
+                        <ul class="submenu">
+                            <li><a href="../chuc-nang-tts/tao-giong-noi-co-ban.html">Tạo Giọng nói Cơ bản</a></li>
+                            <li><a href="../chuc-nang-tts/tuy-chinh-tham-so-tts.html">Tùy chỉnh Tham số TTS</a></li>
+                            <li><a href="../chuc-nang-tts/luu-ho-so-cai-dat-tts.html">Lưu Hồ sơ Cài đặt</a></li>
+                            <li><a href="../chuc-nang-tts/quan-ly-lich-su-tts.html">Quản lý Lịch sử TTS</a></li>
+                        </ul>
+                    </li>
+                     <li>
+                        <a href="#xu-ly-hang-loat" class="menu-toggle">Xử lý Hàng loạt</a>
+                        <ul class="submenu">
+                            <li><a href="../xu-ly-hang-loat/gioi-thieu-xu-ly-hang-loat.html">Giới thiệu</a></li>
+                            <li><a href="../xu-ly-hang-loat/su-dung-xu-ly-hang-loat.html">Cách sử dụng</a></li>
+                            <li><a href="../xu-ly-hang-loat/nhap-hang-loat-api-key.html">Nhập hàng loạt Khóa API</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#proxy-pool" class="menu-toggle">Proxy Pool Chung</a>
+                        <ul class="submenu">
+                            <li><a href="../proxy-pool/gioi-thieu-proxy-pool.html">Giới thiệu</a></li>
+                            <li><a href="../proxy-pool/quan-ly-proxy-pool.html">Quản lý Proxy Pool</a></li>
+                            <li><a href="../proxy-pool/su-dung-proxy-pool-khi-tts.html">Sử dụng với TTS</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#quan-ly-giong-noi" class="menu-toggle open">Quản lý Giọng nói</a>
+                        <ul class="submenu" style="display: block;">
+                            <li><a href="my-voices.html">My Voices</a></li>
+                            <li><a href="voice-library.html">Voice Library</a></li>
+                            <li><a href="su-dung-giong-noi-thu-vien-trong-tts.html" class="active">Sử dụng Giọng nói Thư viện</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#tai-khoan" class="menu-toggle">Tài khoản & VIP</a>
+                        <ul class="submenu">
+                            <li><a href="../tai-khoan/dang-nhap-dang-xuat.html">Đăng nhập/Đăng xuất</a></li>
+                            <li><a href="../tai-khoan/thong-tin-tai-khoan-vip.html">Thông tin VIP</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#cai-dat-chung" class="menu-toggle">Cài đặt Chung</a>
+                        <ul class="submenu">
+                            <li><a href="../cai-dat-chung/thay-doi-thu-muc-luu-mac-dinh.html">Thư mục Lưu trữ</a></li>
+                            <li><a href="../cai-dat-chung/thay-doi-ngon-ngu.html">Ngôn ngữ</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#sao-luu-phuc-hoi" class="menu-toggle">Sao lưu & Phục hồi</a>
+                        <ul class="submenu">
+                            <li><a href="../sao-luu-phuc-hoi/sao-luu-du-lieu.html">Sao lưu Dữ liệu</a></li>
+                            <li><a href="../sao-luu-phuc-hoi/phuc-hoi-du-lieu.html">Phục hồi Dữ liệu</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="../faq.html">Câu hỏi Thường gặp (FAQ)</a></li>
+                    <li><a href="../ho-tro.html">Hỗ trợ</a></li>
+                </ul>
+            </nav>
+        </aside>
+        <main class="content">
+            <header class="main-header">
+                <h1>Sử dụng Giọng nói từ Thư viện Cục bộ khi Tạo TTS</h1>
+            </header>
+            <p>Một trong những tính năng tiện lợi của ElevenLabs Account Hub là khả năng lưu trữ thông tin về các giọng nói từ <a href="voice-library.html">Thư viện Giọng nói Công cộng của ElevenLabs</a> vào một "Thư viện Cục bộ" (Local Library) ngay trong phần mềm. Sau khi đã thêm các giọng nói yêu thích vào thư viện cục bộ, bạn có thể dễ dàng chọn và sử dụng chúng để tạo giọng nói mà không nhất thiết phải thêm chúng vào danh sách "My Voices" trên tài khoản ElevenLabs của mình (giúp tiết kiệm "slot" trong VoiceLab của bạn).</p>
+
+            <section id="chon-giong-noi-thu-vien">
+                <h2>1. Chọn Giọng nói từ Thư viện Cục bộ trong Bảng Cài đặt TTS</h2>
+                <p>Khi bạn đang ở trong một tab TTS (Cột Giữa) và muốn sử dụng một giọng nói đã được lưu vào thư viện cục bộ của phần mềm:</p>
+                <ol>
+                    <li>Nhìn sang <strong>Bảng Cài đặt (Settings Panel)</strong> ở Cột Phải.</li>
+                    <li>Tìm đến danh sách thả xuống (combo box) có nhãn "<strong>Library Voice</strong>" (hoặc "Giọng nói Thư viện").
+                        <img src="../assets/images/select-library-voice-dropdown.png" alt="Danh sách thả xuống chọn Library Voice trong Bảng Cài đặt" class="screenshot">
+                        <em>(Hình ảnh: Danh sách thả xuống "Library Voice" trong Bảng Cài đặt TTS)</em>
+                    </li>
+                    <li>Nhấp vào danh sách thả xuống này. Nó sẽ hiển thị tên của tất cả các giọng nói mà bạn đã <a href="voice-library.html#them-vao-thu-vien-cuc-bo">thêm vào Thư viện Cục bộ</a> trước đó.</li>
+                    <li>Chọn giọng nói bạn muốn sử dụng từ danh sách này. Tên của giọng nói được chọn sẽ hiển thị trong ô.</li>
+                </ol>
+            </section>
+
+            <section id="uu-tien-lua-chon">
+                <h2>2. Cơ chế Ưu tiên khi Lựa chọn Giọng nói</h2>
+                <p>Trong Bảng Cài đặt TTS, bạn có hai cách chính để chọn giọng nói:</p>
+                <ul>
+                    <li><strong>Danh sách "Voice":</strong> Chứa các giọng nói được tải trực tiếp từ API của Khóa API đang hoạt động (bao gồm các giọng nói mặc định của ElevenLabs và các giọng nói trong "My Voices" trên tài khoản ElevenLabs của bạn).</li>
+                    <li><strong>Danh sách "Library Voice":</strong> Chứa các giọng nói bạn đã lưu vào Thư viện Cục bộ của phần mềm.</li>
+                </ul>
+                <p>Phần mềm áp dụng cơ chế ưu tiên như sau:</p>
+                <ul>
+                    <li>Khi bạn chọn một giọng nói từ danh sách "<strong>Library Voice</strong>", lựa chọn giọng nói trong danh sách "<strong>Voice</strong>" (nếu có) sẽ tự động bị bỏ chọn (hoặc được đặt về một giá trị mặc định như "--- Chọn Giọng nói API ---"). Phần mềm sẽ ưu tiên sử dụng giọng nói từ Thư viện Cục bộ.</li>
+                    <li>Ngược lại, nếu bạn chọn một giọng nói từ danh sách "<strong>Voice</strong>" (từ API), lựa chọn trong danh sách "<strong>Library Voice</strong>" sẽ tự động được đặt lại về mục placeholder (ví dụ: "--- Chọn từ Thư viện ---"). Phần mềm sẽ ưu tiên sử dụng giọng nói từ API.</li>
+                </ul>
+                <p>Điều này đảm bảo rằng tại một thời điểm, chỉ có một nguồn giọng nói (hoặc từ API/My Voices, hoặc từ Thư viện Cục bộ) được chọn và sẽ được sử dụng khi bạn tạo TTS.</p>
+            </section>
+
+            <section id="su-dung-de-tao-tts">
+                <h2>3. Sử dụng Giọng nói từ Thư viện Cục bộ để Tạo Âm thanh</h2>
+                <ol>
+                    <li>Sau khi đã chọn một giọng nói từ danh sách "<strong>Library Voice</strong>" trong Bảng Cài đặt, bạn có thể tiếp tục <a href="../chuc-nang-tts/tuy-chinh-tham-so-tts.html">tùy chỉnh các tham số TTS khác</a> (như Mô hình, Tốc độ, Độ ổn định, v.v.) như bình thường.</li>
+                    <li>Nhập văn bản bạn muốn chuyển đổi vào ô TTS trong Cột Giữa.</li>
+                    <li>Nhấn nút "<strong>Generate Audio</strong>".</li>
+                    <li>Phần mềm sẽ sử dụng <strong>Voice ID</strong> của giọng nói bạn đã chọn từ Thư viện Cục bộ để gửi yêu cầu tạo giọng nói đến máy chủ của ElevenLabs. Yêu cầu này sẽ được thực hiện thông qua Khóa API đang hoạt động của tab TTS đó.</li>
+                </ol>
+                <div class="note">
+                    <strong>Lưu ý quan trọng:</strong>
+                    <ul>
+                        <li><strong>Vẫn tiêu tốn Tín dụng:</strong> Việc sử dụng một giọng nói từ Thư viện Cục bộ <strong>vẫn tiêu tốn tín dụng</strong> của Khóa API đang được chọn cho tab TTS đó, tương tự như khi bạn sử dụng một giọng nói trực tiếp từ "My Voices" của tài khoản ElevenLabs. Thư viện Cục bộ chỉ giúp bạn quản lý và chọn lựa giọng nói một cách tiện lợi hơn trong phần mềm; nó không cung cấp giọng nói miễn phí hoặc không giới hạn.</li>
+                        <li><strong>Thư viện Cục bộ chỉ lưu trữ Thông tin:</strong> Thư viện Cục bộ trong ElevenLabs Account Hub chỉ lưu trữ thông tin tham chiếu về giọng nói (như Voice ID, tên, mô tả, nhãn). Yêu cầu tạo giọng nói thực tế vẫn được gửi đến và xử lý bởi máy chủ của ElevenLabs.</li>
+                        <li><strong>Khóa API phải có quyền truy cập:</strong> Khóa API bạn đang sử dụng để tạo TTS phải có quyền truy cập vào Voice ID của giọng nói bạn chọn từ thư viện cục bộ. Hầu hết các giọng nói trong thư viện công cộng của ElevenLabs đều có thể được sử dụng bởi bất kỳ Khóa API nào.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="loi-ich-cua-thu-vien-cuc-bo">
+                <h2>4. Lợi ích của việc Sử dụng Giọng nói từ Thư viện Cục bộ</h2>
+                <ul>
+                    <li><strong>Tiện lợi và Nhanh chóng:</strong> Dễ dàng truy cập và sử dụng lại các giọng nói yêu thích từ thư viện công cộng của ElevenLabs mà không cần phải tìm kiếm lại mỗi lần hoặc thêm tất cả chúng vào danh sách "My Voices" trên từng tài khoản ElevenLabs (điều này có thể bị giới hạn bởi gói tài khoản của bạn).</li>
+                    <li><strong>Tổ chức Bộ sưu tập Giọng nói Cá nhân:</strong> Giúp bạn xây dựng và quản lý một bộ sưu tập các giọng nói ưa thích ngay trong phần mềm, dễ dàng tìm kiếm và áp dụng.</li>
+                    <li><strong>Sử dụng Nhất quán trên Nhiều Khóa API:</strong> Bạn có thể dễ dàng sử dụng cùng một giọng nói từ Thư viện Cục bộ cho nhiều Khóa API khác nhau mà không cần phải "Add to My Voices" cho từng tài khoản ElevenLabs tương ứng.</li>
+                    <li><strong>Tiết kiệm "Slot" trong My Voices (VoiceLab):</strong> Vì bạn không cần thêm mọi giọng nói yêu thích vào "My Voices" trên máy chủ ElevenLabs, bạn có thể dành các "slot" đó cho những giọng nói bạn thực sự muốn nhân bản hoặc tùy chỉnh sâu.</li>
+                </ul>
+                <p>Sử dụng Thư viện Cục bộ là một cách hiệu quả để mở rộng đáng kể lựa chọn giọng nói của bạn, vượt ra ngoài những gì có sẵn trong "My Voices" của từng tài khoản ElevenLabs cụ thể, đồng thời giúp quy trình làm việc của bạn trở nên linh hoạt và hiệu quả hơn.</p>
+            </section>
+        </main>
+    </div>
+    <script>
+        document.querySelectorAll('.menu-toggle').forEach(item => {
+            item.addEventListener('click', event => {
+                event.preventDefault();
+                const submenu = item.nextElementSibling;
+                if (submenu && submenu.classList.contains('submenu')) {
+                    const isOpening = submenu.style.display !== 'block';
+                    document.querySelectorAll('.submenu').forEach(sm => sm.style.display = 'none'); // Close all
+                    document.querySelectorAll('.menu-toggle').forEach(mt => mt.classList.remove('open')); // Remove open class from all
+                    if (isOpening) {
+                        submenu.style.display = 'block';
+                        item.classList.add('open');
+                    }
+                }
+            });
+        });
+        // Ensure the current page's submenu is open on load
+        document.addEventListener('DOMContentLoaded', () => {
+            const activeLink = document.querySelector('.sidebar .active');
+            if (activeLink) {
+                let parent = activeLink.closest('.submenu');
+                if (parent) {
+                    parent.style.display = 'block';
+                    const toggle = parent.previousElementSibling;
+                    if (toggle && toggle.classList.contains('menu-toggle')) {
+                        toggle.classList.add('open');
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+</html>
