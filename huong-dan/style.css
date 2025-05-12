@@ -250,6 +250,95 @@ img.screenshot {
 .warning strong { color: #78350f; }
 
 
+/* THÊM MỚI: Styles cho banner đầu trang */
+.hub-banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(135deg, #4f46e5 0%, #06b6d4 100%);
+    color: white;
+    padding: 20px 30px;
+    border-radius: 12px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.banner-content {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.banner-icon {
+    font-size: 36px;
+}
+
+.banner-text h3 {
+    font-size: 20px;
+    margin: 0 0 5px 0;
+    color: white;
+}
+
+.banner-text p {
+    margin: 0;
+    opacity: 0.9;
+    font-size: 15px;
+    color: white;
+}
+
+.banner-button {
+    background-color: white;
+    color: var(--primary);
+    font-weight: 600;
+    padding: 12px 24px;
+    border-radius: 6px;
+    white-space: nowrap;
+    transition: all 0.3s ease;
+}
+
+.banner-button:hover {
+    background-color: rgba(255, 255, 255, 0.9);
+    transform: translateY(-2px);
+    text-decoration: none;
+    color: var(--primary);
+}
+/* Kết thúc styles banner */
+
+/* THÊM MỚI: Styles cho nút nổi bật cố định */
+.floating-button {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    display: flex;
+    align-items: center;
+    background-color: var(--primary);
+    color: white;
+    padding: 12px 20px;
+    border-radius: 50px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.floating-button:hover {
+    background-color: var(--primary-dark);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+    text-decoration: none;
+    color: white;
+}
+
+.floating-icon {
+    font-size: 20px;
+    margin-right: 8px;
+}
+
+.floating-text {
+    font-weight: 600;
+}
+/* Kết thúc styles nút nổi */
+
 /* Responsive adjustments */
 @media (max-width: 768px) {
     body {
@@ -274,5 +363,38 @@ img.screenshot {
     }
     section h3 {
         font-size: 18px;
+    }
+    
+    /* THÊM MỚI: Responsive cho banner */
+    .hub-banner {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+    
+    .banner-content {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .banner-button {
+        width: 100%;
+        text-align: center;
+    }
+    
+    /* THÊM MỚI: Responsive cho nút nổi */
+    .floating-button {
+        padding: 12px 16px;
+        bottom: 20px;
+        right: 20px;
+    }
+    
+    .floating-text {
+        display: none;
+    }
+    
+    .floating-icon {
+        margin-right: 0;
+        font-size: 24px;
     }
 }
