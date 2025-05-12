@@ -1,1 +1,231 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng nhập & Đăng xuất - Hướng dẫn ElevenLabs Account Hub</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <div class="logo-container">
+                <h2>ElevenLabs Hub Guide</h2>
+            </div>
+            <nav class="navigation-menu">
+                <h3>Mục lục</h3>
+                <ul>
+                    <li><a href="../index.html">Trang chủ</a></li>
+                    <li>
+                        <a href="#bat-dau" class="menu-toggle">Bắt đầu</a>
+                        <ul class="submenu">
+                            <li><a href="../bat-dau/cai-dat-va-khoi-dong.html">Cài đặt & Khởi động</a></li>
+                            <li><a href="../bat-dau/tong-quan-giao-dien.html">Tổng quan Giao diện</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#quan-ly-api" class="menu-toggle">Quản lý Khóa API</a>
+                        <ul class="submenu">
+                            <li><a href="../quan-ly-api/them-sua-xoa-api-key.html">Thêm/Sửa/Xóa Khóa API</a></li>
+                            <li><a href="../quan-ly-api/kiem-tra-tin-dung.html">Kiểm tra Tín dụng</a></li>
+                            <li><a href="../quan-ly-api/cau-hinh-proxy-cho-api-key.html">Cấu hình Proxy</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#chuc-nang-tts" class="menu-toggle">Chức năng TTS</a>
+                        <ul class="submenu">
+                            <li><a href="../chuc-nang-tts/tao-giong-noi-co-ban.html">Tạo Giọng nói Cơ bản</a></li>
+                            <li><a href="../chuc-nang-tts/tuy-chinh-tham-so-tts.html">Tùy chỉnh Tham số TTS</a></li>
+                            <li><a href="../chuc-nang-tts/luu-ho-so-cai-dat-tts.html">Lưu Hồ sơ Cài đặt</a></li>
+                            <li><a href="../chuc-nang-tts/quan-ly-lich-su-tts.html">Quản lý Lịch sử TTS</a></li>
+                        </ul>
+                    </li>
+                     <li>
+                        <a href="#xu-ly-hang-loat" class="menu-toggle">Xử lý Hàng loạt</a>
+                        <ul class="submenu">
+                            <li><a href="../xu-ly-hang-loat/gioi-thieu-xu-ly-hang-loat.html">Giới thiệu</a></li>
+                            <li><a href="../xu-ly-hang-loat/su-dung-xu-ly-hang-loat.html">Cách sử dụng</a></li>
+                            <li><a href="../xu-ly-hang-loat/nhap-hang-loat-api-key.html">Nhập hàng loạt Khóa API</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#proxy-pool" class="menu-toggle">Proxy Pool Chung</a>
+                        <ul class="submenu">
+                            <li><a href="../proxy-pool/gioi-thieu-proxy-pool.html">Giới thiệu</a></li>
+                            <li><a href="../proxy-pool/quan-ly-proxy-pool.html">Quản lý Proxy Pool</a></li>
+                            <li><a href="../proxy-pool/su-dung-proxy-pool-khi-tts.html">Sử dụng với TTS</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#quan-ly-giong-noi" class="menu-toggle">Quản lý Giọng nói</a>
+                        <ul class="submenu">
+                            <li><a href="../quan-ly-giong-noi/my-voices.html">My Voices</a></li>
+                            <li><a href="../quan-ly-giong-noi/voice-library.html">Voice Library</a></li>
+                            <li><a href="../quan-ly-giong-noi/su-dung-giong-noi-thu-vien-trong-tts.html">Sử dụng Giọng nói Thư viện</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#tai-khoan" class="menu-toggle open">Tài khoản & VIP</a>
+                        <ul class="submenu" style="display: block;">
+                            <li><a href="dang-nhap-dang-xuat.html" class="active">Đăng nhập/Đăng xuất</a></li>
+                            <li><a href="thong-tin-tai-khoan-vip.html">Thông tin VIP</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#cai-dat-chung" class="menu-toggle">Cài đặt Chung</a>
+                        <ul class="submenu">
+                            <li><a href="../cai-dat-chung/thay-doi-thu-muc-luu-mac-dinh.html">Thư mục Lưu trữ</a></li>
+                            <li><a href="../cai-dat-chung/thay-doi-ngon-ngu.html">Ngôn ngữ</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#sao-luu-phuc-hoi" class="menu-toggle">Sao lưu & Phục hồi</a>
+                        <ul class="submenu">
+                            <li><a href="../sao-luu-phuc-hoi/sao-luu-du-lieu.html">Sao lưu Dữ liệu</a></li>
+                            <li><a href="../sao-luu-phuc-hoi/phuc-hoi-du-lieu.html">Phục hồi Dữ liệu</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="../faq.html">Câu hỏi Thường gặp (FAQ)</a></li>
+                    <li><a href="../ho-tro.html">Hỗ trợ</a></li>
+                </ul>
+            </nav>
+        </aside>
+        <main class="content">
+            <header class="main-header">
+                <h1>Đăng nhập và Đăng xuất Tài khoản</h1>
+            </header>
+            <p>ElevenLabs Account Hub sử dụng hệ thống xác thực người dùng dựa trên tài khoản Google để quản lý quyền truy cập và các tính năng đặc biệt liên quan đến tài khoản (ví dụ: trạng thái <a href="thong-tin-tai-khoan-vip.html">VIP</a>). Việc đăng nhập giúp cá nhân hóa trải nghiệm của bạn và mở khóa các tính năng nâng cao (nếu có).</p>
 
+            <section id="dang-nhap">
+                <h2>1. Đăng nhập bằng Tài khoản Google</h2>
+                <ol>
+                    <li><strong>Khởi động và Yêu cầu Đăng nhập:</strong>
+                        <ul>
+                            <li>Khi bạn khởi động phần mềm ElevenLabs Account Hub, nếu bạn chưa đăng nhập, một thông báo hoặc cửa sổ có thể tự động xuất hiện, yêu cầu bạn đăng nhập để sử dụng đầy đủ các tính năng.</li>
+                            <li>Hoặc, bạn có thể chủ động bắt đầu quá trình đăng nhập bất cứ lúc nào bằng cách vào Thanh Menu, chọn "<strong>Account</strong>" > "<strong>Đăng nhập</strong>" (Sign In).</li>
+                        </ul>
+                    </li>
+                    <li><strong>Cửa sổ Đăng nhập:</strong> Một cửa sổ nhỏ có tiêu đề "<strong>Đăng nhập</strong>" (Login) sẽ xuất hiện.
+                        <img src="../assets/images/login-dialog-google.png" alt="Cửa sổ Đăng nhập với nút Đăng nhập bằng Google" class="screenshot">
+                        <em>(Hình ảnh: Cửa sổ Đăng nhập với nút "Đăng nhập bằng Google")</em>
+                    </li>
+                    <li>Nhấn nút "<strong>Đăng nhập bằng Google</strong>" (Sign in with Google).</li>
+                    <li><strong>Chuyển hướng đến Trình duyệt:</strong> Hành động này sẽ tự động mở trình duyệt web mặc định trên máy tính của bạn và chuyển bạn đến trang đăng nhập an toàn của Google.</li>
+                    <li><strong>Xác thực với Google:</strong>
+                        <ul>
+                            <li>Trên trang của Google, hãy chọn tài khoản Google mà bạn muốn sử dụng để đăng nhập vào ElevenLabs Account Hub.</li>
+                            <li>Nhập mật khẩu tài khoản Google của bạn (nếu được yêu cầu).</li>
+                            <li>Làm theo các bước hướng dẫn của Google để hoàn tất quá trình xác thực (ví dụ: xác minh hai yếu tố nếu bạn đã bật).</li>
+                            <li>Google có thể hiển thị một màn hình yêu cầu bạn cấp quyền cho ứng dụng "ElevenLabs Account Hub" (hoặc một tên tương tự) để truy cập một số thông tin cơ bản của tài khoản bạn (thường là địa chỉ email và thông tin hồ sơ công khai). Hãy xem xét và chấp nhận các quyền này để tiếp tục.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Hoàn tất và Quay lại Ứng dụng:</strong>
+                        <ul>
+                            <li>Sau khi Google xác nhận đăng nhập và cấp quyền thành công, bạn có thể thấy một thông báo trên trình duyệt cho biết bạn có thể đóng tab/cửa sổ đó và quay lại ứng dụng.</li>
+                            <li>Quay lại cửa sổ ứng dụng ElevenLabs Account Hub. Phần mềm sẽ tự động nhận diện trạng thái đăng nhập mới của bạn.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Xác nhận Đăng nhập Thành công trong Ứng dụng:</strong>
+                        <ul>
+                            <li>Địa chỉ email của tài khoản Google bạn vừa dùng để đăng nhập sẽ được hiển thị trên <strong>Thanh Trạng thái (Status Bar)</strong> ở góc dưới bên phải của cửa sổ chính.</li>
+                            <li>Các tùy chọn trong menu "<strong>Account</strong>" sẽ thay đổi: mục "Đăng nhập" sẽ bị vô hiệu hóa (mờ đi), trong khi các mục "Đăng xuất" (Sign Out) và "Thông tin Tài khoản" (Account Info) sẽ được kích hoạt.</li>
+                            <li>Các tính năng yêu cầu đăng nhập (ví dụ: kiểm tra trạng thái VIP, một số chức năng nâng cao) sẽ trở nên khả dụng.</li>
+                        </ul>
+                    </li>
+                </ol>
+                <div class="note">
+                    <strong>Lưu ý về Quyền riêng tư và Bảo mật:</strong>
+                    <ul>
+                        <li>Phần mềm ElevenLabs Account Hub sử dụng quy trình xác thực OAuth 2.0 tiêu chuẩn và an toàn của Google.</li>
+                        <li><strong>Mật khẩu Google của bạn không bao giờ được chia sẻ trực tiếp với ứng dụng ElevenLabs Account Hub.</strong> Toàn bộ quá trình nhập mật khẩu và xác thực diễn ra trên trang web của Google.</li>
+                        <li>Ứng dụng chỉ nhận được một mã thông báo (access token) từ Google sau khi bạn đăng nhập thành công, cho phép nó xác minh danh tính của bạn và truy cập các thông tin cơ bản mà bạn đã đồng ý cấp quyền.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="dang-xuat">
+                <h2>2. Đăng xuất khỏi Tài khoản</h2>
+                <ol>
+                    <li>Để đăng xuất khỏi tài khoản Google hiện tại đang liên kết với ứng dụng:</li>
+                    <li>Trên Thanh Menu, chọn "<strong>Account</strong>" > "<strong>Đăng xuất</strong>" (Sign Out).</li>
+                    <li>Một hộp thoại xác nhận có thể xuất hiện, hỏi bạn có chắc chắn muốn đăng xuất không. Xác nhận để tiếp tục.</li>
+                    <li><strong>Sau khi Đăng xuất Thành công:</strong>
+                        <ul>
+                            <li>Thông tin email trên Thanh Trạng thái sẽ biến mất hoặc hiển thị trạng thái "Chưa đăng nhập".</li>
+                            <li>Trạng thái VIP (nếu có) cũng sẽ được ẩn hoặc đặt lại.</li>
+                            <li>Các tùy chọn trong menu "<strong>Account</strong>" sẽ được cập nhật: mục "Đăng nhập" sẽ được kích hoạt trở lại, trong khi "Đăng xuất" và "Thông tin Tài khoản" sẽ bị vô hiệu hóa.</li>
+                            <li>Các tính năng yêu cầu đăng nhập hoặc trạng thái VIP có thể sẽ bị giới hạn hoặc không khả dụng cho đến khi bạn đăng nhập lại.</li>
+                        </ul>
+                    </li>
+                </ol>
+            </section>
+
+            <section id="thong-tin-tai-khoan">
+                <h2>3. Xem Thông tin Tài khoản (Account Info)</h2>
+                <p>Khi bạn đã đăng nhập, bạn có thể xem một số thông tin cơ bản về tài khoản người dùng của mình trong ứng dụng:</p>
+                <ol>
+                    <li>Trên Thanh Menu, chọn "<strong>Account</strong>" > "<strong>Thông tin Tài khoản</strong>" (Account Info).</li>
+                    <li>Một hộp thoại hoặc cửa sổ nhỏ sẽ xuất hiện, hiển thị các thông tin như:
+                        <ul>
+                            <li><strong>Email:</strong> Địa chỉ email của tài khoản Google đã đăng nhập.</li>
+                            <li><strong>Tên hiển thị (Display Name):</strong> Tên hiển thị công khai của tài khoản Google của bạn.</li>
+                            <li><strong>Nhà cung cấp (Provider ID):</strong> Thường là <code>google.com</code>.</li>
+                            <li><strong>Thời gian Đăng nhập Cuối (Last Login):</strong> Thời điểm bạn đăng nhập lần cuối vào ứng dụng.</li>
+                            <li><strong>Trạng thái VIP và Ngày hết hạn:</strong> Nếu tài khoản của bạn có trạng thái VIP, thông tin này sẽ được hiển thị, bao gồm cả ngày hết hạn của gói VIP (nếu có). Xem thêm chi tiết tại <a href="thong-tin-tai-khoan-vip.html">Thông tin Tài khoản VIP</a>.</li>
+                        </ul>
+                        <img src="../assets/images/account-info-dialog.png" alt="Hộp thoại Thông tin Tài khoản" class="screenshot">
+                        <em>(Hình ảnh: Hộp thoại hiển thị thông tin tài khoản người dùng)</em>
+                    </li>
+                </ol>
+            </section>
+
+            <section id="xu-ly-token-het-han">
+                <h2>4. Xử lý Tình huống Token Xác thực Hết hạn</h2>
+                <p>Phiên đăng nhập của bạn vào ứng dụng được duy trì bằng một mã thông báo xác thực (authentication token) do Google cung cấp. Các mã thông báo này thường có một thời gian tồn tại nhất định (ví dụ: vài giờ hoặc vài ngày).</p>
+                <ul>
+                    <li><strong>Tự động Làm mới Token:</strong> Phần mềm ElevenLabs Account Hub được thiết kế để cố gắng tự động làm mới mã thông báo này trong nền trước khi nó hết hạn, nhằm duy trì trạng thái đăng nhập của bạn một cách liền mạch.</li>
+                    <li><strong>Khi Token Hết hạn Hoàn toàn:</strong> Tuy nhiên, trong một số trường hợp (ví dụ: bạn không sử dụng phần mềm trong một thời gian dài, không có kết nối internet khi token cần làm mới, hoặc token bị thu hồi bởi Google vì lý do bảo mật), mã thông báo có thể hết hạn hoàn toàn. Khi điều này xảy ra:
+                        <ul>
+                            <li>Phần mềm có thể hiển thị một thông báo lỗi như "<em>Phiên đăng nhập đã hết hạn, vui lòng đăng nhập lại.</em>" (Session expired, please sign in again.) hoặc "<em>Token không hợp lệ.</em>" (Invalid token.).</li>
+                            <li>Các tính năng yêu cầu đăng nhập sẽ bị vô hiệu hóa.</li>
+                            <li>Bạn sẽ cần thực hiện lại quá trình <a href="#dang-nhap">Đăng nhập</a> như mô tả ở Bước 1 để nhận một mã thông báo mới và khôi phục phiên làm việc.</li>
+                        </ul>
+                    </li>
+                </ul>
+                 <p>Việc này đảm bảo rằng chỉ những người dùng đã xác thực mới có thể truy cập các tính năng và dữ liệu liên quan đến tài khoản trong ứng dụng.</p>
+            </section>
+        </main>
+    </div>
+    <script>
+        document.querySelectorAll('.menu-toggle').forEach(item => {
+            item.addEventListener('click', event => {
+                event.preventDefault();
+                const submenu = item.nextElementSibling;
+                if (submenu && submenu.classList.contains('submenu')) {
+                    const isOpening = submenu.style.display !== 'block';
+                    document.querySelectorAll('.submenu').forEach(sm => sm.style.display = 'none'); // Close all
+                    document.querySelectorAll('.menu-toggle').forEach(mt => mt.classList.remove('open')); // Remove open class from all
+                    if (isOpening) {
+                        submenu.style.display = 'block';
+                        item.classList.add('open');
+                    }
+                }
+            });
+        });
+        // Ensure the current page's submenu is open on load
+        document.addEventListener('DOMContentLoaded', () => {
+            const activeLink = document.querySelector('.sidebar .active');
+            if (activeLink) {
+                let parent = activeLink.closest('.submenu');
+                if (parent) {
+                    parent.style.display = 'block';
+                    const toggle = parent.previousElementSibling;
+                    if (toggle && toggle.classList.contains('menu-toggle')) {
+                        toggle.classList.add('open');
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+</html>
