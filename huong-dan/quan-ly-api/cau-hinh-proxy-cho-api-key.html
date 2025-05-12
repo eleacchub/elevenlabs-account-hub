@@ -1,1 +1,208 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cấu hình Proxy cho Khóa API - Hướng dẫn ElevenLabs Account Hub</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <div class="logo-container">
+                <h2>ElevenLabs Hub Guide</h2>
+            </div>
+            <nav class="navigation-menu">
+                <h3>Mục lục</h3>
+                <ul>
+                    <li><a href="../index.html">Trang chủ</a></li>
+                    <li>
+                        <a href="#bat-dau" class="menu-toggle">Bắt đầu</a>
+                        <ul class="submenu">
+                            <li><a href="../bat-dau/cai-dat-va-khoi-dong.html">Cài đặt & Khởi động</a></li>
+                            <li><a href="../bat-dau/tong-quan-giao-dien.html">Tổng quan Giao diện</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#quan-ly-api" class="menu-toggle open">Quản lý Khóa API</a>
+                        <ul class="submenu" style="display: block;">
+                            <li><a href="them-sua-xoa-api-key.html">Thêm/Sửa/Xóa Khóa API</a></li>
+                            <li><a href="kiem-tra-tin-dung.html">Kiểm tra Tín dụng</a></li>
+                            <li><a href="cau-hinh-proxy-cho-api-key.html" class="active">Cấu hình Proxy cho Khóa API</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#chuc-nang-tts" class="menu-toggle">Chức năng TTS</a>
+                        <ul class="submenu">
+                            <li><a href="../chuc-nang-tts/tao-giong-noi-co-ban.html">Tạo Giọng nói Cơ bản</a></li>
+                            <li><a href="../chuc-nang-tts/tuy-chinh-tham-so-tts.html">Tùy chỉnh Tham số TTS</a></li>
+                            <li><a href="../chuc-nang-tts/luu-ho-so-cai-dat-tts.html">Lưu Hồ sơ Cài đặt</a></li>
+                            <li><a href="../chuc-nang-tts/quan-ly-lich-su-tts.html">Quản lý Lịch sử TTS</a></li>
+                        </ul>
+                    </li>
+                     <li>
+                        <a href="#xu-ly-hang-loat" class="menu-toggle">Xử lý Hàng loạt</a>
+                        <ul class="submenu">
+                            <li><a href="../xu-ly-hang-loat/gioi-thieu-xu-ly-hang-loat.html">Giới thiệu</a></li>
+                            <li><a href="../xu-ly-hang-loat/su-dung-xu-ly-hang-loat.html">Cách sử dụng</a></li>
+                            <li><a href="../xu-ly-hang-loat/nhap-hang-loat-api-key.html">Nhập hàng loạt Khóa API</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#proxy-pool" class="menu-toggle">Proxy Pool Chung</a>
+                        <ul class="submenu">
+                            <li><a href="../proxy-pool/gioi-thieu-proxy-pool.html">Giới thiệu</a></li>
+                            <li><a href="../proxy-pool/quan-ly-proxy-pool.html">Quản lý Proxy Pool</a></li>
+                            <li><a href="../proxy-pool/su-dung-proxy-pool-khi-tts.html">Sử dụng với TTS</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#quan-ly-giong-noi" class="menu-toggle">Quản lý Giọng nói</a>
+                        <ul class="submenu">
+                            <li><a href="../quan-ly-giong-noi/my-voices.html">My Voices</a></li>
+                            <li><a href="../quan-ly-giong-noi/voice-library.html">Voice Library</a></li>
+                            <li><a href="../quan-ly-giong-noi/su-dung-giong-noi-thu-vien-trong-tts.html">Sử dụng Giọng nói Thư viện</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#tai-khoan" class="menu-toggle">Tài khoản & VIP</a>
+                        <ul class="submenu">
+                            <li><a href="../tai-khoan/dang-nhap-dang-xuat.html">Đăng nhập/Đăng xuất</a></li>
+                            <li><a href="../tai-khoan/thong-tin-tai-khoan-vip.html">Thông tin VIP</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#cai-dat-chung" class="menu-toggle">Cài đặt Chung</a>
+                        <ul class="submenu">
+                            <li><a href="../cai-dat-chung/thay-doi-thu-muc-luu-mac-dinh.html">Thư mục Lưu trữ</a></li>
+                            <li><a href="../cai-dat-chung/thay-doi-ngon-ngu.html">Ngôn ngữ</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#sao-luu-phuc-hoi" class="menu-toggle">Sao lưu & Phục hồi</a>
+                        <ul class="submenu">
+                            <li><a href="../sao-luu-phuc-hoi/sao-luu-du-lieu.html">Sao lưu Dữ liệu</a></li>
+                            <li><a href="../sao-luu-phuc-hoi/phuc-hoi-du-lieu.html">Phục hồi Dữ liệu</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="../faq.html">Câu hỏi Thường gặp (FAQ)</a></li>
+                    <li><a href="../ho-tro.html">Hỗ trợ</a></li>
+                </ul>
+            </nav>
+        </aside>
+        <main class="content">
+            <header class="main-header">
+                <h1>Cấu hình Proxy cho từng Khóa API</h1>
+            </header>
+            <section id="gioi-thieu-proxy">
+                <h2>Tại sao cần Sử dụng Proxy cho Khóa API?</h2>
+                <p>Khi bạn làm việc với nhiều tài khoản ElevenLabs, đặc biệt là các tài khoản miễn phí, việc sử dụng proxy cho mỗi Khóa API có thể mang lại một số lợi ích quan trọng:</p>
+                <ul>
+                    <li><strong>Tránh Giới hạn IP:</strong> ElevenLabs, giống như nhiều dịch vụ API khác, có thể áp đặt giới hạn về số lượng yêu cầu từ cùng một địa chỉ IP trong một khoảng thời gian nhất định. Sử dụng proxy cho phép mỗi Khóa API (hoặc một nhóm Khóa API) gửi yêu cầu từ một địa chỉ IP khác nhau, giúp giảm nguy cơ bị giới hạn hoặc tạm thời bị chặn do hoạt động quá nhiều từ một IP duy nhất.</li>
+                    <li><strong>Tăng Tính Ẩn danh:</strong> Proxy giúp che giấu địa chỉ IP thực của bạn khi tương tác với API, tăng cường một lớp bảo vệ cho quyền riêng tư.</li>
+                    <li><strong>Vượt qua Chặn Địa lý (Nếu có):</strong> Mặc dù ít phổ biến với ElevenLabs, trong một số trường hợp, proxy có thể giúp truy cập dịch vụ từ các vị trí địa lý khác nhau nếu có bất kỳ hạn chế nào dựa trên khu vực.</li>
+                </ul>
+                <p>ElevenLabs Account Hub cho phép bạn cấu hình một máy chủ proxy riêng biệt cho từng Khóa API mà bạn thêm vào phần mềm. Khi Khóa API đó được sử dụng để thực hiện các yêu cầu đến ElevenLabs (ví dụ: kiểm tra tín dụng, lấy danh sách giọng nói, tạo TTS), tất cả các yêu cầu đó sẽ được định tuyến thông qua proxy đã được cấu hình cho khóa đó.</p>
+            </section>
 
+            <section id="cach-cau-hinh">
+                <h2>Cách Cấu hình Proxy cho một Khóa API</h2>
+                <p>Bạn có thể thiết lập thông tin proxy khi <a href="them-sua-xoa-api-key.html#them-api-key">thêm một Khóa API mới</a> hoặc khi <a href="them-sua-xoa-api-key.html#sua-api-key">chỉnh sửa một Khóa API đã có</a>.</p>
+                <ol>
+                    <li>Mở cửa sổ "<strong>Quản lý Khóa API</strong>" (API Key Management).</li>
+                    <li>Trong cửa sổ này, tìm đến phần "<strong>Cấu hình Proxy</strong>" (Proxy Configuration).
+                        <img src="../assets/images/api-key-dialog-proxy-section.png" alt="Phần cấu hình Proxy trong hộp thoại Quản lý Khóa API" class="screenshot">
+                        <em>(Hình ảnh: Khu vực cấu hình Proxy trong hộp thoại Quản lý Khóa API)</em>
+                    </li>
+                    <li><strong>Kích hoạt Proxy:</strong> Đánh dấu (check) vào ô "<strong>Bật Proxy</strong>" (Enable Proxy) để bắt đầu cấu hình. Nếu ô này không được đánh dấu, các cài đặt proxy bên dưới sẽ bị bỏ qua.</li>
+                    <li><strong>Điền Thông tin Proxy:</strong>
+                        <ul>
+                            <li><strong>Loại Proxy (Proxy Type):</strong> Chọn loại giao thức proxy từ danh sách thả xuống. Các loại phổ biến được hỗ trợ bao gồm:
+                                <ul>
+                                    <li><code>HTTP</code></li>
+                                    <li><code>HTTPS</code> (thường được xử lý giống như HTTP cho mục đích proxy client)</li>
+                                    <li><code>SOCKS4</code></li>
+                                    <li><code>SOCKS5</code></li>
+                                </ul>
+                            </li>
+                            <li><strong>Host Proxy:</strong> Nhập địa chỉ IP hoặc tên miền (hostname) của máy chủ proxy. Ví dụ: <code>123.45.67.89</code> hoặc <code>myproxy.server.com</code>.</li>
+                            <li><strong>Cổng Proxy (Port):</strong> Nhập số cổng mà máy chủ proxy đang lắng nghe. Ví dụ: <code>8080</code>, <code>3128</code>, <code>1080</code>.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Xác thực Proxy (Proxy Authentication - Tùy chọn):</strong> Nếu máy chủ proxy của bạn yêu cầu tên người dùng và mật khẩu để truy cập:
+                        <ul>
+                            <li>Đánh dấu (check) vào ô "<strong>Bật Xác thực</strong>" (Enable Authentication).</li>
+                            <li><strong>Tên người dùng (Username):</strong> Nhập tên người dùng được cấp cho bạn để sử dụng proxy.</li>
+                            <li><strong>Mật khẩu (Password):</strong> Nhập mật khẩu tương ứng với tên người dùng proxy. Mật khẩu này sẽ được mã hóa khi lưu vào cơ sở dữ liệu của ứng dụng.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Kiểm tra Proxy (Test Proxy):</strong>
+                        <ul>
+                            <li>Sau khi điền đầy đủ thông tin proxy, bạn nên nhấn nút "<strong>Kiểm tra Proxy</strong>" (Test Proxy).</li>
+                            <li>Phần mềm sẽ cố gắng thực hiện một kết nối thử nghiệm đến một dịch vụ bên ngoài (ví dụ: <code>https://httpbin.org/ip</code>) thông qua cấu hình proxy bạn vừa nhập.</li>
+                            <li>Một thông báo sẽ xuất hiện cho biết kết quả kiểm tra:
+                                <ul>
+                                    <li><strong>Thành công:</strong> Proxy hoạt động và có thể kết nối ra ngoài.</li>
+                                    <li><strong>Thất bại:</strong> Có thể do thông tin proxy sai (host, port, loại, tài khoản), proxy không hoạt động, hoặc vấn đề mạng. Thông báo lỗi sẽ cố gắng cung cấp thêm chi tiết.</li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <div class="tip">
+                            <strong>Mẹo:</strong> Luôn luôn "Kiểm tra Proxy" sau khi cấu hình hoặc thay đổi thông tin proxy để đảm bảo nó hoạt động chính xác trước khi lưu. Điều này giúp tránh các lỗi không mong muốn khi phần mềm cố gắng sử dụng proxy đó cho các yêu cầu API sau này.
+                        </div>
+                    </li>
+                    <li><strong>Lưu Cấu hình:</strong> Sau khi đã điền và kiểm tra thông tin, nhấn nút "<strong>Lưu</strong>" (Save) trong cửa sổ "Quản lý Khóa API" để lưu lại cấu hình proxy cùng với các thông tin khác của Khóa API.</li>
+                </ol>
+            </section>
+
+            <section id="luu-y-proxy">
+                <h2>Lưu ý khi Sử dụng Proxy cho Khóa API</h2>
+                <ul>
+                    <li><strong>Chất lượng Proxy:</strong> Hiệu suất và độ tin cậy của các yêu cầu API (bao gồm cả việc tạo TTS) sẽ phụ thuộc lớn vào chất lượng của proxy bạn sử dụng. Proxy chậm, không ổn định, hoặc thường xuyên bị chặn có thể gây ra lỗi hoặc làm chậm đáng kể quá trình làm việc.</li>
+                    <li><strong>Loại Proxy Phù hợp:</strong> Đảm bảo bạn chọn đúng "Loại Proxy" (HTTP, SOCKS4, SOCKS5) mà nhà cung cấp proxy của bạn hỗ trợ và yêu cầu.</li>
+                    <li><strong>Bảo mật Thông tin Proxy:</strong> Chỉ sử dụng proxy từ các nguồn đáng tin cậy. Mật khẩu proxy (nếu có) sẽ được mã hóa khi lưu trong cơ sở dữ liệu của ElevenLabs Account Hub, nhưng việc bảo vệ thông tin đăng nhập proxy của bạn nói chung vẫn rất quan trọng.</li>
+                    <li><strong>Proxy Riêng vs. Proxy Pool:</strong>
+                        <ul>
+                            <li>Cấu hình proxy theo hướng dẫn này là thiết lập một proxy <strong>riêng</strong> cho một Khóa API cụ thể.</li>
+                            <li>Phần mềm cũng hỗ trợ một <a href="../proxy-pool/gioi-thieu-proxy-pool.html">Proxy Pool Chung</a>. Khi tạo TTS, bạn có thể chọn sử dụng proxy từ Pool này thay vì proxy riêng đã cấu hình cho Khóa API (xem <a href="../proxy-pool/su-dung-proxy-pool-khi-tts.html">Sử dụng Proxy Pool khi Tạo TTS</a>).</li>
+                            <li>Nếu bạn không bật "Sử dụng Proxy Pool" trong Bảng Cài đặt TTS, và Khóa API hiện tại có cấu hình proxy riêng được bật, thì proxy riêng đó sẽ được sử dụng.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Kiểm tra Định kỳ:</strong> Nếu bạn gặp lỗi kết nối khi sử dụng một Khóa API có proxy, hãy thử kiểm tra lại cấu hình proxy đó hoặc thử một proxy khác.</li>
+                </ul>
+            </section>
+        </main>
+    </div>
+    <script>
+        document.querySelectorAll('.menu-toggle').forEach(item => {
+            item.addEventListener('click', event => {
+                event.preventDefault();
+                const submenu = item.nextElementSibling;
+                if (submenu && submenu.classList.contains('submenu')) {
+                    const isOpening = submenu.style.display !== 'block';
+                    document.querySelectorAll('.submenu').forEach(sm => sm.style.display = 'none'); // Close all
+                    document.querySelectorAll('.menu-toggle').forEach(mt => mt.classList.remove('open')); // Remove open class from all
+                    if (isOpening) {
+                        submenu.style.display = 'block';
+                        item.classList.add('open');
+                    }
+                }
+            });
+        });
+        // Ensure the current page's submenu is open on load
+        document.addEventListener('DOMContentLoaded', () => {
+            const activeLink = document.querySelector('.sidebar .active');
+            if (activeLink) {
+                let parent = activeLink.closest('.submenu');
+                if (parent) {
+                    parent.style.display = 'block';
+                    const toggle = parent.previousElementSibling;
+                    if (toggle && toggle.classList.contains('menu-toggle')) {
+                        toggle.classList.add('open');
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+</html>

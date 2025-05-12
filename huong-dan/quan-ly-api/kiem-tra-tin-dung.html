@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kiểm tra Tín dụng API - Hướng dẫn ElevenLabs Account Hub</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <div class="logo-container">
+                <h2>ElevenLabs Hub Guide</h2>
+            </div>
+            <nav class="navigation-menu">
+                <h3>Mục lục</h3>
+                <ul>
+                    <li><a href="../index.html">Trang chủ</a></li>
+                    <li>
+                        <a href="#bat-dau" class="menu-toggle">Bắt đầu</a>
+                        <ul class="submenu">
+                            <li><a href="../bat-dau/cai-dat-va-khoi-dong.html">Cài đặt & Khởi động</a></li>
+                            <li><a href="../bat-dau/tong-quan-giao-dien.html">Tổng quan Giao diện</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#quan-ly-api" class="menu-toggle open">Quản lý Khóa API</a>
+                        <ul class="submenu" style="display: block;">
+                            <li><a href="them-sua-xoa-api-key.html">Thêm/Sửa/Xóa Khóa API</a></li>
+                            <li><a href="kiem-tra-tin-dung.html" class="active">Kiểm tra Tín dụng</a></li>
+                            <li><a href="cau-hinh-proxy-cho-api-key.html">Cấu hình Proxy cho Khóa API</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#chuc-nang-tts" class="menu-toggle">Chức năng TTS</a>
+                        <ul class="submenu">
+                            <li><a href="../chuc-nang-tts/tao-giong-noi-co-ban.html">Tạo Giọng nói Cơ bản</a></li>
+                            <li><a href="../chuc-nang-tts/tuy-chinh-tham-so-tts.html">Tùy chỉnh Tham số TTS</a></li>
+                            <li><a href="../chuc-nang-tts/luu-ho-so-cai-dat-tts.html">Lưu Hồ sơ Cài đặt</a></li>
+                            <li><a href="../chuc-nang-tts/quan-ly-lich-su-tts.html">Quản lý Lịch sử TTS</a></li>
+                        </ul>
+                    </li>
+                     <li>
+                        <a href="#xu-ly-hang-loat" class="menu-toggle">Xử lý Hàng loạt</a>
+                        <ul class="submenu">
+                            <li><a href="../xu-ly-hang-loat/gioi-thieu-xu-ly-hang-loat.html">Giới thiệu</a></li>
+                            <li><a href="../xu-ly-hang-loat/su-dung-xu-ly-hang-loat.html">Cách sử dụng</a></li>
+                            <li><a href="../xu-ly-hang-loat/nhap-hang-loat-api-key.html">Nhập hàng loạt Khóa API</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#proxy-pool" class="menu-toggle">Proxy Pool Chung</a>
+                        <ul class="submenu">
+                            <li><a href="../proxy-pool/gioi-thieu-proxy-pool.html">Giới thiệu</a></li>
+                            <li><a href="../proxy-pool/quan-ly-proxy-pool.html">Quản lý Proxy Pool</a></li>
+                            <li><a href="../proxy-pool/su-dung-proxy-pool-khi-tts.html">Sử dụng với TTS</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#quan-ly-giong-noi" class="menu-toggle">Quản lý Giọng nói</a>
+                        <ul class="submenu">
+                            <li><a href="../quan-ly-giong-noi/my-voices.html">My Voices</a></li>
+                            <li><a href="../quan-ly-giong-noi/voice-library.html">Voice Library</a></li>
+                            <li><a href="../quan-ly-giong-noi/su-dung-giong-noi-thu-vien-trong-tts.html">Sử dụng Giọng nói Thư viện</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#tai-khoan" class="menu-toggle">Tài khoản & VIP</a>
+                        <ul class="submenu">
+                            <li><a href="../tai-khoan/dang-nhap-dang-xuat.html">Đăng nhập/Đăng xuất</a></li>
+                            <li><a href="../tai-khoan/thong-tin-tai-khoan-vip.html">Thông tin VIP</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#cai-dat-chung" class="menu-toggle">Cài đặt Chung</a>
+                        <ul class="submenu">
+                            <li><a href="../cai-dat-chung/thay-doi-thu-muc-luu-mac-dinh.html">Thư mục Lưu trữ</a></li>
+                            <li><a href="../cai-dat-chung/thay-doi-ngon-ngu.html">Ngôn ngữ</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#sao-luu-phuc-hoi" class="menu-toggle">Sao lưu & Phục hồi</a>
+                        <ul class="submenu">
+                            <li><a href="../sao-luu-phuc-hoi/sao-luu-du-lieu.html">Sao lưu Dữ liệu</a></li>
+                            <li><a href="../sao-luu-phuc-hoi/phuc-hoi-du-lieu.html">Phục hồi Dữ liệu</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="../faq.html">Câu hỏi Thường gặp (FAQ)</a></li>
+                    <li><a href="../ho-tro.html">Hỗ trợ</a></li>
+                </ul>
+            </nav>
+        </aside>
+        <main class="content">
+            <header class="main-header">
+                <h1>Kiểm tra Tín dụng (Character Credits)</h1>
+            </header>
+            <section id="gioi-thieu-tin-dung">
+                <h2>Giới thiệu về Tín dụng Ký tự của ElevenLabs</h2>
+                <p>ElevenLabs sử dụng một hệ thống "tín dụng ký tự" (character credits) để đo lường và giới hạn việc sử dụng dịch vụ Text-to-Speech (TTS) của họ. Mỗi khi bạn chuyển đổi một đoạn văn bản thành giọng nói, một số lượng ký tự tương ứng sẽ được trừ vào tổng tín dụng của tài khoản bạn.</p>
+                <ul>
+                    <li><strong>Tài khoản Miễn phí:</strong> Thường có một lượng tín dụng giới hạn mỗi tháng (ví dụ: 10.000 ký tự). Số tín dụng này sẽ được làm mới vào một ngày cụ thể hàng tháng.</li>
+                    <li><strong>Tài khoản Trả phí:</strong> Có các gói với giới hạn tín dụng cao hơn hoặc không giới hạn, tùy thuộc vào gói bạn đăng ký.</li>
+                </ul>
+                <p>Việc theo dõi sát sao lượng tín dụng còn lại là rất quan trọng, đặc biệt khi bạn sử dụng nhiều tài khoản miễn phí, để đảm bảo bạn không bị gián đoạn dịch vụ và có thể lên kế hoạch sử dụng hiệu quả.</p>
+                <p>ElevenLabs Account Hub cung cấp các công cụ giúp bạn dễ dàng theo dõi và quản lý tín dụng cho từng Khóa API cũng như tổng quan tất cả các khóa.</p>
+            </section>
+
+            <section id="xem-tin-dung">
+                <h2>Cách Xem Thông tin Tín dụng</h2>
+                <h3>1. Trong Danh sách Khóa API (Cột Trái)</h3>
+                <p>Đây là nơi bạn có thể xem nhanh thông tin tín dụng cho từng Khóa API đã thêm:</p>
+                <ul>
+                    <li>Sau khi bạn <a href="them-sua-xoa-api-key.html">thêm một Khóa API mới</a> và thực hiện thao tác "<strong>Test Key & Fetch Info</strong>" thành công, hoặc sau khi một Khóa API được làm mới tín dụng, thông tin tín dụng sẽ được hiển thị.</li>
+                    <li>Thông tin thường được hiển thị dưới dạng: <code>Số ký tự đã dùng / Tổng giới hạn ký tự</code> (ví dụ: <code>5.000 / 10.000</code>).</li>
+                    <li>Màu sắc của thông tin tín dụng có thể thay đổi để chỉ báo mức độ sử dụng (ví dụ: xanh lá khi còn nhiều, vàng khi gần hết, đỏ khi đã hết).</li>
+                </ul>
+                <img src="../assets/images/credit-info-in-api-list.png" alt="Thông tin tín dụng trong danh sách Khóa API" class="screenshot">
+                <em>(Hình ảnh: Thông tin tín dụng hiển thị bên cạnh mỗi Khóa API trong danh sách)</em>
+
+                <h3>2. Tổng Tín dụng trên Thanh Trạng thái (Status Bar)</h3>
+                <p>Để có cái nhìn tổng quan về tổng lượng tài nguyên TTS bạn đang có:</p>
+                <ul>
+                    <li>Nhìn xuống góc dưới bên trái của cửa sổ chính, trên Thanh Trạng thái.</li>
+                    <li>Một nhãn sẽ hiển thị tổng số ký tự <strong>còn lại</strong> của tất cả các Khóa API đã được thêm và kiểm tra thành công trong phần mềm.</li>
+                    <li>Ví dụ: "Tổng Credits còn lại: 150.000".</li>
+                </ul>
+                <img src="../assets/images/total-credits-statusbar.png" alt="Tổng tín dụng còn lại trên Thanh Trạng thái" class="screenshot">
+                <em>(Hình ảnh: Tổng tín dụng còn lại hiển thị trên Thanh Trạng thái)</em>
+                <p>Con số này được tự động cập nhật mỗi khi thông tin tín dụng của bất kỳ Khóa API nào thay đổi (ví dụ: sau khi làm mới hoặc sau khi tạo TTS).</p>
+            </section>
+
+            <section id="lam-moi-tin-dung">
+                <h2>Làm mới (Refresh) Thông tin Tín dụng</h2>
+                <p>Thông tin tín dụng được cập nhật tự động trong một số trường hợp (như sau khi "Test Key" hoặc sau khi tạo TTS thành công). Tuy nhiên, bạn cũng có thể chủ động làm mới thông tin này:</p>
+                <h3>1. Làm mới cho một Khóa API Cụ thể</h3>
+                <ol>
+                    <li>Trong Cột Trái (Danh sách Khóa API), chọn Khóa API mà bạn muốn làm mới thông tin tín dụng.</li>
+                    <li>Nhấn nút "<strong>Refresh Credits</strong>" <img src="../assets/icons/refresh-cw.svg" alt="Biểu tượng Refresh" style="width:16px; height:16px; vertical-align:middle;"> (biểu tượng mũi tên xoay tròn) nằm ở phía dưới cùng của danh sách Khóa API.</li>
+                    <li>Phần mềm sẽ gửi yêu cầu đến ElevenLabs để lấy thông tin tín dụng mới nhất cho khóa đã chọn. Thanh Trạng thái sẽ hiển thị thông báo về quá trình này.</li>
+                    <li>Sau khi hoàn tất, thông tin tín dụng trong danh sách và tổng tín dụng trên Thanh Trạng thái sẽ được cập nhật.</li>
+                </ol>
+
+                <h3>2. Làm mới cho Tất cả Khóa API</h3>
+                <ol>
+                    <li>Từ Thanh Menu, chọn "<strong>File</strong>" > "<strong>Refresh All Credits</strong>".</li>
+                    <li>Phần mềm sẽ lần lượt làm mới thông tin tín dụng cho tất cả các Khóa API có trong danh sách của bạn.</li>
+                    <li>Quá trình này có thể mất một chút thời gian nếu bạn có nhiều Khóa API. Theo dõi Thanh Trạng thái để biết tiến trình.</li>
+                </ol>
+                <div class="note">
+                    <strong>Lưu ý:</strong>
+                    <ul>
+                        <li>Việc làm mới tín dụng yêu cầu kết nối internet ổn định.</li>
+                        <li>Nếu một Khóa API không hợp lệ hoặc có vấn đề kết nối, việc làm mới cho khóa đó có thể thất bại và một thông báo lỗi sẽ được hiển thị.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="luu-y-quan-trong">
+                <h2>Lưu ý Quan trọng về Tín dụng</h2>
+                <ul>
+                    <li><strong>Giới hạn Tài khoản Miễn phí:</strong> Các tài khoản ElevenLabs miễn phí thường có giới hạn 10.000 ký tự mỗi tháng. Ngoài ra, có thể có các giới hạn khác như số lượng giọng nói tùy chỉnh (Instant Voice Cloning) được phép tạo (ví dụ: 3 giọng nói).</li>
+                    <li><strong>Thời gian Reset Tín dụng:</strong> Tín dụng của tài khoản miễn phí thường được làm mới (reset) vào một ngày cố định hàng tháng. Phần mềm có thể hiển thị thông tin về ngày reset tiếp theo nếu API của ElevenLabs cung cấp.</li>
+                    <li><strong>Tối ưu hóa Sử dụng:</strong> ElevenLabs Account Hub được thiết kế để giúp bạn tận dụng tối đa lượng tín dụng từ nhiều tài khoản, đặc biệt hữu ích khi bạn có nhiều tài khoản miễn phí và muốn phân bổ các tác vụ TTS một cách thông minh.</li>
+                    <li><strong>Chi phí Ký tự cho các Mô hình Khác nhau:</strong> Một số mô hình TTS của ElevenLabs (ví dụ: các mô hình "Turbo" hoặc "Flash") có thể có cách tính ký tự khác nhau (ví dụ: 2 ký tự văn bản gốc chỉ tính là 1 ký tự sử dụng). Phần mềm cố gắng ước tính điều này khi bạn chọn mô hình trong Bảng Cài đặt.</li>
+                </ul>
+            </section>
+        </main>
+    </div>
+    <script>
+        document.querySelectorAll('.menu-toggle').forEach(item => {
+            item.addEventListener('click', event => {
+                event.preventDefault();
+                const submenu = item.nextElementSibling;
+                if (submenu && submenu.classList.contains('submenu')) {
+                    const isOpening = submenu.style.display !== 'block';
+                    document.querySelectorAll('.submenu').forEach(sm => sm.style.display = 'none'); // Close all
+                    document.querySelectorAll('.menu-toggle').forEach(mt => mt.classList.remove('open')); // Remove open class from all
+                    if (isOpening) {
+                        submenu.style.display = 'block';
+                        item.classList.add('open');
+                    }
+                }
+            });
+        });
+        // Ensure the current page's submenu is open on load
+        document.addEventListener('DOMContentLoaded', () => {
+            const activeLink = document.querySelector('.sidebar .active');
+            if (activeLink) {
+                let parent = activeLink.closest('.submenu');
+                if (parent) {
+                    parent.style.display = 'block';
+                    const toggle = parent.previousElementSibling;
+                    if (toggle && toggle.classList.contains('menu-toggle')) {
+                        toggle.classList.add('open');
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+</html>

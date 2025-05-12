@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thêm/Sửa/Xóa Khóa API - Hướng dẫn ElevenLabs Account Hub</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <div class="logo-container">
+                <h2>ElevenLabs Hub Guide</h2>
+            </div>
+            <nav class="navigation-menu">
+                <h3>Mục lục</h3>
+                <ul>
+                    <li><a href="../index.html">Trang chủ</a></li>
+                    <li>
+                        <a href="#bat-dau" class="menu-toggle">Bắt đầu</a>
+                        <ul class="submenu">
+                            <li><a href="../bat-dau/cai-dat-va-khoi-dong.html">Cài đặt & Khởi động</a></li>
+                            <li><a href="../bat-dau/tong-quan-giao-dien.html">Tổng quan Giao diện</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#quan-ly-api" class="menu-toggle open">Quản lý Khóa API</a>
+                        <ul class="submenu" style="display: block;">
+                            <li><a href="them-sua-xoa-api-key.html" class="active">Thêm/Sửa/Xóa Khóa API</a></li>
+                            <li><a href="kiem-tra-tin-dung.html">Kiểm tra Tín dụng</a></li>
+                            <li><a href="cau-hinh-proxy-cho-api-key.html">Cấu hình Proxy cho Khóa API</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#chuc-nang-tts" class="menu-toggle">Chức năng TTS</a>
+                        <ul class="submenu">
+                            <li><a href="../chuc-nang-tts/tao-giong-noi-co-ban.html">Tạo Giọng nói Cơ bản</a></li>
+                            <li><a href="../chuc-nang-tts/tuy-chinh-tham-so-tts.html">Tùy chỉnh Tham số TTS</a></li>
+                            <li><a href="../chuc-nang-tts/luu-ho-so-cai-dat-tts.html">Lưu Hồ sơ Cài đặt</a></li>
+                            <li><a href="../chuc-nang-tts/quan-ly-lich-su-tts.html">Quản lý Lịch sử TTS</a></li>
+                        </ul>
+                    </li>
+                     <li>
+                        <a href="#xu-ly-hang-loat" class="menu-toggle">Xử lý Hàng loạt</a>
+                        <ul class="submenu">
+                            <li><a href="../xu-ly-hang-loat/gioi-thieu-xu-ly-hang-loat.html">Giới thiệu</a></li>
+                            <li><a href="../xu-ly-hang-loat/su-dung-xu-ly-hang-loat.html">Cách sử dụng</a></li>
+                            <li><a href="../xu-ly-hang-loat/nhap-hang-loat-api-key.html">Nhập hàng loạt Khóa API</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#proxy-pool" class="menu-toggle">Proxy Pool Chung</a>
+                        <ul class="submenu">
+                            <li><a href="../proxy-pool/gioi-thieu-proxy-pool.html">Giới thiệu</a></li>
+                            <li><a href="../proxy-pool/quan-ly-proxy-pool.html">Quản lý Proxy Pool</a></li>
+                            <li><a href="../proxy-pool/su-dung-proxy-pool-khi-tts.html">Sử dụng với TTS</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#quan-ly-giong-noi" class="menu-toggle">Quản lý Giọng nói</a>
+                        <ul class="submenu">
+                            <li><a href="../quan-ly-giong-noi/my-voices.html">My Voices</a></li>
+                            <li><a href="../quan-ly-giong-noi/voice-library.html">Voice Library</a></li>
+                            <li><a href="../quan-ly-giong-noi/su-dung-giong-noi-thu-vien-trong-tts.html">Sử dụng Giọng nói Thư viện</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#tai-khoan" class="menu-toggle">Tài khoản & VIP</a>
+                        <ul class="submenu">
+                            <li><a href="../tai-khoan/dang-nhap-dang-xuat.html">Đăng nhập/Đăng xuất</a></li>
+                            <li><a href="../tai-khoan/thong-tin-tai-khoan-vip.html">Thông tin VIP</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#cai-dat-chung" class="menu-toggle">Cài đặt Chung</a>
+                        <ul class="submenu">
+                            <li><a href="../cai-dat-chung/thay-doi-thu-muc-luu-mac-dinh.html">Thư mục Lưu trữ</a></li>
+                            <li><a href="../cai-dat-chung/thay-doi-ngon-ngu.html">Ngôn ngữ</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#sao-luu-phuc-hoi" class="menu-toggle">Sao lưu & Phục hồi</a>
+                        <ul class="submenu">
+                            <li><a href="../sao-luu-phuc-hoi/sao-luu-du-lieu.html">Sao lưu Dữ liệu</a></li>
+                            <li><a href="../sao-luu-phuc-hoi/phuc-hoi-du-lieu.html">Phục hồi Dữ liệu</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="../faq.html">Câu hỏi Thường gặp (FAQ)</a></li>
+                    <li><a href="../ho-tro.html">Hỗ trợ</a></li>
+                </ul>
+            </nav>
+        </aside>
+        <main class="content">
+            <header class="main-header">
+                <h1>Thêm, Sửa và Xóa Khóa API</h1>
+            </header>
+            <section id="them-api-key">
+                <h2>Thêm Khóa API Mới</h2>
+                <p>Bạn có thể thêm nhiều khóa API ElevenLabs vào phần mềm để quản lý tập trung. Mỗi khóa API sẽ có hồ sơ cài đặt TTS và lịch sử riêng.</p>
+                <ol>
+                    <li>Trong Cột Trái (Danh sách Khóa API), nhấn nút "<strong>Thêm Key</strong>" <img src="../assets/icons/plus-circle.svg" alt="Biểu tượng Thêm" style="width:16px; height:16px; vertical-align:middle;">.</li>
+                    <li>Hoặc, bạn có thể vào menu "<strong>File</strong>" > "<strong>Thêm Khóa API</strong>".</li>
+                    <li>Cửa sổ "<strong>Quản lý Khóa API</strong>" sẽ xuất hiện.
+                        <img src="../assets/images/placeholder-add-api-key-dialog.png" alt="Cửa sổ Thêm Khóa API" class="screenshot">
+                        <em>(Hình ảnh minh họa cửa sổ Quản lý Khóa API khi thêm mới)</em>
+                    </li>
+                    <li>Điền các thông tin sau:
+                        <ul>
+                            <li><strong>Tên Key (Name):</strong> Đặt một tên gợi nhớ cho khóa API này (ví dụ: "Tài khoản A", "Dự án X"). Tên này phải là duy nhất.</li>
+                            <li><strong>Khóa API (API Key):</strong> Dán giá trị khóa API của bạn từ trang web ElevenLabs.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <strong>Kiểm tra Key và Lấy Thông tin (Test Key & Fetch Info):</strong>
+                        <ul>
+                            <li>Sau khi điền Tên Key và Khóa API, nhấn nút "<strong>Test Key & Fetch Info</strong>".</li>
+                            <li>Phần mềm sẽ kết nối đến ElevenLabs để kiểm tra tính hợp lệ của khóa và tự động lấy thông tin về số ký tự đã sử dụng (Character Count) và giới hạn ký tự (Character Limit) của tài khoản tương ứng.</li>
+                            <li>Nếu khóa hợp lệ, các trường "Character Count" và "Character Limit" sẽ được tự động điền. Một thông báo thành công sẽ hiển thị.</li>
+                            <li>Nếu khóa không hợp lệ hoặc có lỗi kết nối, một thông báo lỗi sẽ xuất hiện. Hãy kiểm tra lại khóa API và kết nối mạng của bạn.</li>
+                        </ul>
+                        <div class="tip">
+                            <strong>Mẹo:</strong> Luôn nhấn "Test Key & Fetch Info" sau khi nhập khóa API để đảm bảo khóa hoạt động và thông tin tín dụng được cập nhật chính xác.
+                        </div>
+                    </li>
+                    <li><strong>Cấu hình Proxy (Tùy chọn):</strong> Xem chi tiết tại <a href="cau-hinh-proxy-cho-api-key.html">Cấu hình Proxy cho Khóa API</a>.</li>
+                    <li>Nhấn "<strong>Lưu</strong>" (Save) để thêm khóa API vào danh sách.</li>
+                </ol>
+            </section>
+
+            <section id="sua-api-key">
+                <h2>Chỉnh sửa Khóa API</h2>
+                <p>Bạn có thể chỉnh sửa thông tin của một khóa API đã lưu, bao gồm tên, giá trị khóa, hoặc cấu hình proxy.</p>
+                <ol>
+                    <li>Trong Cột Trái, chọn khóa API bạn muốn chỉnh sửa từ danh sách.</li>
+                    <li>Nhấn nút "<strong>Sửa Key</strong>" <img src="../assets/icons/edit.svg" alt="Biểu tượng Sửa" style="width:16px; height:16px; vertical-align:middle;"> ở phía dưới danh sách.</li>
+                    <li>Cửa sổ "<strong>Quản lý Khóa API</strong>" sẽ xuất hiện, hiển thị thông tin hiện tại của khóa đã chọn.</li>
+                    <li>Thay đổi các thông tin cần thiết (Tên Key, Khóa API, thông tin Proxy).</li>
+                    <li>Nếu bạn thay đổi giá trị Khóa API, hãy nhấn lại nút "<strong>Test Key & Fetch Info</strong>" để cập nhật thông tin tín dụng.</li>
+                    <li>Nhấn "<strong>Lưu</strong>" (Save) để lưu các thay đổi.</li>
+                </ol>
+            </section>
+
+            <section id="xoa-api-key">
+                <h2>Xóa Khóa API</h2>
+                <p>Bạn có thể xóa một hoặc tất cả các khóa API khỏi phần mềm.</p>
+                <h3>Xóa một Khóa API</h3>
+                <ol>
+                    <li>Trong Cột Trái, chọn khóa API bạn muốn xóa.</li>
+                    <li>Nhấn nút "<strong>Xóa Key</strong>" <img src="../assets/icons/trash.svg" alt="Biểu tượng Xóa" style="width:16px; height:16px; vertical-align:middle;"> ở phía dưới danh sách.</li>
+                    <li>Hoặc, bạn có thể vào menu "<strong>File</strong>" > "<strong>Xóa Khóa API</strong>" (đảm bảo khóa đã được chọn trong danh sách).</li>
+                    <li>Một hộp thoại xác nhận sẽ xuất hiện. Nhấn "<strong>Yes</strong>" để xác nhận xóa.</li>
+                </ol>
+                <div class="warning">
+                    <strong>Cảnh báo:</strong> Việc xóa khóa API sẽ xóa cả hồ sơ cài đặt và lịch sử TTS liên quan đến khóa đó trong phần mềm. Hành động này không thể hoàn tác.
+                </div>
+
+                <h3>Xóa Tất cả Khóa API</h3>
+                <ol>
+                    <li>Vào menu "<strong>File</strong>" > "<strong>Xóa Tất cả Khóa API</strong>".</li>
+                    <li>Một hộp thoại xác nhận sẽ xuất hiện. Nhấn "<strong>Yes</strong>" để xác nhận xóa tất cả các khóa API.</li>
+                </ol>
+                 <div class="warning">
+                    <strong>Cảnh báo:</strong> Hành động này sẽ xóa TOÀN BỘ các khóa API, hồ sơ cài đặt và lịch sử TTS đã lưu trong phần mềm. Hãy cân nhắc kỹ trước khi thực hiện.
+                </div>
+            </section>
+        </main>
+    </div>
+    <script>
+        document.querySelectorAll('.menu-toggle').forEach(item => {
+            item.addEventListener('click', event => {
+                event.preventDefault();
+                const submenu = item.nextElementSibling;
+                if (submenu && submenu.classList.contains('submenu')) {
+                    const isOpening = submenu.style.display !== 'block';
+                    document.querySelectorAll('.submenu').forEach(sm => sm.style.display = 'none'); // Close all
+                    document.querySelectorAll('.menu-toggle').forEach(mt => mt.classList.remove('open')); // Remove open class from all
+                    if (isOpening) {
+                        submenu.style.display = 'block';
+                        item.classList.add('open');
+                    }
+                }
+            });
+        });
+        // Ensure the current page's submenu is open on load
+        document.addEventListener('DOMContentLoaded', () => {
+            const activeLink = document.querySelector('.sidebar .active');
+            if (activeLink) {
+                let parent = activeLink.closest('.submenu');
+                if (parent) {
+                    parent.style.display = 'block';
+                    const toggle = parent.previousElementSibling;
+                    if (toggle && toggle.classList.contains('menu-toggle')) {
+                        toggle.classList.add('open');
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+</html>
