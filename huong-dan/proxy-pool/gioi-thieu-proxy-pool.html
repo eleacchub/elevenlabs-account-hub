@@ -1,1 +1,169 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giới thiệu Proxy Pool Chung - Hướng dẫn ElevenLabs Account Hub</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <div class="logo-container">
+                <h2>ElevenLabs Hub Guide</h2>
+            </div>
+            <nav class="navigation-menu">
+                <h3>Mục lục</h3>
+                <ul>
+                    <li><a href="../index.html">Trang chủ</a></li>
+                    <li>
+                        <a href="#bat-dau" class="menu-toggle">Bắt đầu</a>
+                        <ul class="submenu">
+                            <li><a href="../bat-dau/cai-dat-va-khoi-dong.html">Cài đặt & Khởi động</a></li>
+                            <li><a href="../bat-dau/tong-quan-giao-dien.html">Tổng quan Giao diện</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#quan-ly-api" class="menu-toggle">Quản lý Khóa API</a>
+                        <ul class="submenu">
+                            <li><a href="../quan-ly-api/them-sua-xoa-api-key.html">Thêm/Sửa/Xóa Khóa API</a></li>
+                            <li><a href="../quan-ly-api/kiem-tra-tin-dung.html">Kiểm tra Tín dụng</a></li>
+                            <li><a href="../quan-ly-api/cau-hinh-proxy-cho-api-key.html">Cấu hình Proxy</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#chuc-nang-tts" class="menu-toggle">Chức năng TTS</a>
+                        <ul class="submenu">
+                            <li><a href="../chuc-nang-tts/tao-giong-noi-co-ban.html">Tạo Giọng nói Cơ bản</a></li>
+                            <li><a href="../chuc-nang-tts/tuy-chinh-tham-so-tts.html">Tùy chỉnh Tham số TTS</a></li>
+                            <li><a href="../chuc-nang-tts/luu-ho-so-cai-dat-tts.html">Lưu Hồ sơ Cài đặt</a></li>
+                            <li><a href="../chuc-nang-tts/quan-ly-lich-su-tts.html">Quản lý Lịch sử TTS</a></li>
+                        </ul>
+                    </li>
+                     <li>
+                        <a href="#xu-ly-hang-loat" class="menu-toggle">Xử lý Hàng loạt</a>
+                        <ul class="submenu">
+                            <li><a href="../xu-ly-hang-loat/gioi-thieu-xu-ly-hang-loat.html">Giới thiệu</a></li>
+                            <li><a href="../xu-ly-hang-loat/su-dung-xu-ly-hang-loat.html">Cách sử dụng</a></li>
+                            <li><a href="../xu-ly-hang-loat/nhap-hang-loat-api-key.html">Nhập hàng loạt Khóa API</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#proxy-pool" class="menu-toggle open">Proxy Pool Chung</a>
+                        <ul class="submenu" style="display: block;">
+                            <li><a href="gioi-thieu-proxy-pool.html" class="active">Giới thiệu</a></li>
+                            <li><a href="quan-ly-proxy-pool.html">Quản lý Proxy Pool</a></li>
+                            <li><a href="su-dung-proxy-pool-khi-tts.html">Sử dụng với TTS</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#quan-ly-giong-noi" class="menu-toggle">Quản lý Giọng nói</a>
+                        <ul class="submenu">
+                            <li><a href="../quan-ly-giong-noi/my-voices.html">My Voices</a></li>
+                            <li><a href="../quan-ly-giong-noi/voice-library.html">Voice Library</a></li>
+                            <li><a href="../quan-ly-giong-noi/su-dung-giong-noi-thu-vien-trong-tts.html">Sử dụng Giọng nói Thư viện</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#tai-khoan" class="menu-toggle">Tài khoản & VIP</a>
+                        <ul class="submenu">
+                            <li><a href="../tai-khoan/dang-nhap-dang-xuat.html">Đăng nhập/Đăng xuất</a></li>
+                            <li><a href="../tai-khoan/thong-tin-tai-khoan-vip.html">Thông tin VIP</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#cai-dat-chung" class="menu-toggle">Cài đặt Chung</a>
+                        <ul class="submenu">
+                            <li><a href="../cai-dat-chung/thay-doi-thu-muc-luu-mac-dinh.html">Thư mục Lưu trữ</a></li>
+                            <li><a href="../cai-dat-chung/thay-doi-ngon-ngu.html">Ngôn ngữ</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#sao-luu-phuc-hoi" class="menu-toggle">Sao lưu & Phục hồi</a>
+                        <ul class="submenu">
+                            <li><a href="../sao-luu-phuc-hoi/sao-luu-du-lieu.html">Sao lưu Dữ liệu</a></li>
+                            <li><a href="../sao-luu-phuc-hoi/phuc-hoi-du-lieu.html">Phục hồi Dữ liệu</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="../faq.html">Câu hỏi Thường gặp (FAQ)</a></li>
+                    <li><a href="../ho-tro.html">Hỗ trợ</a></li>
+                </ul>
+            </nav>
+        </aside>
+        <main class="content">
+            <header class="main-header">
+                <h1>Giới thiệu về Proxy Pool Chung</h1>
+            </header>
+            <section id="proxy-pool-la-gi">
+                <h2>Proxy Pool Chung là gì?</h2>
+                <p>Trong ElevenLabs Account Hub, "Proxy Pool Chung" (Shared Proxy Pool) là một tính năng cho phép bạn quản lý một danh sách tập trung các máy chủ proxy. Thay vì phải <a href="../quan-ly-api/cau-hinh-proxy-cho-api-key.html">cấu hình một proxy riêng lẻ cho từng Khóa API</a>, bạn có thể tạo một "bể chứa" (pool) gồm nhiều proxy khác nhau. Sau đó, khi thực hiện các tác vụ Text-to-Speech (TTS), bạn có thể chọn để phần mềm tự động sử dụng các proxy từ pool này.</p>
+                <p>Tính năng này đặc biệt hữu ích khi bạn muốn tăng cường khả năng luân chuyển địa chỉ IP cho các yêu cầu API của mình, giúp giảm thiểu rủi ro bị giới hạn hoặc chặn do hoạt động từ một IP duy nhất quá nhiều, nhất là khi thực hiện các tác vụ hàng loạt.</p>
+                <img src="../assets/images/proxy-pool-concept.png" alt="Khái niệm Proxy Pool Chung" class="screenshot">
+                <em>(Hình ảnh: Minh họa khái niệm Proxy Pool Chung)</em>
+            </section>
 
+            <section id="loi-ich-proxy-pool">
+                <h2>Lợi ích của việc Sử dụng Proxy Pool Chung</h2>
+                <ul>
+                    <li><strong>Quản lý Proxy Tập trung:</strong> Bạn có thể dễ dàng thêm mới, chỉnh sửa thông tin, kích hoạt/vô hiệu hóa, kiểm tra trạng thái và xóa các proxy trong pool của mình từ một giao diện quản lý duy nhất. Điều này tiện lợi hơn nhiều so với việc phải cấu hình proxy cho từng Khóa API một.</li>
+                    <li><strong>Luân chuyển IP Hiệu quả:</strong> Khi bạn thực hiện nhiều yêu cầu TTS liên tiếp (ví dụ: trong <a href="../xu-ly-hang-loat/gioi-thieu-xu-ly-hang-loat.html">Xử lý Hàng loạt</a>), phần mềm có thể tự động chọn và luân chuyển qua các proxy khác nhau trong pool. Điều này giúp phân tán các yêu cầu API của bạn qua nhiều địa chỉ IP, giảm thiểu nguy cơ bị ElevenLabs phát hiện và áp đặt giới hạn.</li>
+                    <li><strong>Tăng cường Tính Ẩn danh và Bảo mật:</strong> Bằng cách định tuyến các yêu cầu qua nhiều proxy, bạn tăng cường một lớp ẩn danh cho địa chỉ IP thực của mình.</li>
+                    <li><strong>Linh hoạt trong Sử dụng:</strong> Bạn có thể nhanh chóng bật hoặc tắt việc sử dụng Proxy Pool cho các tác vụ TTS cụ thể thông qua một tùy chọn trong Bảng Cài đặt (Settings Panel), mà không cần phải thay đổi cấu hình proxy của từng Khóa API.</li>
+                    <li><strong>Xử lý Lỗi Proxy Thông minh hơn:</strong> Nếu một proxy được chọn từ pool gặp sự cố (ví dụ: không kết nối được, timeout, bị chặn), phần mềm có cơ chế tự động thử một proxy khác từ pool (nếu còn proxy hoạt động và chưa bị đánh dấu là lỗi trong phiên đó). Điều này giúp tăng khả năng hoàn thành tác vụ và làm cho quá trình TTS diễn ra mượt mà hơn.</li>
+                    <li><strong>Tiết kiệm Công sức Cấu hình:</strong> Nếu bạn có nhiều Khóa API và muốn tất cả chúng đều sử dụng một bộ proxy nhất định, việc sử dụng Proxy Pool sẽ đơn giản hơn nhiều so với việc cấu hình lặp đi lặp lại cho từng khóa.</li>
+                </ul>
+            </section>
+
+            <section id="khi-nao-nen-dung">
+                <h2>Khi nào bạn nên Cân nhắc Sử dụng Proxy Pool Chung?</h2>
+                <ul>
+                    <li>Khi bạn thực hiện các tác vụ <strong>Xử lý Hàng loạt (Batch Processing)</strong> với số lượng lớn yêu cầu TTS. Đây là trường hợp sử dụng chính và hiệu quả nhất cho Proxy Pool.</li>
+                    <li>Khi bạn muốn <strong>tự động hóa việc thay đổi địa chỉ IP</strong> cho các yêu cầu API của mình để tránh bị giới hạn hoặc theo dõi.</li>
+                    <li>Khi bạn có một danh sách các proxy tốt (ví dụ: proxy dân cư, proxy xoay) và muốn sử dụng chúng một cách linh hoạt cho nhiều Khóa API khác nhau mà không cần phải gán cố định.</li>
+                    <li>Khi bạn muốn <strong>tăng khả năng thành công</strong> của các yêu cầu API bằng cách có một "bể chứa" các proxy dự phòng, tự động chuyển đổi khi có lỗi.</li>
+                    <li>Nếu bạn thường xuyên làm việc với nhiều tài khoản ElevenLabs miễn phí và muốn tối ưu hóa việc sử dụng chúng mà không bị phát hiện dễ dàng.</li>
+                </ul>
+            </section>
+            <section id="cac-buoc-tiep-theo">
+                <h2>Các Bước Tiếp theo</h2>
+                <p>Để bắt đầu sử dụng Proxy Pool Chung, bạn cần thực hiện các bước sau:</p>
+                <ol>
+                    <li><a href="quan-ly-proxy-pool.html">Quản lý Proxy Pool:</a> Tìm hiểu cách thêm, sửa, xóa, kiểm tra và nhập/xuất danh sách proxy trong trình quản lý Proxy Pool.</li>
+                    <li><a href="su-dung-proxy-pool-khi-tts.html">Kích hoạt Sử dụng Proxy Pool khi Tạo Giọng nói:</a> Tìm hiểu cách bật tùy chọn sử dụng Proxy Pool trong Bảng Cài đặt khi bạn thực hiện tác vụ TTS.</li>
+                </ol>
+            </section>
+        </main>
+    </div>
+    <script>
+        document.querySelectorAll('.menu-toggle').forEach(item => {
+            item.addEventListener('click', event => {
+                event.preventDefault();
+                const submenu = item.nextElementSibling;
+                if (submenu && submenu.classList.contains('submenu')) {
+                    const isOpening = submenu.style.display !== 'block';
+                    document.querySelectorAll('.submenu').forEach(sm => sm.style.display = 'none'); // Close all
+                    document.querySelectorAll('.menu-toggle').forEach(mt => mt.classList.remove('open')); // Remove open class from all
+                    if (isOpening) {
+                        submenu.style.display = 'block';
+                        item.classList.add('open');
+                    }
+                }
+            });
+        });
+        // Ensure the current page's submenu is open on load
+        document.addEventListener('DOMContentLoaded', () => {
+            const activeLink = document.querySelector('.sidebar .active');
+            if (activeLink) {
+                let parent = activeLink.closest('.submenu');
+                if (parent) {
+                    parent.style.display = 'block';
+                    const toggle = parent.previousElementSibling;
+                    if (toggle && toggle.classList.contains('menu-toggle')) {
+                        toggle.classList.add('open');
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+</html>

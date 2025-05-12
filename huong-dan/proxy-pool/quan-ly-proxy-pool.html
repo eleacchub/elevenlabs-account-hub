@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quản lý Proxy Pool Chung - Hướng dẫn ElevenLabs Account Hub</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <div class="logo-container">
+                <h2>ElevenLabs Hub Guide</h2>
+            </div>
+            <nav class="navigation-menu">
+                <h3>Mục lục</h3>
+                <ul>
+                    <li><a href="../index.html">Trang chủ</a></li>
+                    <li>
+                        <a href="#bat-dau" class="menu-toggle">Bắt đầu</a>
+                        <ul class="submenu">
+                            <li><a href="../bat-dau/cai-dat-va-khoi-dong.html">Cài đặt & Khởi động</a></li>
+                            <li><a href="../bat-dau/tong-quan-giao-dien.html">Tổng quan Giao diện</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#quan-ly-api" class="menu-toggle">Quản lý Khóa API</a>
+                        <ul class="submenu">
+                            <li><a href="../quan-ly-api/them-sua-xoa-api-key.html">Thêm/Sửa/Xóa Khóa API</a></li>
+                            <li><a href="../quan-ly-api/kiem-tra-tin-dung.html">Kiểm tra Tín dụng</a></li>
+                            <li><a href="../quan-ly-api/cau-hinh-proxy-cho-api-key.html">Cấu hình Proxy</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#chuc-nang-tts" class="menu-toggle">Chức năng TTS</a>
+                        <ul class="submenu">
+                            <li><a href="../chuc-nang-tts/tao-giong-noi-co-ban.html">Tạo Giọng nói Cơ bản</a></li>
+                            <li><a href="../chuc-nang-tts/tuy-chinh-tham-so-tts.html">Tùy chỉnh Tham số TTS</a></li>
+                            <li><a href="../chuc-nang-tts/luu-ho-so-cai-dat-tts.html">Lưu Hồ sơ Cài đặt</a></li>
+                            <li><a href="../chuc-nang-tts/quan-ly-lich-su-tts.html">Quản lý Lịch sử TTS</a></li>
+                        </ul>
+                    </li>
+                     <li>
+                        <a href="#xu-ly-hang-loat" class="menu-toggle">Xử lý Hàng loạt</a>
+                        <ul class="submenu">
+                            <li><a href="../xu-ly-hang-loat/gioi-thieu-xu-ly-hang-loat.html">Giới thiệu</a></li>
+                            <li><a href="../xu-ly-hang-loat/su-dung-xu-ly-hang-loat.html">Cách sử dụng</a></li>
+                            <li><a href="../xu-ly-hang-loat/nhap-hang-loat-api-key.html">Nhập hàng loạt Khóa API</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#proxy-pool" class="menu-toggle open">Proxy Pool Chung</a>
+                        <ul class="submenu" style="display: block;">
+                            <li><a href="gioi-thieu-proxy-pool.html">Giới thiệu</a></li>
+                            <li><a href="quan-ly-proxy-pool.html" class="active">Quản lý Proxy Pool</a></li>
+                            <li><a href="su-dung-proxy-pool-khi-tts.html">Sử dụng với TTS</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#quan-ly-giong-noi" class="menu-toggle">Quản lý Giọng nói</a>
+                        <ul class="submenu">
+                            <li><a href="../quan-ly-giong-noi/my-voices.html">My Voices</a></li>
+                            <li><a href="../quan-ly-giong-noi/voice-library.html">Voice Library</a></li>
+                            <li><a href="../quan-ly-giong-noi/su-dung-giong-noi-thu-vien-trong-tts.html">Sử dụng Giọng nói Thư viện</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#tai-khoan" class="menu-toggle">Tài khoản & VIP</a>
+                        <ul class="submenu">
+                            <li><a href="../tai-khoan/dang-nhap-dang-xuat.html">Đăng nhập/Đăng xuất</a></li>
+                            <li><a href="../tai-khoan/thong-tin-tai-khoan-vip.html">Thông tin VIP</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#cai-dat-chung" class="menu-toggle">Cài đặt Chung</a>
+                        <ul class="submenu">
+                            <li><a href="../cai-dat-chung/thay-doi-thu-muc-luu-mac-dinh.html">Thư mục Lưu trữ</a></li>
+                            <li><a href="../cai-dat-chung/thay-doi-ngon-ngu.html">Ngôn ngữ</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#sao-luu-phuc-hoi" class="menu-toggle">Sao lưu & Phục hồi</a>
+                        <ul class="submenu">
+                            <li><a href="../sao-luu-phuc-hoi/sao-luu-du-lieu.html">Sao lưu Dữ liệu</a></li>
+                            <li><a href="../sao-luu-phuc-hoi/phuc-hoi-du-lieu.html">Phục hồi Dữ liệu</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="../faq.html">Câu hỏi Thường gặp (FAQ)</a></li>
+                    <li><a href="../ho-tro.html">Hỗ trợ</a></li>
+                </ul>
+            </nav>
+        </aside>
+        <main class="content">
+            <header class="main-header">
+                <h1>Quản lý Proxy Pool Chung</h1>
+            </header>
+            <p>Cửa sổ "Quản lý Proxy Pool" (Proxy Pool Manager) là nơi bạn tập trung quản lý danh sách các máy chủ proxy sẽ được sử dụng bởi tính năng <a href="gioi-thieu-proxy-pool.html">Proxy Pool Chung</a>. Tại đây, bạn có thể thêm mới, chỉnh sửa thông tin, kích hoạt/vô hiệu hóa, kiểm tra trạng thái hoạt động, và xóa các proxy khỏi pool.</p>
+
+            <section id="mo-cua-so-quan-ly">
+                <h2>1. Mở Cửa sổ Quản lý Proxy Pool</h2>
+                <p>Để truy cập trình quản lý Proxy Pool, bạn thực hiện các bước sau từ cửa sổ chính của ứng dụng:</p>
+                <ol>
+                    <li>Trên Thanh Menu, chọn "<strong>Batch Processing</strong>".</li>
+                    <li>Từ menu con xổ xuống, chọn "<strong>Quản lý Proxy Pool</strong>" (Manage Proxy Pool).</li>
+                </ol>
+                <img src="../assets/images/menu-manage-proxy-pool.png" alt="Menu để mở cửa sổ Quản lý Proxy Pool" class="screenshot">
+                <em>(Hình ảnh: Vị trí menu để mở cửa sổ Quản lý Proxy Pool)</em>
+                <p>Sau khi chọn, cửa sổ "<strong>Proxy Pool Manager</strong>" sẽ xuất hiện. Giao diện chính của cửa sổ này bao gồm một bảng hiển thị danh sách các proxy hiện có trong pool và các nút chức năng để thao tác với chúng.</p>
+                <img src="../assets/images/proxy-pool-manager-window.png" alt="Giao diện cửa sổ Quản lý Proxy Pool" class="screenshot">
+                <em>(Hình ảnh: Giao diện tổng quan của cửa sổ Quản lý Proxy Pool)</em>
+                <p>Bảng danh sách proxy thường hiển thị các thông tin sau cho mỗi proxy:</p>
+                <ul>
+                    <li><strong>ID:</strong> Mã định danh duy nhất của proxy trong cơ sở dữ liệu.</li>
+                    <li><strong>Loại (Type):</strong> Loại giao thức proxy (HTTP, HTTPS, SOCKS4, SOCKS5).</li>
+                    <li><strong>Host:</strong> Địa chỉ IP hoặc tên miền của máy chủ proxy.</li>
+                    <li><strong>Port:</strong> Cổng của máy chủ proxy.</li>
+                    <li><strong>Username:</strong> Tên người dùng (nếu proxy yêu cầu xác thực).</li>
+                    <li><strong>Kích hoạt (Active):</strong> Trạng thái kích hoạt (có được sử dụng hay không).</li>
+                    <li><strong>Trạng thái Kiểm tra (Status Message):</strong> Kết quả của lần kiểm tra proxy gần nhất.</li>
+                    <li><strong>Lần kiểm tra cuối (Last Tested At):</strong> Thời điểm proxy được kiểm tra lần cuối.</li>
+                    <li><strong>Ghi chú (Notes):</strong> Ghi chú cá nhân của bạn về proxy này.</li>
+                </ul>
+            </section>
+
+            <section id="them-proxy">
+                <h2>2. Thêm một Proxy mới vào Pool</h2>
+                <ol>
+                    <li>Trong cửa sổ "Proxy Pool Manager", nhấn nút "<strong>Thêm Proxy</strong>" (Add Proxy).</li>
+                    <li>Một hộp thoại "<strong>Thêm/Sửa Proxy</strong>" (Add/Edit Proxy) sẽ xuất hiện.
+                        <img src="../assets/images/add-edit-proxy-dialog-pool.png" alt="Hộp thoại Thêm/Sửa Proxy cho Proxy Pool" class="screenshot">
+                        <em>(Hình ảnh: Hộp thoại để thêm hoặc sửa thông tin một proxy trong pool)</em>
+                    </li>
+                    <li>Điền đầy đủ các thông tin cho proxy mới:
+                        <ul>
+                            <li><strong>Loại Proxy (Proxy Type):</strong> Chọn loại giao thức từ danh sách thả xuống (HTTP, HTTPS, SOCKS4, SOCKS5).</li>
+                            <li><strong>Host:</strong> Nhập địa chỉ IP hoặc tên miền của máy chủ proxy.</li>
+                            <li><strong>Port:</strong> Nhập số cổng của máy chủ proxy.</li>
+                            <li><strong>Username (Tùy chọn):</strong> Nếu proxy của bạn yêu cầu xác thực, hãy nhập tên người dùng.</li>
+                            <li><strong>Password (Tùy chọn):</strong> Nếu proxy yêu cầu xác thực, hãy nhập mật khẩu tương ứng. Mật khẩu này sẽ được mã hóa khi lưu.</li>
+                            <li><strong>Ghi chú (Notes - Tùy chọn):</strong> Bạn có thể thêm bất kỳ ghi chú nào liên quan đến proxy này (ví dụ: nhà cung cấp, vị trí, mục đích sử dụng).</li>
+                            <li><strong>Kích hoạt (Is Active):</strong> Đánh dấu (check) vào ô này nếu bạn muốn proxy này được đưa vào sử dụng ngay lập tức khi Proxy Pool được kích hoạt. Bỏ đánh dấu nếu bạn muốn thêm vào pool nhưng chưa sử dụng ngay.</li>
+                        </ul>
+                    </li>
+                    <li>Nhấn nút "<strong>Lưu</strong>" (Save) để thêm proxy vào pool. Proxy mới sẽ xuất hiện trong danh sách ở cửa sổ "Proxy Pool Manager".</li>
+                </ol>
+            </section>
+
+            <section id="sua-proxy">
+                <h2>3. Chỉnh sửa Thông tin Proxy</h2>
+                <ol>
+                    <li>Trong bảng danh sách proxy của cửa sổ "Proxy Pool Manager", chọn proxy mà bạn muốn chỉnh sửa thông tin.</li>
+                    <li>Nhấn nút "<strong>Sửa Proxy</strong>" (Edit Proxy).</li>
+                    <li>Hộp thoại "Thêm/Sửa Proxy" sẽ xuất hiện, hiển thị các thông tin hiện tại của proxy đã chọn.</li>
+                    <li>Thực hiện các thay đổi cần thiết đối với thông tin proxy.</li>
+                    <li>Nhấn nút "<strong>Lưu</strong>" (Save) để cập nhật các thay đổi.</li>
+                </ol>
+            </section>
+
+            <section id="xoa-proxy">
+                <h2>4. Xóa Proxy khỏi Pool</h2>
+                <ol>
+                    <li>Trong bảng danh sách proxy, chọn một hoặc nhiều proxy bạn muốn xóa.
+                        <ul>
+                            <li>Để chọn một proxy, nhấp chuột vào hàng đó.</li>
+                            <li>Để chọn nhiều proxy không liên tiếp, giữ phím <code>Ctrl</code> (hoặc <code>Cmd</code> trên macOS) trong khi nhấp chuột vào từng proxy.</li>
+                            <li>Để chọn một khoảng proxy liên tiếp, nhấp vào proxy đầu tiên, sau đó giữ phím <code>Shift</code> và nhấp vào proxy cuối cùng trong khoảng.</li>
+                        </ul>
+                    </li>
+                    <li>Nhấn nút "<strong>Xóa Proxy</strong>" (Delete Proxy).</li>
+                    <li>Một hộp thoại xác nhận sẽ xuất hiện, yêu cầu bạn xác nhận hành động xóa.</li>
+                    <li>Nhấn "<strong>Yes</strong>" (Đồng ý) để xóa các proxy đã chọn khỏi pool.</li>
+                </ol>
+            </section>
+
+            <section id="kiem-tra-proxy">
+                <h2>5. Kiểm tra Trạng thái Hoạt động của Proxy</h2>
+                <p>Để đảm bảo các proxy trong pool của bạn vẫn hoạt động tốt, bạn nên thường xuyên kiểm tra chúng:</p>
+                <ul>
+                    <li><strong>Kiểm tra các Proxy đã chọn (Test Selected):</strong>
+                        <ol>
+                            <li>Chọn một hoặc nhiều proxy từ danh sách trong bảng.</li>
+                            <li>Nhấn nút "<strong>Kiểm tra Đã chọn</strong>" (Test Selected).</li>
+                            <li>Phần mềm sẽ lần lượt thử kết nối qua từng proxy đã chọn đến một URL kiểm tra (ví dụ: <code>https://httpbin.org/ip</code>).</li>
+                            <li>Kết quả kiểm tra (ví dụ: "Thành công", "Timeout", "Lỗi kết nối") sẽ được cập nhật vào cột "<strong>Trạng thái Kiểm tra</strong>" (Status Message) và thời gian kiểm tra sẽ được ghi vào cột "<strong>Lần kiểm tra cuối</strong>" (Last Tested At) cho từng proxy.</li>
+                        </ol>
+                    </li>
+                    <li><strong>Kiểm tra Tất cả Proxy trong Pool (Test All):</strong>
+                        <ol>
+                            <li>Nhấn nút "<strong>Kiểm tra Tất cả</strong>" (Test All).</li>
+                            <li>Phần mềm sẽ thực hiện kiểm tra kết nối cho tất cả các proxy hiện có trong pool.</li>
+                            <li>Quá trình này có thể mất một chút thời gian nếu bạn có nhiều proxy. Kết quả và thời gian kiểm tra sẽ được cập nhật tương tự như khi kiểm tra các proxy đã chọn.</li>
+                        </ol>
+                    </li>
+                </ul>
+                <p>Các kết quả kiểm tra có thể bao gồm:</p>
+                <ul>
+                    <li><strong>Thành công (Success):</strong> Proxy hoạt động tốt và có thể kết nối ra ngoài.</li>
+                    <li><strong>Timeout:</strong> Kết nối đến proxy hoặc từ proxy đến URL kiểm tra bị quá thời gian chờ.</li>
+                    <li><strong>Lỗi Proxy (Proxy Error):</strong> Có lỗi xảy ra trong quá trình kết nối qua proxy (ví dụ: proxy từ chối kết nối, lỗi xác thực với proxy).</li>
+                    <li><strong>Lỗi HTTP (HTTP Error):</strong> Proxy kết nối được, nhưng máy chủ đích (URL kiểm tra) trả về một mã lỗi HTTP (ví dụ: 403 Forbidden, 500 Internal Server Error).</li>
+                    <li><strong>Lỗi Yêu cầu (Request Error):</strong> Các lỗi mạng khác xảy ra trong quá trình gửi yêu cầu (ví dụ: lỗi DNS).</li>
+                    <li><strong>Lỗi không mong muốn (Unexpected Error):</strong> Các lỗi khác không xác định.</li>
+                </ul>
+                <div class="tip">
+                    <strong>Mẹo:</strong> Nên thường xuyên kiểm tra trạng thái các proxy trong pool, đặc biệt là trước khi chạy các tác vụ Xử lý Hàng loạt lớn. Hãy vô hiệu hóa (bỏ chọn "Kích hoạt") hoặc xóa các proxy không hoạt động để đảm bảo hiệu suất tốt nhất.
+                </div>
+            </section>
+
+            <section id="nhap-xuat-proxy">
+                <h2>6. Nhập và Xuất Danh sách Proxy từ/sang Tệp CSV</h2>
+                <p>Để dễ dàng quản lý một số lượng lớn proxy, bạn có thể nhập danh sách proxy từ tệp CSV hoặc xuất danh sách proxy hiện tại trong pool ra tệp CSV.</p>
+                <ul>
+                    <li><strong>Nhập từ CSV (Import from CSV):</strong>
+                        <ol>
+                            <li>Nhấn nút "<strong>Nhập từ CSV</strong>".</li>
+                            <li>Một hộp thoại chọn tệp sẽ xuất hiện. Duyệt đến và chọn một tệp <code>.csv</code> chứa danh sách proxy của bạn.</li>
+                            <li>Tệp CSV nên có các cột tương ứng với thông tin proxy (ví dụ: <code>proxy_type,host,port,username,password,notes,is_active</code>). Dòng đầu tiên của tệp CSV nên là dòng tiêu đề chứa tên các cột này.</li>
+                            <li>Phần mềm sẽ đọc tệp và cố gắng thêm các proxy từ tệp vào pool. Có thể có các tùy chọn xử lý trùng lặp (ví dụ: bỏ qua hoặc ghi đè proxy đã tồn tại).</li>
+                        </ol>
+                    </li>
+                    <li><strong>Xuất ra CSV (Export to CSV):</strong>
+                        <ol>
+                            <li>Nhấn nút "<strong>Xuất ra CSV</strong>".</li>
+                            <li>Một hộp thoại lưu tệp sẽ xuất hiện. Chọn vị trí và đặt tên cho tệp <code>.csv</code> bạn muốn lưu.</li>
+                            <li>Toàn bộ danh sách proxy hiện tại trong pool (bao gồm tất cả thông tin của chúng) sẽ được lưu vào tệp CSV này.</li>
+                        </ol>
+                    </li>
+                </ul>
+                 <p>Bạn có thể tham khảo tệp <code>sample_proxies.csv</code> (nếu được cung cấp cùng phần mềm, thường nằm trong thư mục gốc của dự án) để xem định dạng tệp CSV mẫu cho việc nhập/xuất proxy.</p>
+            </section>
+
+             <section id="xoa-tat-ca-proxy">
+                <h2>7. Xóa Tất cả Proxy khỏi Pool</h2>
+                <p>Nếu bạn muốn xóa toàn bộ danh sách proxy khỏi Proxy Pool Chung:</p>
+                <ol>
+                    <li>Nhấn nút "<strong>Xóa Tất cả</strong>" (Delete All Proxies).</li>
+                    <li>Một hộp thoại xác nhận sẽ xuất hiện, cảnh báo rằng hành động này sẽ xóa tất cả các proxy trong pool và không thể hoàn tác.</li>
+                    <li>Nhấn "<strong>Yes</strong>" (Đồng ý) để xác nhận. Toàn bộ proxy sẽ bị xóa khỏi cơ sở dữ liệu của ứng dụng.</li>
+                </ol>
+            </section>
+        </main>
+    </div>
+    <script>
+        document.querySelectorAll('.menu-toggle').forEach(item => {
+            item.addEventListener('click', event => {
+                event.preventDefault();
+                const submenu = item.nextElementSibling;
+                if (submenu && submenu.classList.contains('submenu')) {
+                    const isOpening = submenu.style.display !== 'block';
+                    document.querySelectorAll('.submenu').forEach(sm => sm.style.display = 'none'); // Close all
+                    document.querySelectorAll('.menu-toggle').forEach(mt => mt.classList.remove('open')); // Remove open class from all
+                    if (isOpening) {
+                        submenu.style.display = 'block';
+                        item.classList.add('open');
+                    }
+                }
+            });
+        });
+        // Ensure the current page's submenu is open on load
+        document.addEventListener('DOMContentLoaded', () => {
+            const activeLink = document.querySelector('.sidebar .active');
+            if (activeLink) {
+                let parent = activeLink.closest('.submenu');
+                if (parent) {
+                    parent.style.display = 'block';
+                    const toggle = parent.previousElementSibling;
+                    if (toggle && toggle.classList.contains('menu-toggle')) {
+                        toggle.classList.add('open');
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+</html>
