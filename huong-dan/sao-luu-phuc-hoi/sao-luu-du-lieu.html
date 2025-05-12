@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sao lưu Dữ liệu - Hướng dẫn ElevenLabs Account Hub</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <div class="logo-container">
+                <h2>ElevenLabs Hub Guide</h2>
+            </div>
+            <nav class="navigation-menu">
+                <h3>Mục lục</h3>
+                <ul>
+                    <li><a href="../index.html">Trang chủ</a></li>
+                    <li>
+                        <a href="#bat-dau" class="menu-toggle">Bắt đầu</a>
+                        <ul class="submenu">
+                            <li><a href="../bat-dau/cai-dat-va-khoi-dong.html">Cài đặt & Khởi động</a></li>
+                            <li><a href="../bat-dau/tong-quan-giao-dien.html">Tổng quan Giao diện</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#quan-ly-api" class="menu-toggle">Quản lý Khóa API</a>
+                        <ul class="submenu">
+                            <li><a href="../quan-ly-api/them-sua-xoa-api-key.html">Thêm/Sửa/Xóa Khóa API</a></li>
+                            <li><a href="../quan-ly-api/kiem-tra-tin-dung.html">Kiểm tra Tín dụng</a></li>
+                            <li><a href="../quan-ly-api/cau-hinh-proxy-cho-api-key.html">Cấu hình Proxy</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#chuc-nang-tts" class="menu-toggle">Chức năng TTS</a>
+                        <ul class="submenu">
+                            <li><a href="../chuc-nang-tts/tao-giong-noi-co-ban.html">Tạo Giọng nói Cơ bản</a></li>
+                            <li><a href="../chuc-nang-tts/tuy-chinh-tham-so-tts.html">Tùy chỉnh Tham số TTS</a></li>
+                            <li><a href="../chuc-nang-tts/luu-ho-so-cai-dat-tts.html">Lưu Hồ sơ Cài đặt</a></li>
+                            <li><a href="../chuc-nang-tts/quan-ly-lich-su-tts.html">Quản lý Lịch sử TTS</a></li>
+                        </ul>
+                    </li>
+                     <li>
+                        <a href="#xu-ly-hang-loat" class="menu-toggle">Xử lý Hàng loạt</a>
+                        <ul class="submenu">
+                            <li><a href="../xu-ly-hang-loat/gioi-thieu-xu-ly-hang-loat.html">Giới thiệu</a></li>
+                            <li><a href="../xu-ly-hang-loat/su-dung-xu-ly-hang-loat.html">Cách sử dụng</a></li>
+                            <li><a href="../xu-ly-hang-loat/nhap-hang-loat-api-key.html">Nhập hàng loạt Khóa API</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#proxy-pool" class="menu-toggle">Proxy Pool Chung</a>
+                        <ul class="submenu">
+                            <li><a href="../proxy-pool/gioi-thieu-proxy-pool.html">Giới thiệu</a></li>
+                            <li><a href="../proxy-pool/quan-ly-proxy-pool.html">Quản lý Proxy Pool</a></li>
+                            <li><a href="../proxy-pool/su-dung-proxy-pool-khi-tts.html">Sử dụng với TTS</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#quan-ly-giong-noi" class="menu-toggle">Quản lý Giọng nói</a>
+                        <ul class="submenu">
+                            <li><a href="../quan-ly-giong-noi/my-voices.html">My Voices</a></li>
+                            <li><a href="../quan-ly-giong-noi/voice-library.html">Voice Library</a></li>
+                            <li><a href="../quan-ly-giong-noi/su-dung-giong-noi-thu-vien-trong-tts.html">Sử dụng Giọng nói Thư viện</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#tai-khoan" class="menu-toggle">Tài khoản & VIP</a>
+                        <ul class="submenu">
+                            <li><a href="../tai-khoan/dang-nhap-dang-xuat.html">Đăng nhập/Đăng xuất</a></li>
+                            <li><a href="../tai-khoan/thong-tin-tai-khoan-vip.html">Thông tin VIP</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#cai-dat-chung" class="menu-toggle">Cài đặt Chung</a>
+                        <ul class="submenu">
+                            <li><a href="../cai-dat-chung/thay-doi-thu-muc-luu-mac-dinh.html">Thư mục Lưu trữ</a></li>
+                            <li><a href="../cai-dat-chung/thay-doi-ngon-ngu.html">Ngôn ngữ</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#sao-luu-phuc-hoi" class="menu-toggle open">Sao lưu & Phục hồi</a>
+                        <ul class="submenu" style="display: block;">
+                            <li><a href="sao-luu-du-lieu.html" class="active">Sao lưu Dữ liệu</a></li>
+                            <li><a href="phuc-hoi-du-lieu.html">Phục hồi Dữ liệu</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="../faq.html">Câu hỏi Thường gặp (FAQ)</a></li>
+                    <li><a href="../ho-tro.html">Hỗ trợ</a></li>
+                </ul>
+            </nav>
+        </aside>
+        <main class="content">
+            <header class="main-header">
+                <h1>Sao lưu Dữ liệu Ứng dụng</h1>
+            </header>
+            <p>Để đảm bảo an toàn cho tất cả các cấu hình, danh sách Khóa API, lịch sử tạo TTS, cài đặt Proxy Pool, Thư viện Giọng nói Cục bộ và các dữ liệu quan trọng khác mà bạn đã thiết lập trong ElevenLabs Account Hub, phần mềm cung cấp tính năng sao lưu cơ sở dữ liệu. Việc thực hiện sao lưu thường xuyên là một thói quen tốt để phòng ngừa mất mát dữ liệu.</p>
+
+            <section id="tai-sao-can-sao-luu">
+                <h2>Tại sao việc Sao lưu Dữ liệu lại Quan trọng?</h2>
+                <ul>
+                    <li><strong>Phòng ngừa Mất dữ liệu:</strong> Trong trường hợp máy tính của bạn gặp sự cố phần cứng (hỏng ổ cứng), lỗi hệ điều hành, bị nhiễm virus, hoặc bạn vô tình xóa mất dữ liệu quan trọng của ứng dụng.</li>
+                    <li><strong>Chuyển đổi sang Máy tính Mới:</strong> Khi bạn muốn chuyển toàn bộ cài đặt và dữ liệu của ElevenLabs Account Hub từ máy tính cũ sang một máy tính mới một cách dễ dàng.</li>
+                    <li><strong>Trước khi Thực hiện các Thay đổi Lớn:</strong> Ví dụ, trước khi cập nhật một phiên bản mới của phần mềm ElevenLabs Account Hub, hoặc trước khi bạn thử nghiệm các cài đặt phức tạp, việc có một bản sao lưu sẽ giúp bạn yên tâm hơn.</li>
+                    <li><strong>Lưu trữ Lịch sử và Cấu hình:</strong> Giữ lại một bản ghi các cấu hình và lịch sử làm việc của bạn theo thời gian.</li>
+                </ul>
+            </section>
+
+            <section id="cach-sao-luu">
+                <h2>Cách Thực hiện Sao lưu Cơ sở dữ liệu</h2>
+                <p>ElevenLabs Account Hub cung cấp một chức năng đơn giản và trực tiếp để bạn sao lưu toàn bộ cơ sở dữ liệu của ứng dụng (thường là một tệp SQLite).</p>
+                <ol>
+                    <li>Trong cửa sổ chính của phần mềm, tìm đến <strong>Thanh Menu</strong> ở phía trên cùng.</li>
+                    <li>Nhấp vào mục menu "<strong>Settings</strong>" (Cài đặt).</li>
+                    <li>Từ menu con xổ xuống, chọn "<strong>Sao lưu Cơ sở dữ liệu</strong>" (Backup Database).
+                        <img src="../assets/images/menu-backup-database.png" alt="Menu Sao lưu Cơ sở dữ liệu trong mục Settings" class="screenshot">
+                        <em>(Hình ảnh: Vị trí của tùy chọn "Sao lưu Cơ sở dữ liệu" trong menu Settings)</em>
+                    </li>
+                    <li>Một hộp thoại "<strong>Lưu tệp Sao lưu Cơ sở dữ liệu</strong>" (Save Database Backup) của hệ điều hành sẽ xuất hiện.</li>
+                    <li><strong>Chọn Vị trí Lưu trữ Tệp Sao lưu:</strong>
+                        <ul>
+                            <li>Sử dụng hộp thoại này để duyệt đến thư mục trên máy tính của bạn nơi bạn muốn lưu tệp sao lưu.</li>
+                            <li><strong>Khuyến nghị:</strong> Nên chọn một vị trí lưu trữ an toàn và tách biệt với ổ đĩa cài đặt hệ điều hành hoặc thư mục cài đặt của ứng dụng. Ví dụ: một ổ đĩa USB, ổ cứng ngoài, hoặc một thư mục trong dịch vụ lưu trữ đám mây (Google Drive, Dropbox, OneDrive) đã được đồng bộ hóa với máy tính của bạn.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Đặt tên cho Tệp Sao lưu:</strong>
+                        <ul>
+                            <li>Theo mặc định, tên tệp sao lưu có thể được gợi ý với định dạng bao gồm ngày và giờ sao lưu, ví dụ: <code>elevenlabs_backup_YYYYMMDD_HHMMSS.db</code> (trong đó <code>YYYYMMDD_HHMMSS</code> là năm, tháng, ngày, giờ, phút, giây hiện tại).</li>
+                            <li>Bạn có thể giữ nguyên tên gợi ý này để dễ dàng quản lý các bản sao lưu theo thời gian, hoặc bạn có thể đổi tên tệp theo ý muốn.</li>
+                            <li><strong>Quan trọng:</strong> Nên giữ phần mở rộng của tệp là <code>.db</code> hoặc <code>.sqlite</code> để dễ nhận biết đây là một tệp cơ sở dữ liệu SQLite.</li>
+                        </ul>
+                    </li>
+                    <li>Nhấn nút "<strong>Save</strong>" (Lưu) trong hộp thoại lưu tệp.</li>
+                    <li>Phần mềm sẽ tiến hành tạo một bản sao của tệp cơ sở dữ liệu hiện tại (thường là tệp <code>elevenlabs.db</code> nằm trong thư mục <code>data</code> của ứng dụng) và lưu nó vào vị trí bạn đã chọn với tên bạn đã đặt.</li>
+                    <li>Sau khi quá trình sao lưu hoàn tất, một thông báo sẽ xuất hiện trên Thanh Trạng thái hoặc dưới dạng một hộp thoại nhỏ, xác nhận rằng việc sao lưu đã thành công (ví dụ: "<em>Database backup successful to [đường_dẫn_tệp_sao_lưu]</em>"). Nếu có lỗi xảy ra trong quá trình sao lưu, một thông báo lỗi sẽ được hiển thị.</li>
+                </ol>
+            </section>
+
+            <section id="luu-y-sao-luu">
+                <h2>Những Điều cần Lưu ý khi Thực hiện Sao lưu</h2>
+                <ul>
+                    <li><strong>Tần suất Sao lưu:</strong> Tần suất sao lưu nên phụ thuộc vào mức độ thường xuyên bạn thay đổi cấu hình, thêm Khóa API mới, hoặc tạo ra lịch sử TTS quan trọng. Nếu bạn sử dụng phần mềm hàng ngày và thực hiện nhiều thay đổi, việc sao lưu hàng tuần hoặc thậm chí thường xuyên hơn có thể là một ý tưởng tốt. Đối với người dùng ít thay đổi, sao lưu hàng tháng có thể đủ.</li>
+                    <li><strong>Lưu trữ An toàn và Đa dạng:</strong> Không nên chỉ lưu tệp sao lưu trên cùng một ổ đĩa với dữ liệu gốc. Hãy cân nhắc chiến lược "3-2-1 backup": ít nhất <strong>3</strong> bản sao, trên <strong>2</strong> loại phương tiện lưu trữ khác nhau, và <strong>1</strong> bản sao ở một vị trí địa lý khác (off-site, ví dụ: lưu trữ đám mây).</li>
+                    <li><strong>Kích thước Tệp Sao lưu:</strong> Tệp cơ sở dữ liệu SQLite thường không quá lớn, nhưng kích thước của nó có thể tăng lên theo thời gian nếu bạn có một lượng lớn lịch sử TTS, nhiều Khóa API, hoặc nhiều mục trong Proxy Pool và Thư viện Giọng nói Cục bộ.</li>
+                    <li><strong>Nội dung được Sao lưu:</strong> Chức năng sao lưu này chủ yếu tập trung vào việc sao lưu <strong>cơ sở dữ liệu của ứng dụng</strong>. Điều này bao gồm:
+                        <ul>
+                            <li>Danh sách Khóa API và cấu hình proxy riêng của chúng.</li>
+                            <li>Hồ sơ cài đặt TTS mặc định cho từng Khóa API.</li>
+                            <li>Lịch sử các lần tạo TTS.</li>
+                            <li>Danh sách proxy trong Proxy Pool Chung.</li>
+                            <li>Danh sách giọng nói trong Thư viện Giọng nói Cục bộ.</li>
+                            <li>Các cài đặt chung của ứng dụng (như ngôn ngữ, thư mục lưu mặc định).</li>
+                        </ul>
+                    </li>
+                    <li><strong>Nội dung KHÔNG được Sao lưu (Bởi chức năng này):</strong>
+                        <ul>
+                            <li><strong>Các tệp âm thanh <code>.mp3</code> đã được tạo:</strong> Chức năng sao lưu cơ sở dữ liệu <strong>không</strong> sao lưu các tệp âm thanh thực tế mà bạn đã tạo và lưu vào thư mục đầu ra. Bạn cần tự quản lý và sao lưu các tệp <code>.mp3</code> này một cách riêng biệt nếu muốn giữ chúng.</li>
+                            <li><strong>Tệp cài đặt của chính ứng dụng:</strong> Bản sao lưu này không phải là bản sao lưu của toàn bộ thư mục cài đặt ứng dụng.</li>
+                        </ul>
+                    </li>
+                </ul>
+                <p>Sau khi đã có tệp sao lưu, bạn có thể sử dụng nó để <a href="phuc-hoi-du-lieu.html">Phục hồi Dữ liệu</a> khi cần thiết.</p>
+            </section>
+        </main>
+    </div>
+    <script>
+        document.querySelectorAll('.menu-toggle').forEach(item => {
+            item.addEventListener('click', event => {
+                event.preventDefault();
+                const submenu = item.nextElementSibling;
+                if (submenu && submenu.classList.contains('submenu')) {
+                    const isOpening = submenu.style.display !== 'block';
+                    document.querySelectorAll('.submenu').forEach(sm => sm.style.display = 'none'); // Close all
+                    document.querySelectorAll('.menu-toggle').forEach(mt => mt.classList.remove('open')); // Remove open class from all
+                    if (isOpening) {
+                        submenu.style.display = 'block';
+                        item.classList.add('open');
+                    }
+                }
+            });
+        });
+        // Ensure the current page's submenu is open on load
+        document.addEventListener('DOMContentLoaded', () => {
+            const activeLink = document.querySelector('.sidebar .active');
+            if (activeLink) {
+                let parent = activeLink.closest('.submenu');
+                if (parent) {
+                    parent.style.display = 'block';
+                    const toggle = parent.previousElementSibling;
+                    if (toggle && toggle.classList.contains('menu-toggle')) {
+                        toggle.classList.add('open');
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+</html>
