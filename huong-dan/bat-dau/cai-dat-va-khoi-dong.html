@@ -1,1 +1,180 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cài đặt & Khởi động - Hướng dẫn ElevenLabs Account Hub</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <div class="logo-container">
+                <h2>ElevenLabs Hub Guide</h2>
+            </div>
+            <nav class="navigation-menu">
+                <h3>Mục lục</h3>
+                <ul>
+                    <li><a href="../index.html">Trang chủ</a></li>
+                    <li>
+                        <a href="#bat-dau" class="menu-toggle open">Bắt đầu</a>
+                        <ul class="submenu" style="display: block;">
+                            <li><a href="cai-dat-va-khoi-dong.html" class="active">Cài đặt & Khởi động</a></li>
+                            <li><a href="tong-quan-giao-dien.html">Tổng quan Giao diện</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#quan-ly-api" class="menu-toggle">Quản lý Khóa API</a>
+                        <ul class="submenu">
+                            <li><a href="../quan-ly-api/them-sua-xoa-api-key.html">Thêm/Sửa/Xóa Khóa API</a></li>
+                            <li><a href="../quan-ly-api/kiem-tra-tin-dung.html">Kiểm tra Tín dụng</a></li>
+                            <li><a href="../quan-ly-api/cau-hinh-proxy-cho-api-key.html">Cấu hình Proxy cho Khóa API</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#chuc-nang-tts" class="menu-toggle">Chức năng TTS</a>
+                        <ul class="submenu">
+                            <li><a href="../chuc-nang-tts/tao-giong-noi-co-ban.html">Tạo Giọng nói Cơ bản</a></li>
+                            <li><a href="../chuc-nang-tts/tuy-chinh-tham-so-tts.html">Tùy chỉnh Tham số TTS</a></li>
+                            <li><a href="../chuc-nang-tts/luu-ho-so-cai-dat-tts.html">Lưu Hồ sơ Cài đặt</a></li>
+                            <li><a href="../chuc-nang-tts/quan-ly-lich-su-tts.html">Quản lý Lịch sử TTS</a></li>
+                        </ul>
+                    </li>
+                     <li>
+                        <a href="#xu-ly-hang-loat" class="menu-toggle">Xử lý Hàng loạt</a>
+                        <ul class="submenu">
+                            <li><a href="../xu-ly-hang-loat/gioi-thieu-xu-ly-hang-loat.html">Giới thiệu</a></li>
+                            <li><a href="../xu-ly-hang-loat/su-dung-xu-ly-hang-loat.html">Cách sử dụng</a></li>
+                            <li><a href="../xu-ly-hang-loat/nhap-hang-loat-api-key.html">Nhập hàng loạt Khóa API</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#proxy-pool" class="menu-toggle">Proxy Pool Chung</a>
+                        <ul class="submenu">
+                            <li><a href="../proxy-pool/gioi-thieu-proxy-pool.html">Giới thiệu</a></li>
+                            <li><a href="../proxy-pool/quan-ly-proxy-pool.html">Quản lý Proxy Pool</a></li>
+                            <li><a href="../proxy-pool/su-dung-proxy-pool-khi-tts.html">Sử dụng với TTS</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#quan-ly-giong-noi" class="menu-toggle">Quản lý Giọng nói</a>
+                        <ul class="submenu">
+                            <li><a href="../quan-ly-giong-noi/my-voices.html">My Voices</a></li>
+                            <li><a href="../quan-ly-giong-noi/voice-library.html">Voice Library</a></li>
+                            <li><a href="../quan-ly-giong-noi/su-dung-giong-noi-thu-vien-trong-tts.html">Sử dụng Giọng nói Thư viện</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#tai-khoan" class="menu-toggle">Tài khoản & VIP</a>
+                        <ul class="submenu">
+                            <li><a href="../tai-khoan/dang-nhap-dang-xuat.html">Đăng nhập/Đăng xuất</a></li>
+                            <li><a href="../tai-khoan/thong-tin-tai-khoan-vip.html">Thông tin VIP</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#cai-dat-chung" class="menu-toggle">Cài đặt Chung</a>
+                        <ul class="submenu">
+                            <li><a href="../cai-dat-chung/thay-doi-thu-muc-luu-mac-dinh.html">Thư mục Lưu trữ</a></li>
+                            <li><a href="../cai-dat-chung/thay-doi-ngon-ngu.html">Ngôn ngữ</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#sao-luu-phuc-hoi" class="menu-toggle">Sao lưu & Phục hồi</a>
+                        <ul class="submenu">
+                            <li><a href="../sao-luu-phuc-hoi/sao-luu-du-lieu.html">Sao lưu Dữ liệu</a></li>
+                            <li><a href="../sao-luu-phuc-hoi/phuc-hoi-du-lieu.html">Phục hồi Dữ liệu</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="../faq.html">Câu hỏi Thường gặp (FAQ)</a></li>
+                    <li><a href="../ho-tro.html">Hỗ trợ</a></li>
+                </ul>
+            </nav>
+        </aside>
+        <main class="content">
+            <header class="main-header">
+                <h1>Cài đặt và Khởi động Phần mềm</h1>
+            </header>
+            <section id="cai-dat">
+                <h2>Tải xuống và Cài đặt</h2>
+                <p>Phần mềm ElevenLabs Account Hub được cung cấp dưới dạng tệp thực thi (.exe) cho Windows, giúp bạn dễ dàng cài đặt và sử dụng mà không cần các bước cấu hình phức tạp.</p>
+                <ol>
+                    <li>Truy cập liên kết tải xuống được cung cấp (thường là trên trang chủ hoặc qua thông báo từ nhà phát triển).</li>
+                    <li>Tải tệp .exe về máy tính của bạn.</li>
+                    <li>Do phần mềm chưa được ký số chính thức, Windows Defender hoặc các trình duyệt có thể hiển thị cảnh báo. Bạn có thể cần chọn "Keep" hoặc "Run anyway" để tiếp tục.
+                        <div class="tip">
+                            <strong>Mẹo:</strong> Nếu gặp khó khăn khi tải hoặc chạy tệp, bạn có thể tạm thời tắt Windows Defender SmartScreen hoặc thêm tệp vào danh sách loại trừ của phần mềm diệt virus. Tuy nhiên, hãy đảm bảo bạn tải tệp từ nguồn tin cậy.
+                        </div>
+                    </li>
+                    <li>Sau khi tải xong, bạn có thể chạy trực tiếp tệp .exe này. Không cần quá trình cài đặt phức tạp, phần mềm sẽ khởi chạy ngay.</li>
+                </ol>
+                <p>Chúng tôi khuyến khích bạn tạo một thư mục riêng cho phần mềm (ví dụ: "ElevenLabs Hub") và đặt tệp .exe vào đó để dễ quản lý.</p>
+            </section>
 
+            <section id="khoi-dong-lan-dau">
+                <h2>Khởi động Lần đầu và Đăng nhập</h2>
+                <p>Khi bạn chạy phần mềm lần đầu tiên, bạn sẽ được yêu cầu đăng nhập để có thể sử dụng các tính năng.</p>
+                <ol>
+                    <li>Nhấp đúp vào tệp <code>ElevenLabs_Account_Hub.exe</code> (hoặc tên tệp tương tự) để khởi chạy phần mềm.</li>
+                    <li>Một cửa sổ thông báo yêu cầu đăng nhập có thể xuất hiện. Nhấn "OK" hoặc nút tương tự để tiếp tục.</li>
+                    <li>Cửa sổ Đăng nhập sẽ hiển thị. Nhấn vào nút "Đăng nhập bằng Google".
+                        <img src="../assets/images/placeholder-login-dialog.png" alt="Hộp thoại đăng nhập" class="screenshot">
+                        <em>(Hình ảnh minh họa cho hộp thoại đăng nhập)</em>
+                    </li>
+                    <li>Trình duyệt web mặc định của bạn sẽ mở ra, chuyển đến trang đăng nhập của Google.</li>
+                    <li>Chọn tài khoản Google bạn muốn sử dụng và hoàn tất quá trình đăng nhập trên trình duyệt.</li>
+                    <li>Sau khi đăng nhập thành công trên trình duyệt, bạn có thể đóng tab đó và quay lại ứng dụng ElevenLabs Account Hub.</li>
+                    <li>Ứng dụng sẽ tự động nhận diện bạn đã đăng nhập thành công. Thông tin email của bạn sẽ xuất hiện trên thanh trạng thái ở góc dưới cửa sổ chính.</li>
+                </ol>
+                <div class="note">
+                    <strong>Lưu ý quan trọng:</strong> Để kích hoạt đầy đủ các tính năng (VIP), sau khi đăng nhập lần đầu, bạn cần liên hệ với nhà phát triển (ví dụ: qua Telegram hoặc Email được cung cấp) để yêu cầu kích hoạt tài khoản VIP cho email bạn đã dùng để đăng nhập.
+                </div>
+            </section>
+             <section id="cap-nhat-phan-mem">
+                <h2>Cập nhật Phần mềm</h2>
+                <p>Để cập nhật lên phiên bản mới nhất của ElevenLabs Account Hub:</p>
+                <ol>
+                    <li>Theo dõi thông báo từ nhà phát triển về các bản cập nhật mới (thường qua các kênh liên lạc như Telegram, Facebook).</li>
+                    <li>Tải xuống tệp .exe của phiên bản mới từ liên kết được cung cấp.</li>
+                    <li>Thoát hoàn toàn phiên bản cũ của phần mềm đang chạy (nếu có).</li>
+                    <li>Thay thế tệp .exe cũ bằng tệp .exe mới vừa tải về.</li>
+                    <li>Chạy tệp .exe mới. Dữ liệu và cài đặt của bạn thường sẽ được giữ nguyên.</li>
+                </ol>
+                <div class="tip">
+                    <strong>Mẹo:</strong> Nên sao lưu dữ liệu của phần mềm trước khi cập nhật để đảm bảo an toàn. Xem mục <a href="../sao-luu-phuc-hoi/sao-luu-du-lieu.html">Sao lưu Dữ liệu</a>.
+                </div>
+            </section>
+        </main>
+    </div>
+    <script>
+        document.querySelectorAll('.menu-toggle').forEach(item => {
+            item.addEventListener('click', event => {
+                event.preventDefault();
+                const submenu = item.nextElementSibling;
+                if (submenu && submenu.classList.contains('submenu')) {
+                    const isOpening = submenu.style.display !== 'block';
+                    document.querySelectorAll('.submenu').forEach(sm => sm.style.display = 'none'); // Close all
+                    document.querySelectorAll('.menu-toggle').forEach(mt => mt.classList.remove('open')); // Remove open class from all
+                    if (isOpening) {
+                        submenu.style.display = 'block';
+                        item.classList.add('open');
+                    }
+                }
+            });
+        });
+        // Ensure the current page's submenu is open on load
+        document.addEventListener('DOMContentLoaded', () => {
+            const activeLink = document.querySelector('.sidebar .active');
+            if (activeLink) {
+                let parent = activeLink.closest('.submenu');
+                if (parent) {
+                    parent.style.display = 'block';
+                    const toggle = parent.previousElementSibling;
+                    if (toggle && toggle.classList.contains('menu-toggle')) {
+                        toggle.classList.add('open');
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+</html>

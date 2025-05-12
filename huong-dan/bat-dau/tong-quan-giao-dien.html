@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tổng quan Giao diện - Hướng dẫn ElevenLabs Account Hub</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <div class="logo-container">
+                <h2>ElevenLabs Hub Guide</h2>
+            </div>
+            <nav class="navigation-menu">
+                <h3>Mục lục</h3>
+                <ul>
+                    <li><a href="../index.html">Trang chủ</a></li>
+                    <li>
+                        <a href="#bat-dau" class="menu-toggle open">Bắt đầu</a>
+                        <ul class="submenu" style="display: block;">
+                            <li><a href="cai-dat-va-khoi-dong.html">Cài đặt & Khởi động</a></li>
+                            <li><a href="tong-quan-giao-dien.html" class="active">Tổng quan Giao diện</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#quan-ly-api" class="menu-toggle">Quản lý Khóa API</a>
+                        <ul class="submenu">
+                            <li><a href="../quan-ly-api/them-sua-xoa-api-key.html">Thêm/Sửa/Xóa Khóa API</a></li>
+                            <li><a href="../quan-ly-api/kiem-tra-tin-dung.html">Kiểm tra Tín dụng</a></li>
+                            <li><a href="../quan-ly-api/cau-hinh-proxy-cho-api-key.html">Cấu hình Proxy cho Khóa API</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#chuc-nang-tts" class="menu-toggle">Chức năng TTS</a>
+                        <ul class="submenu">
+                            <li><a href="../chuc-nang-tts/tao-giong-noi-co-ban.html">Tạo Giọng nói Cơ bản</a></li>
+                            <li><a href="../chuc-nang-tts/tuy-chinh-tham-so-tts.html">Tùy chỉnh Tham số TTS</a></li>
+                            <li><a href="../chuc-nang-tts/luu-ho-so-cai-dat-tts.html">Lưu Hồ sơ Cài đặt</a></li>
+                            <li><a href="../chuc-nang-tts/quan-ly-lich-su-tts.html">Quản lý Lịch sử TTS</a></li>
+                        </ul>
+                    </li>
+                     <li>
+                        <a href="#xu-ly-hang-loat" class="menu-toggle">Xử lý Hàng loạt</a>
+                        <ul class="submenu">
+                            <li><a href="../xu-ly-hang-loat/gioi-thieu-xu-ly-hang-loat.html">Giới thiệu</a></li>
+                            <li><a href="../xu-ly-hang-loat/su-dung-xu-ly-hang-loat.html">Cách sử dụng</a></li>
+                            <li><a href="../xu-ly-hang-loat/nhap-hang-loat-api-key.html">Nhập hàng loạt Khóa API</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#proxy-pool" class="menu-toggle">Proxy Pool Chung</a>
+                        <ul class="submenu">
+                            <li><a href="../proxy-pool/gioi-thieu-proxy-pool.html">Giới thiệu</a></li>
+                            <li><a href="../proxy-pool/quan-ly-proxy-pool.html">Quản lý Proxy Pool</a></li>
+                            <li><a href="../proxy-pool/su-dung-proxy-pool-khi-tts.html">Sử dụng với TTS</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#quan-ly-giong-noi" class="menu-toggle">Quản lý Giọng nói</a>
+                        <ul class="submenu">
+                            <li><a href="../quan-ly-giong-noi/my-voices.html">My Voices</a></li>
+                            <li><a href="../quan-ly-giong-noi/voice-library.html">Voice Library</a></li>
+                            <li><a href="../quan-ly-giong-noi/su-dung-giong-noi-thu-vien-trong-tts.html">Sử dụng Giọng nói Thư viện</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#tai-khoan" class="menu-toggle">Tài khoản & VIP</a>
+                        <ul class="submenu">
+                            <li><a href="../tai-khoan/dang-nhap-dang-xuat.html">Đăng nhập/Đăng xuất</a></li>
+                            <li><a href="../tai-khoan/thong-tin-tai-khoan-vip.html">Thông tin VIP</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#cai-dat-chung" class="menu-toggle">Cài đặt Chung</a>
+                        <ul class="submenu">
+                            <li><a href="../cai-dat-chung/thay-doi-thu-muc-luu-mac-dinh.html">Thư mục Lưu trữ</a></li>
+                            <li><a href="../cai-dat-chung/thay-doi-ngon-ngu.html">Ngôn ngữ</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#sao-luu-phuc-hoi" class="menu-toggle">Sao lưu & Phục hồi</a>
+                        <ul class="submenu">
+                            <li><a href="../sao-luu-phuc-hoi/sao-luu-du-lieu.html">Sao lưu Dữ liệu</a></li>
+                            <li><a href="../sao-luu-phuc-hoi/phuc-hoi-du-lieu.html">Phục hồi Dữ liệu</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="../faq.html">Câu hỏi Thường gặp (FAQ)</a></li>
+                    <li><a href="../ho-tro.html">Hỗ trợ</a></li>
+                </ul>
+            </nav>
+        </aside>
+        <main class="content">
+            <header class="main-header">
+                <h1>Tổng quan Giao diện Người dùng</h1>
+            </header>
+            <section id="layout-chinh">
+                <h2>Bố cục Chính của Phần mềm</h2>
+                <p>Giao diện của ElevenLabs Account Hub được thiết kế với mục tiêu mang lại trải nghiệm trực quan và hiệu quả cho người dùng. Bố cục chính bao gồm các thành phần sau:</p>
+                <img src="../assets/images/main-interface-overview.png" alt="Bố cục chính của phần mềm ElevenLabs Account Hub" class="screenshot">
+                <em>(Hình ảnh: Giao diện chính của ElevenLabs Account Hub với các khu vực được đánh dấu)</em>
+
+                <h3>1. Thanh Menu (Menu Bar)</h3>
+                <p>Nằm ở phía trên cùng của cửa sổ, Thanh Menu cung cấp quyền truy cập vào tất cả các chức năng chính của ứng dụng, được tổ chức thành các menu thả xuống logic:</p>
+                <ul>
+                    <li><strong>File:</strong> Chứa các lệnh liên quan đến quản lý Khóa API (Thêm, Xóa, Làm mới Tín dụng), đóng các tab làm việc và thoát ứng dụng.</li>
+                    <li><strong>Settings:</strong> Cho phép bạn truy cập Cài đặt chung của ứng dụng (như thư mục lưu trữ mặc định, ngôn ngữ hiển thị), làm mới bộ đệm (cache) giọng nói và mô hình từ ElevenLabs, và xóa tệp nhật ký (log) của ứng dụng.</li>
+                    <li><strong>Batch Processing:</strong> Mở các cửa sổ chức năng cho việc Xử lý Hàng loạt TTS, Nhập hàng loạt Khóa API từ tệp CSV, và Quản lý Proxy Pool chung.</li>
+                    <li><strong>Language:</strong> Cho phép bạn thay đổi ngôn ngữ hiển thị của toàn bộ giao diện phần mềm.</li>
+                    <li><strong>Account:</strong> Cung cấp các tùy chọn để Đăng nhập, Đăng xuất khỏi tài khoản người dùng và xem Thông tin Tài khoản chi tiết (bao gồm trạng thái VIP).</li>
+                    <li><strong>Voices Library:</strong> Mở các cửa sổ chuyên dụng để quản lý "My Voices" (các giọng nói tùy chỉnh của bạn trên ElevenLabs) và khám phá "Library" (thư viện giọng nói công cộng của ElevenLabs).</li>
+                    <li><strong>Help:</strong> Cung cấp liên kết đến trang hướng dẫn sử dụng này và hiển thị thông tin "Giới thiệu" (About) về phiên bản phần mềm.</li>
+                </ul>
+
+                <h3>2. Cột Trái: Danh sách Khóa API (API Key List)</h3>
+                <p>Đây là trung tâm quản lý các Khóa API ElevenLabs của bạn. Tại đây bạn có thể:</p>
+                <ul>
+                    <li>Xem danh sách tất cả các Khóa API đã được thêm vào phần mềm, cùng với tên gợi nhớ của chúng.</li>
+                    <li>Theo dõi thông tin tín dụng (character credits) cho mỗi khóa: số ký tự đã sử dụng và tổng giới hạn ký tự.</li>
+                    <li>Thực hiện nhanh các thao tác:
+                        <ul>
+                            <li><strong>Thêm Key:</strong> Mở hộp thoại để thêm một Khóa API mới.</li>
+                            <li><strong>Sửa Key:</strong> Chỉnh sửa thông tin của Khóa API đang được chọn.</li>
+                            <li><strong>Xóa Key:</strong> Xóa Khóa API đang được chọn.</li>
+                            <li><strong>Refresh Credits:</strong> Làm mới thông tin tín dụng cho Khóa API đang được chọn (hoặc tất cả các khóa thông qua menu File).</li>
+                        </ul>
+                    </li>
+                    <li>Khi bạn nhấp chuột vào một Khóa API trong danh sách này, một tab làm việc tương ứng sẽ được mở hoặc kích hoạt ở Cột Giữa, và Bảng Cài đặt ở Cột Phải sẽ hiển thị các cài đặt liên quan đến khóa đó.</li>
+                </ul>
+                <img src="../assets/images/api-key-list-panel.png" alt="Cột danh sách Khóa API" class="screenshot">
+                <em>(Hình ảnh: Cột Danh sách Khóa API với các nút chức năng)</em>
+
+                <h3>3. Cột Giữa: Không gian Làm việc TTS theo Tab (TTS Workspace)</h3>
+                <p>Đây là khu vực chính nơi bạn thực hiện các tác vụ chuyển văn bản thành giọng nói (Text-to-Speech).</p>
+                <ul>
+                    <li>Mỗi Khóa API được chọn từ Cột Trái sẽ mở ra một tab làm việc riêng biệt tại đây. Điều này cho phép bạn dễ dàng chuyển đổi giữa các Khóa API và duy trì các ngữ cảnh làm việc khác nhau (ví dụ: văn bản đang soạn, lịch sử TTS riêng).</li>
+                    <li>Bên trong mỗi tab TTS, bạn sẽ tìm thấy:
+                        <ul>
+                            <li><strong>Ô nhập văn bản (Text Input Area):</strong> Một vùng lớn để bạn nhập hoặc dán đoạn văn bản cần chuyển đổi thành giọng nói. Có bộ đếm ký tự để theo dõi độ dài văn bản.</li>
+                            <li><strong>Nút "Generate Audio":</strong> Nhấn nút này để bắt đầu quá trình tạo giọng nói cho văn bản đã nhập, sử dụng các cài đặt từ Bảng Cài đặt (Cột Phải).</li>
+                            <li><strong>Nút "Stop":</strong> Xuất hiện khi quá trình tạo giọng nói đang diễn ra, cho phép bạn hủy bỏ tác vụ.</li>
+                            <li><strong>Thanh tiến trình (Progress Bar):</strong> Hiển thị trạng thái khi phần mềm đang xử lý yêu cầu TTS.</li>
+                            <li><strong>Bảng Lịch sử TTS (History Table):</strong> Liệt kê các lần tạo giọng nói trước đó cho Khóa API của tab này, bao gồm thông tin về thời gian, tên tệp, giọng nói đã dùng, thời lượng, tín dụng ước tính, trạng thái và các hành động (mở thư mục, xóa).</li>
+                        </ul>
+                    </li>
+                    <li>Khi không có Khóa API nào được chọn (ví dụ: khi mới khởi động phần mềm), một tab "Welcome" (Chào mừng) có thể được hiển thị với thông tin giới thiệu hoặc hướng dẫn nhanh.</li>
+                </ul>
+                <img src="../assets/images/tts-workspace-tab.png" alt="Không gian làm việc TTS theo Tab" class="screenshot">
+                <em>(Hình ảnh: Một tab TTS đang hoạt động trong Không gian Làm việc)</em>
+
+                <h3>4. Cột Phải: Bảng Cài đặt (Settings Panel)</h3>
+                <p>Bảng này cho phép bạn tùy chỉnh chi tiết các tham số cho việc tạo giọng nói, áp dụng cho tab TTS đang hoạt động ở Cột Giữa.</p>
+                <ul>
+                    <li><strong>Lựa chọn Giọng nói (Voice Selection):</strong>
+                        <ul>
+                            <li><strong>Voice:</strong> Chọn từ danh sách các giọng nói có sẵn trên tài khoản ElevenLabs của Khóa API đang hoạt động (bao gồm cả "My Voices" của bạn).</li>
+                            <li><strong>Library Voice:</strong> Chọn từ danh sách các giọng nói bạn đã lưu vào Thư viện Cục bộ của phần mềm (từ Voice Library của ElevenLabs).</li>
+                        </ul>
+                    </li>
+                    <li><strong>Lựa chọn Mô hình (Model Selection):</strong> Chọn mô hình AI của ElevenLabs để sử dụng (ví dụ: Multilingual v2, English v1).</li>
+                    <li><strong>Các Tham số Giọng nói (Voice Parameters):</strong> Sử dụng các thanh trượt để điều chỉnh Tốc độ (Speed), Độ ổn định (Stability), Độ tương đồng (Similarity Boost), và Kiểu cách/Cường độ (Style/Intensity).</li>
+                    <li><strong>Tùy chọn Bổ sung (Additional Options):</strong>
+                        <ul>
+                            <li><strong>Use Speaker Boost:</strong> Bật/tắt tính năng cải thiện chất lượng âm thanh.</li>
+                            <li><strong>Use Proxy Pool:</strong> Bật/tắt việc sử dụng Proxy Pool chung cho yêu cầu TTS này.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Nút Hành động:</strong>
+                        <ul>
+                            <li><strong>Save Settings:</strong> Lưu các cài đặt hiện tại làm hồ sơ mặc định cho Khóa API đang hoạt động.</li>
+                            <li><strong>Reset Settings:</strong> Đặt lại các cài đặt về hồ sơ mặc định đã lưu trước đó cho Khóa API này.</li>
+                        </ul>
+                    </li>
+                </ul>
+                <img src="../assets/images/settings-panel.png" alt="Bảng Cài đặt TTS" class="screenshot">
+                <em>(Hình ảnh: Bảng Cài đặt với các tùy chọn giọng nói và tham số)</em>
+
+                <h3>5. Thanh Trạng thái (Status Bar)</h3>
+                <p>Nằm ở phía dưới cùng của cửa sổ, Thanh Trạng thái cung cấp các thông tin nhanh và hữu ích:</p>
+                <ul>
+                    <li><strong>Thông báo trạng thái:</strong> Hiển thị các thông báo về hoạt động hiện tại của ứng dụng (ví dụ: "Sẵn sàng", "Đang tạo giọng nói...", "Lỗi API", "Đã lưu cài đặt").</li>
+                    <li><strong>Tổng Tín dụng Còn lại:</strong> Hiển thị tổng số ký tự tín dụng còn lại từ tất cả các Khóa API đã được thêm và kiểm tra.</li>
+                    <li><strong>Email Người dùng:</strong> Hiển thị địa chỉ email của tài khoản Google đã đăng nhập.</li>
+                    <li><strong>Trạng thái VIP:</strong> Cho biết bạn có phải là người dùng VIP hay không và ngày hết hạn VIP (nếu có).</li>
+                </ul>
+                <img src="../assets/images/status-bar-overview.png" alt="Thanh Trạng thái của ứng dụng" class="screenshot">
+                <em>(Hình ảnh: Thanh Trạng thái với các thông tin ví dụ)</em>
+            </section>
+        </main>
+    </div>
+    <script>
+        document.querySelectorAll('.menu-toggle').forEach(item => {
+            item.addEventListener('click', event => {
+                event.preventDefault();
+                const submenu = item.nextElementSibling;
+                if (submenu && submenu.classList.contains('submenu')) {
+                    const isOpening = submenu.style.display !== 'block';
+                    document.querySelectorAll('.submenu').forEach(sm => sm.style.display = 'none'); // Close all
+                    document.querySelectorAll('.menu-toggle').forEach(mt => mt.classList.remove('open')); // Remove open class from all
+                    if (isOpening) {
+                        submenu.style.display = 'block';
+                        item.classList.add('open');
+                    }
+                }
+            });
+        });
+        // Ensure the current page's submenu is open on load
+        document.addEventListener('DOMContentLoaded', () => {
+            const activeLink = document.querySelector('.sidebar .active');
+            if (activeLink) {
+                let parent = activeLink.closest('.submenu');
+                if (parent) {
+                    parent.style.display = 'block';
+                    const toggle = parent.previousElementSibling;
+                    if (toggle && toggle.classList.contains('menu-toggle')) {
+                        toggle.classList.add('open');
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+</html>
