@@ -2,34 +2,25 @@
  * Tự động nhúng banner ElevenLabs vào tất cả các trang
  */
 document.addEventListener("DOMContentLoaded", function() {
-    // Xác định đường dẫn tới banner.html dựa vào vị trí hiện tại
-    let bannerPath = 'banner.html';
+    // Tạo banner trực tiếp trong script thay vì tải từ file
+    const bannerHTML = `
+    <!-- Banner ElevenLabs Hub -->
+    <div class="banner-hub">
+        <div class="banner-content">
+            <span class="icon">⚡</span>
+            <div>
+                <div class="banner-title">ElevenLabs Account Hub</div>
+                <div class="banner-desc">Truy cập trực tiếp vào công cụ và bắt đầu sử dụng ngay hôm nay</div>
+            </div>
+        </div>
+        <a href="https://eleacchub.github.io/elevenlabs-account-hub/index.html#" class="banner-btn" target="_blank">Tải Ngay</a>
+    </div>
+    `;
     
-    // Điều chỉnh đường dẫn nếu đang ở thư mục con
-    if (window.location.pathname.includes('/')) {
-        const pathSegments = window.location.pathname.split('/').filter(Boolean);
-        // Nếu đang ở thư mục con, điều chỉnh đường dẫn
-        if (pathSegments.length > 1) {
-            bannerPath = '../banner.html';
-        }
+    // Chèn banner vào đầu phần content
+    const contentDiv = document.querySelector('.content');
+    if (contentDiv) {
+        // Chèn banner vào đầu phần nội dung chính
+        contentDiv.insertAdjacentHTML('afterbegin', bannerHTML);
     }
-    
-    // Tải nội dung banner và chèn vào đầu phần content
-    fetch(bannerPath)
-        .then(response => {
-            if (!response.ok) {
-                throw new Error('Không thể tải banner');
-            }
-            return response.text();
-        })
-        .then(data => {
-            const contentDiv = document.querySelector('.content');
-            if (contentDiv) {
-                // Chèn banner vào đầu phần nội dung chính
-                contentDiv.insertAdjacentHTML('afterbegin', data);
-            }
-        })
-        .catch(error => {
-            console.error('Lỗi khi tải banner:', error);
-        });
 }); 
