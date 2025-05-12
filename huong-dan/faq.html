@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Câu hỏi Thường gặp (FAQ) - Hướng dẫn ElevenLabs Account Hub</title>
+    <link rel="stylesheet" href="style.css"> <!-- Liên kết đến style.css ở thư mục cha -->
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <div class="logo-container">
+                <h2>ElevenLabs Hub Guide</h2>
+            </div>
+            <nav class="navigation-menu">
+                <h3>Mục lục</h3>
+                <ul>
+                    <li><a href="index.html">Trang chủ</a></li>
+                    <li>
+                        <a href="#bat-dau" class="menu-toggle">Bắt đầu</a>
+                        <ul class="submenu">
+                            <li><a href="bat-dau/cai-dat-va-khoi-dong.html">Cài đặt & Khởi động</a></li>
+                            <li><a href="bat-dau/tong-quan-giao-dien.html">Tổng quan Giao diện</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#quan-ly-api" class="menu-toggle">Quản lý Khóa API</a>
+                        <ul class="submenu">
+                            <li><a href="quan-ly-api/them-sua-xoa-api-key.html">Thêm/Sửa/Xóa Khóa API</a></li>
+                            <li><a href="quan-ly-api/kiem-tra-tin-dung.html">Kiểm tra Tín dụng</a></li>
+                            <li><a href="quan-ly-api/cau-hinh-proxy-cho-api-key.html">Cấu hình Proxy</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#chuc-nang-tts" class="menu-toggle">Chức năng TTS</a>
+                        <ul class="submenu">
+                            <li><a href="chuc-nang-tts/tao-giong-noi-co-ban.html">Tạo Giọng nói Cơ bản</a></li>
+                            <li><a href="chuc-nang-tts/tuy-chinh-tham-so-tts.html">Tùy chỉnh Tham số TTS</a></li>
+                            <li><a href="chuc-nang-tts/luu-ho-so-cai-dat-tts.html">Lưu Hồ sơ Cài đặt</a></li>
+                            <li><a href="chuc-nang-tts/quan-ly-lich-su-tts.html">Quản lý Lịch sử TTS</a></li>
+                        </ul>
+                    </li>
+                     <li>
+                        <a href="#xu-ly-hang-loat" class="menu-toggle">Xử lý Hàng loạt</a>
+                        <ul class="submenu">
+                            <li><a href="xu-ly-hang-loat/gioi-thieu-xu-ly-hang-loat.html">Giới thiệu</a></li>
+                            <li><a href="xu-ly-hang-loat/su-dung-xu-ly-hang-loat.html">Cách sử dụng</a></li>
+                            <li><a href="xu-ly-hang-loat/nhap-hang-loat-api-key.html">Nhập hàng loạt Khóa API</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#proxy-pool" class="menu-toggle">Proxy Pool Chung</a>
+                        <ul class="submenu">
+                            <li><a href="proxy-pool/gioi-thieu-proxy-pool.html">Giới thiệu</a></li>
+                            <li><a href="proxy-pool/quan-ly-proxy-pool.html">Quản lý Proxy Pool</a></li>
+                            <li><a href="proxy-pool/su-dung-proxy-pool-khi-tts.html">Sử dụng với TTS</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#quan-ly-giong-noi" class="menu-toggle">Quản lý Giọng nói</a>
+                        <ul class="submenu">
+                            <li><a href="quan-ly-giong-noi/my-voices.html">My Voices</a></li>
+                            <li><a href="quan-ly-giong-noi/voice-library.html">Voice Library</a></li>
+                            <li><a href="quan-ly-giong-noi/su-dung-giong-noi-thu-vien-trong-tts.html">Sử dụng Giọng nói Thư viện</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#tai-khoan" class="menu-toggle">Tài khoản & VIP</a>
+                        <ul class="submenu">
+                            <li><a href="tai-khoan/dang-nhap-dang-xuat.html">Đăng nhập/Đăng xuất</a></li>
+                            <li><a href="tai-khoan/thong-tin-tai-khoan-vip.html">Thông tin VIP</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#cai-dat-chung" class="menu-toggle">Cài đặt Chung</a>
+                        <ul class="submenu">
+                            <li><a href="cai-dat-chung/thay-doi-thu-muc-luu-mac-dinh.html">Thư mục Lưu trữ</a></li>
+                            <li><a href="cai-dat-chung/thay-doi-ngon-ngu.html">Ngôn ngữ</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#sao-luu-phuc-hoi" class="menu-toggle">Sao lưu & Phục hồi</a>
+                        <ul class="submenu">
+                            <li><a href="sao-luu-phuc-hoi/sao-luu-du-lieu.html">Sao lưu Dữ liệu</a></li>
+                            <li><a href="sao-luu-phuc-hoi/phuc-hoi-du-lieu.html">Phục hồi Dữ liệu</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="faq.html" class="active">Câu hỏi Thường gặp (FAQ)</a></li>
+                    <li><a href="ho-tro.html">Hỗ trợ</a></li>
+                </ul>
+            </nav>
+        </aside>
+        <main class="content">
+            <header class="main-header">
+                <h1>Câu hỏi Thường gặp (FAQ)</h1>
+            </header>
+            <p>Dưới đây là một số câu hỏi thường gặp về ElevenLabs Account Hub và câu trả lời tương ứng. Nếu bạn không tìm thấy câu trả lời cho thắc mắc của mình, vui lòng <a href="ho-tro.html">liên hệ hỗ trợ</a>.</p>
+
+            <section id="faq-cai-dat">
+                <h2>Cài đặt và Khởi động</h2>
+                <details>
+                    <summary><strong>Phần mềm có yêu cầu cài đặt phức tạp không?</strong></summary>
+                    <p>Không. ElevenLabs Account Hub được cung cấp dưới dạng tệp thực thi (.exe) cho Windows. Bạn chỉ cần tải về và chạy tệp đó, không cần quá trình cài đặt phức tạp. Xem chi tiết tại <a href="bat-dau/cai-dat-va-khoi-dong.html">Cài đặt & Khởi động</a>.</p>
+                </details>
+                <details>
+                    <summary><strong>Tại sao Windows Defender/trình duyệt lại cảnh báo khi tôi tải tệp .exe?</strong></summary>
+                    <p>Do phần mềm chưa được ký số chính thức bởi một nhà cung cấp chứng chỉ lớn, hệ điều hành hoặc trình duyệt có thể hiển thị cảnh báo an toàn. Nếu bạn tải tệp từ nguồn chính thức do nhà phát triển cung cấp, bạn có thể chọn "Keep" hoặc "Run anyway".</p>
+                </details>
+                 <details>
+                    <summary><strong>Tôi có cần kết nối internet để sử dụng phần mềm không?</strong></summary>
+                    <p>Có. Để thực hiện các thao tác liên quan đến API của ElevenLabs (như kiểm tra tín dụng, lấy danh sách giọng nói, tạo TTS), bạn cần có kết nối internet. Các chức năng quản lý cục bộ (như xem lịch sử đã lưu, quản lý proxy pool đã lưu) có thể hoạt động offline, nhưng các tương tác với ElevenLabs thì không.</p>
+                </details>
+            </section>
+
+            <section id="faq-api-key">
+                <h2>Quản lý Khóa API</h2>
+                <details>
+                    <summary><strong>Tôi có thể thêm bao nhiêu Khóa API?</strong></summary>
+                    <p>Phiên bản hiện tại cho phép bạn thêm không giới hạn số lượng Khóa API. Tuy nhiên, hiệu suất có thể bị ảnh hưởng nếu số lượng quá lớn. Trạng thái VIP có thể ảnh hưởng đến giới hạn này trong tương lai.</p>
+                </details>
+                <details>
+                    <summary><strong>Làm thế nào để lấy Khóa API ElevenLabs?</strong></summary>
+                    <p>Bạn cần đăng ký tài khoản trên trang web chính thức của ElevenLabs (elevenlabs.io). Sau khi đăng nhập, bạn có thể tìm thấy Khóa API của mình trong phần cài đặt tài khoản hoặc hồ sơ người dùng.</p>
+                </details>
+                <details>
+                    <summary><strong>Thông tin tín dụng của tôi không cập nhật đúng?</strong></summary>
+                    <p>Hãy thử nhấn nút "Refresh Credits" cho khóa API đó hoặc "Refresh All Credits" từ menu File. Đảm bảo bạn có kết nối internet ổn định. Thông tin tín dụng cũng được cập nhật sau mỗi lần tạo TTS thành công.</p>
+                </details>
+            </section>
+
+            <section id="faq-tts">
+                <h2>Chức năng Text-to-Speech (TTS)</h2>
+                <details>
+                    <summary><strong>Tại sao tôi không thể chọn một số giọng nói hoặc mô hình?</strong></summary>
+                    <p>Danh sách giọng nói và mô hình phụ thuộc vào Khóa API bạn đang sử dụng và các quyền của tài khoản ElevenLabs tương ứng. Một số giọng nói hoặc mô hình có thể chỉ dành cho các gói trả phí hoặc yêu cầu quyền truy cập đặc biệt.</p>
+                </details>
+                <details>
+                    <summary><strong>Giới hạn ký tự cho mỗi lần tạo TTS là bao nhiêu?</strong></summary>
+                    <p>Giới hạn này do ElevenLabs quy định và có thể thay đổi. Phần mềm hiển thị một giới hạn ước tính (ví dụ: 5.000 ký tự) trong ô nhập văn bản. Đối với các đoạn văn bản dài hơn, bạn nên chia thành nhiều phần nhỏ hơn để xử lý.</p>
+                </details>
+                 <details>
+                    <summary><strong>Tệp âm thanh được lưu ở đâu và định dạng là gì?</strong></summary>
+                    <p>Tệp âm thanh được lưu dưới dạng .mp3 trong thư mục bạn đã cấu hình (xem <a href="cai-dat-chung/thay-doi-thu-muc-luu-mac-dinh.html">Thư mục Lưu trữ Mặc định</a>). Tên tệp được tạo tự động bao gồm tên khóa API, tên giọng nói và dấu thời gian.</p>
+                </details>
+            </section>
+
+            <section id="faq-proxy">
+                <h2>Proxy và Proxy Pool</h2>
+                <details>
+                    <summary><strong>Sử dụng proxy có an toàn không?</strong></summary>
+                    <p>Chỉ nên sử dụng proxy từ các nhà cung cấp đáng tin cậy. Phần mềm sẽ mã hóa mật khẩu proxy (nếu có) khi lưu trữ. Tuy nhiên, việc sử dụng proxy luôn tiềm ẩn một số rủi ro nếu proxy đó không an toàn.</p>
+                </details>
+                <details>
+                    <summary><strong>Sự khác biệt giữa proxy riêng của Khóa API và Proxy Pool là gì?</strong></summary>
+                    <p>Proxy riêng được cấu hình cho từng Khóa API cụ thể và chỉ áp dụng cho khóa đó. Proxy Pool là một danh sách proxy chung mà bạn có thể bật/tắt để sử dụng cho bất kỳ tác vụ TTS nào, giúp luân chuyển IP hiệu quả hơn, đặc biệt khi xử lý hàng loạt.</p>
+                </details>
+            </section>
+
+            <section id="faq-vip">
+                <h2>Tài khoản VIP và Giấy phép</h2>
+                <details>
+                    <summary><strong>Làm thế nào để trở thành người dùng VIP?</strong></summary>
+                    <p>Sau khi đăng nhập lần đầu bằng tài khoản Google, bạn cần liên hệ với nhà phát triển (thông tin trong mục <a href="ho-tro.html">Hỗ trợ</a>) để yêu cầu kích hoạt VIP. Quy trình cụ thể có thể thay đổi.</p>
+                </details>
+                <details>
+                    <summary><strong>Nếu tôi không phải VIP, tôi có thể sử dụng phần mềm không?</strong></summary>
+                    <p>Bạn vẫn có thể sử dụng các tính năng cơ bản, nhưng một số tính năng nâng cao hoặc giới hạn (ví dụ: số lượng khóa API, xử lý hàng loạt không giới hạn) có thể yêu cầu trạng thái VIP.</p>
+                </details>
+            </section>
+
+            <section id="faq-khac">
+                <h2>Khác</h2>
+                <details>
+                    <summary><strong>Dữ liệu của tôi (Khóa API, lịch sử) được lưu ở đâu?</strong></summary>
+                    <p>Tất cả dữ liệu của bạn được lưu trữ cục bộ trên máy tính của bạn trong một tệp cơ sở dữ liệu SQLite (thường là <code>data/elevenlabs.db</code>). Khóa API và mật khẩu proxy được mã hóa trước khi lưu.</p>
+                </details>
+                <details>
+                    <summary><strong>Tôi có thể sử dụng phần mềm trên nhiều máy tính không?</strong></summary>
+                    <p>Giấy phép VIP (nếu có) có thể được liên kết với phần cứng cụ thể. Vui lòng kiểm tra điều khoản giấy phép hoặc liên hệ nhà phát triển để biết chi tiết. Bạn có thể <a href="sao-luu-phuc-hoi/sao-luu-du-lieu.html">sao lưu</a> và <a href="sao-luu-phuc-hoi/phuc-hoi-du-lieu.html">phục hồi</a> dữ liệu để chuyển cài đặt giữa các máy tính.</p>
+                </details>
+            </section>
+            <!-- Thêm các câu hỏi và trả lời khác nếu cần -->
+        </main>
+    </div>
+    <script>
+        document.querySelectorAll('.menu-toggle').forEach(item => {
+            item.addEventListener('click', event => {
+                event.preventDefault();
+                const submenu = item.nextElementSibling;
+                if (submenu && submenu.classList.contains('submenu')) {
+                    const isOpening = submenu.style.display !== 'block';
+                    document.querySelectorAll('.submenu').forEach(sm => sm.style.display = 'none'); // Close all
+                    document.querySelectorAll('.menu-toggle').forEach(mt => mt.classList.remove('open')); // Remove open class from all
+                    if (isOpening) {
+                        submenu.style.display = 'block';
+                        item.classList.add('open');
+                    }
+                }
+            });
+        });
+        // Ensure the current page's submenu is open on load
+        document.addEventListener('DOMContentLoaded', () => {
+            const activeLink = document.querySelector('.sidebar .active');
+            if (activeLink) {
+                let parent = activeLink.closest('.submenu');
+                if (parent) {
+                    parent.style.display = 'block';
+                    const toggle = parent.previousElementSibling;
+                    if (toggle && toggle.classList.contains('menu-toggle')) {
+                        toggle.classList.add('open');
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+</html>
