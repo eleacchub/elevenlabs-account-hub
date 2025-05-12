@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tạo Giọng nói Cơ bản - Hướng dẫn ElevenLabs Account Hub</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <div class="logo-container">
+                <h2>ElevenLabs Hub Guide</h2>
+            </div>
+            <nav class="navigation-menu">
+                <h3>Mục lục</h3>
+                <ul>
+                    <li><a href="../index.html">Trang chủ</a></li>
+                    <li>
+                        <a href="#bat-dau" class="menu-toggle">Bắt đầu</a>
+                        <ul class="submenu">
+                            <li><a href="../bat-dau/cai-dat-va-khoi-dong.html">Cài đặt & Khởi động</a></li>
+                            <li><a href="../bat-dau/tong-quan-giao-dien.html">Tổng quan Giao diện</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#quan-ly-api" class="menu-toggle">Quản lý Khóa API</a>
+                        <ul class="submenu">
+                            <li><a href="../quan-ly-api/them-sua-xoa-api-key.html">Thêm/Sửa/Xóa Khóa API</a></li>
+                            <li><a href="../quan-ly-api/kiem-tra-tin-dung.html">Kiểm tra Tín dụng</a></li>
+                            <li><a href="../quan-ly-api/cau-hinh-proxy-cho-api-key.html">Cấu hình Proxy</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#chuc-nang-tts" class="menu-toggle open">Chức năng TTS</a>
+                        <ul class="submenu" style="display: block;">
+                            <li><a href="tao-giong-noi-co-ban.html" class="active">Tạo Giọng nói Cơ bản</a></li>
+                            <li><a href="tuy-chinh-tham-so-tts.html">Tùy chỉnh Tham số TTS</a></li>
+                            <li><a href="luu-ho-so-cai-dat-tts.html">Lưu Hồ sơ Cài đặt</a></li>
+                            <li><a href="quan-ly-lich-su-tts.html">Quản lý Lịch sử TTS</a></li>
+                        </ul>
+                    </li>
+                     <li>
+                        <a href="#xu-ly-hang-loat" class="menu-toggle">Xử lý Hàng loạt</a>
+                        <ul class="submenu">
+                            <li><a href="../xu-ly-hang-loat/gioi-thieu-xu-ly-hang-loat.html">Giới thiệu</a></li>
+                            <li><a href="../xu-ly-hang-loat/su-dung-xu-ly-hang-loat.html">Cách sử dụng</a></li>
+                            <li><a href="../xu-ly-hang-loat/nhap-hang-loat-api-key.html">Nhập hàng loạt Khóa API</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#proxy-pool" class="menu-toggle">Proxy Pool Chung</a>
+                        <ul class="submenu">
+                            <li><a href="../proxy-pool/gioi-thieu-proxy-pool.html">Giới thiệu</a></li>
+                            <li><a href="../proxy-pool/quan-ly-proxy-pool.html">Quản lý Proxy Pool</a></li>
+                            <li><a href="../proxy-pool/su-dung-proxy-pool-khi-tts.html">Sử dụng với TTS</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#quan-ly-giong-noi" class="menu-toggle">Quản lý Giọng nói</a>
+                        <ul class="submenu">
+                            <li><a href="../quan-ly-giong-noi/my-voices.html">My Voices</a></li>
+                            <li><a href="../quan-ly-giong-noi/voice-library.html">Voice Library</a></li>
+                            <li><a href="../quan-ly-giong-noi/su-dung-giong-noi-thu-vien-trong-tts.html">Sử dụng Giọng nói Thư viện</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#tai-khoan" class="menu-toggle">Tài khoản & VIP</a>
+                        <ul class="submenu">
+                            <li><a href="../tai-khoan/dang-nhap-dang-xuat.html">Đăng nhập/Đăng xuất</a></li>
+                            <li><a href="../tai-khoan/thong-tin-tai-khoan-vip.html">Thông tin VIP</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#cai-dat-chung" class="menu-toggle">Cài đặt Chung</a>
+                        <ul class="submenu">
+                            <li><a href="../cai-dat-chung/thay-doi-thu-muc-luu-mac-dinh.html">Thư mục Lưu trữ</a></li>
+                            <li><a href="../cai-dat-chung/thay-doi-ngon-ngu.html">Ngôn ngữ</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#sao-luu-phuc-hoi" class="menu-toggle">Sao lưu & Phục hồi</a>
+                        <ul class="submenu">
+                            <li><a href="../sao-luu-phuc-hoi/sao-luu-du-lieu.html">Sao lưu Dữ liệu</a></li>
+                            <li><a href="../sao-luu-phuc-hoi/phuc-hoi-du-lieu.html">Phục hồi Dữ liệu</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="../faq.html">Câu hỏi Thường gặp (FAQ)</a></li>
+                    <li><a href="../ho-tro.html">Hỗ trợ</a></li>
+                </ul>
+            </nav>
+        </aside>
+        <main class="content">
+            <header class="main-header">
+                <h1>Tạo Giọng nói Cơ bản với Text-to-Speech (TTS)</h1>
+            </header>
+            <p>Chức năng cốt lõi của ElevenLabs Account Hub là giúp bạn dễ dàng chuyển đổi văn bản thành giọng nói (Text-to-Speech) sử dụng các Khóa API ElevenLabs của mình. Dưới đây là các bước cơ bản để tạo ra một tệp âm thanh:</p>
+
+            <section id="chon-api-key">
+                <h2>1. Chọn Khóa API để Sử dụng</h2>
+                <p>Mọi thao tác TTS đều được thực hiện thông qua một Khóa API cụ thể. Vì vậy, bước đầu tiên là chọn Khóa API bạn muốn dùng:</p>
+                <ol>
+                    <li>Nhìn vào <strong>Cột Trái (Danh sách Khóa API)</strong>.</li>
+                    <li>Nhấp chuột vào tên của Khóa API bạn muốn sử dụng. Ví dụ: "TaiKhoanChinh", "AccClone01".</li>
+                    <li>Khi một Khóa API được chọn:
+                        <ul>
+                            <li>Một tab làm việc mới sẽ được mở (hoặc tab đã có cho khóa đó sẽ được kích hoạt) ở <strong>Cột Giữa (Không gian Làm việc TTS)</strong>. Tên của tab này sẽ trùng với tên Khóa API bạn chọn.</li>
+                            <li><strong>Bảng Cài đặt (Settings Panel)</strong> ở Cột Phải sẽ tự động tải và hiển thị các cài đặt TTS mặc định (hoặc đã lưu trước đó) cho Khóa API này.</li>
+                        </ul>
+                    </li>
+                </ol>
+                <img src="../assets/images/select-api-key-for-tts-guide.png" alt="Chọn Khóa API từ danh sách để bắt đầu tạo TTS" class="screenshot">
+                <em>(Hình ảnh: Chọn một Khóa API từ danh sách bên trái, tab tương ứng được mở ở giữa)</em>
+            </section>
+
+            <section id="nhap-van-ban">
+                <h2>2. Nhập Văn bản cần Chuyển đổi</h2>
+                <p>Trong tab TTS đang hoạt động (Cột Giữa), bạn sẽ thấy một khu vực lớn để nhập văn bản:</p>
+                <ol>
+                    <li>Nhập hoặc dán đoạn văn bản bạn muốn chuyển đổi thành giọng nói vào ô có nhãn "<strong>Text to synthesize</strong>" (Văn bản để tổng hợp).</li>
+                    <li>Khi bạn nhập, bộ đếm ký tự ở ngay phía dưới ô nhập liệu sẽ cập nhật. Ví dụ: "<code>150 / 5.000 characters (estimated limit)</code>".
+                        <ul>
+                            <li>Số đầu tiên (<code>150</code>) là số ký tự bạn đã nhập.</li>
+                            <li>Số thứ hai (<code>5.000</code>) là giới hạn ký tự ước tính cho một lần tạo TTS với mô hình hiện tại. Giới hạn này do ElevenLabs quy định và có thể thay đổi.</li>
+                            <li><strong>Lưu ý quan trọng về bộ đếm:</strong> Một số mô hình TTS của ElevenLabs (ví dụ: các mô hình "Turbo" hoặc "Flash") có thể tính 2 ký tự văn bản gốc chỉ bằng 1 ký tự sử dụng. Nếu bạn chọn một trong các mô hình này trong Bảng Cài đặt, bộ đếm ký tự sẽ tự động hiển thị số ký tự đã được điều chỉnh (chia đôi và làm tròn lên), kèm theo ghi chú "(adjusted for [tên mô hình])". Điều này giúp bạn ước tính chính xác hơn lượng tín dụng sẽ bị trừ.</li>
+                        </ul>
+                    </li>
+                </ol>
+                <img src="../assets/images/tts-text-input-area.png" alt="Nhập văn bản vào ô TTS và theo dõi bộ đếm ký tự" class="screenshot">
+                <em>(Hình ảnh: Ô nhập văn bản với bộ đếm ký tự bên dưới)</em>
+            </section>
+
+            <section id="chon-giong-noi-model">
+                <h2>3. Chọn Giọng nói và Mô hình (trong Bảng Cài đặt - Cột Phải)</h2>
+                <p>Sau khi đã có văn bản, bạn cần chọn giọng nói và mô hình AI sẽ được sử dụng. Các tùy chọn này nằm trong <strong>Bảng Cài đặt (Settings Panel)</strong> ở Cột Phải:</p>
+                <ol>
+                    <li><strong>Chọn Giọng nói (Voice):</strong>
+                        <ul>
+                            <li>Từ danh sách thả xuống "<strong>Voice</strong>": Danh sách này chứa các giọng nói có sẵn từ tài khoản ElevenLabs của Khóa API đang hoạt động (bao gồm các giọng nói mặc định của ElevenLabs và các giọng nói trong "My Voices" của bạn trên trang web ElevenLabs).</li>
+                            <li>Hoặc, từ danh sách thả xuống "<strong>Library Voice</strong>": Danh sách này chứa các giọng nói bạn đã lưu vào Thư viện Cục bộ của phần mềm (xem <a href="../quan-ly-giong-noi/voice-library.html">Voice Library</a> và <a href="../quan-ly-giong-noi/su-dung-giong-noi-thu-vien-trong-tts.html">Sử dụng Giọng nói Thư viện</a>).</li>
+                            <li><strong>Lưu ý:</strong> Bạn chỉ có thể chọn một nguồn giọng nói tại một thời điểm. Nếu bạn chọn một "Library Voice", lựa chọn "Voice" (API) sẽ bị xóa và ngược lại.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Chọn Mô hình (Model):</strong>
+                        <ul>
+                            <li>Từ danh sách thả xuống "<strong>Model</strong>", chọn mô hình AI bạn muốn sử dụng. Ví dụ:
+                                <ul>
+                                    <li><code>eleven_multilingual_v2</code>: Hỗ trợ nhiều ngôn ngữ, chất lượng tốt.</li>
+                                    <li><code>eleven_english_v1</code>: Tối ưu cho tiếng Anh.</li>
+                                    <li><code>eleven_turbo_v2</code> / <code>eleven_flash_v2</code>: Các mô hình nhanh hơn, có thể có cách tính ký tự khác.</li>
+                                </ul>
+                            </li>
+                            <li>Lựa chọn mô hình có thể ảnh hưởng đến ngôn ngữ được hỗ trợ, chất lượng giọng nói và tốc độ tạo.</li>
+                        </ul>
+                    </li>
+                </ol>
+                <p>Các tham số khác như Tốc độ, Độ ổn định, v.v., sẽ được đề cập chi tiết trong mục <a href="tuy-chinh-tham-so-tts.html">Tùy chỉnh Tham số TTS</a>. Đối với tạo giọng nói cơ bản, bạn có thể giữ nguyên các giá trị mặc định của chúng.</p>
+                <img src="../assets/images/tts-settings-panel-voice-model.png" alt="Chọn Giọng nói và Mô hình trong Bảng Cài đặt" class="screenshot">
+                <em>(Hình ảnh: Lựa chọn Giọng nói và Mô hình trong Bảng Cài đặt)</em>
+            </section>
+
+            <section id="tao-giong-noi">
+                <h2>4. Bắt đầu Tạo Giọng nói</h2>
+                <ol>
+                    <li>Sau khi đã nhập văn bản và chọn các cài đặt cơ bản (Giọng nói, Mô hình), quay lại tab TTS ở Cột Giữa.</li>
+                    <li>Nhấn nút "<strong>Generate Audio</strong>".</li>
+                    <li>Quá trình tạo giọng nói sẽ bắt đầu:
+                        <ul>
+                            <li>Nút "Generate Audio" sẽ chuyển thành "<strong>Generating...</strong>" và tạm thời bị vô hiệu hóa.</li>
+                            <li>Nút "<strong>Stop</strong>" sẽ được kích hoạt, cho phép bạn hủy bỏ quá trình nếu muốn.</li>
+                            <li>Thanh tiến trình (Progress Bar) sẽ xuất hiện và chạy ở chế độ không xác định (indeterminate mode), cho biết phần mềm đang làm việc.</li>
+                        </ul>
+                    </li>
+                    <li>Phần mềm sẽ gửi yêu cầu đến máy chủ của ElevenLabs. Thời gian xử lý phụ thuộc vào độ dài văn bản, mô hình được chọn, và tải hiện tại của máy chủ ElevenLabs.</li>
+                    <li><strong>Kết quả:</strong>
+                        <ul>
+                            <li><strong>Thành công:</strong>
+                                <ul>
+                                    <li>Tệp âm thanh (thường là .mp3) sẽ được tự động lưu vào thư mục đầu ra mặc định mà bạn đã cấu hình (xem <a href="../cai-dat-chung/thay-doi-thu-muc-luu-mac-dinh.html">Thư mục Lưu trữ Mặc định</a>).</li>
+                                    <li>Một mục mới sẽ được thêm vào bảng <strong>Lịch sử TTS</strong> ở phía dưới của tab, ghi lại thông tin về lần tạo này (thời gian, tên tệp, giọng nói đã dùng, thời lượng ước tính, trạng thái "Thành công", và số ký tự đã sử dụng).</li>
+                                    <li>Thông tin tín dụng của Khóa API sẽ được cập nhật.</li>
+                                </ul>
+                            </li>
+                            <li><strong>Thất bại:</strong>
+                                <ul>
+                                    <li>Nếu có lỗi xảy ra (ví dụ: Khóa API không hợp lệ, hết tín dụng, lỗi kết nối mạng, lỗi từ máy chủ ElevenLabs), một hộp thoại thông báo lỗi chi tiết sẽ xuất hiện.</li>
+                                    <li>Một mục lịch sử với trạng thái "Lỗi" cũng có thể được thêm vào bảng Lịch sử TTS.</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>Sau khi quá trình hoàn tất (dù thành công hay thất bại), các nút "Generate Audio" và "Stop" sẽ trở lại trạng thái ban đầu, sẵn sàng cho lần tạo tiếp theo.</li>
+                </ol>
+                <div class="tip">
+                    <strong>Mẹo:</strong> Nếu quá trình tạo giọng nói có vẻ mất quá nhiều thời gian hoặc bạn muốn dừng lại vì lý do nào đó, bạn có thể nhấn nút "<strong>Stop</strong>".
+                </div>
+            </section>
+
+            <section id="nghe-lai-audio">
+                <h2>5. Nghe lại và Quản lý Tệp Âm thanh</h2>
+                <p>Sau khi giọng nói được tạo thành công:</p>
+                <ul>
+                    <li>Bạn có thể tìm thấy tệp âm thanh .mp3 đã được lưu trong thư mục đầu ra mà bạn đã cấu hình trong phần Cài đặt của ứng dụng.</li>
+                    <li>Trong bảng <strong>Lịch sử TTS</strong> của tab hiện tại, tìm đến mục vừa tạo. Nhấn vào nút "Mở thư mục" <img src="../assets/icons/folder-open.svg" alt="Biểu tượng Mở thư mục" style="width:16px; height:16px; vertical-align:middle;"> ở cột "Actions" để mở nhanh thư mục chứa tệp âm thanh đó trên máy tính của bạn.</li>
+                </ul>
+                <p>Từ đây, bạn có thể nghe lại tệp âm thanh, sao chép, di chuyển hoặc sử dụng cho các mục đích của mình.</p>
+            </section>
+        </main>
+    </div>
+    <script>
+        document.querySelectorAll('.menu-toggle').forEach(item => {
+            item.addEventListener('click', event => {
+                event.preventDefault();
+                const submenu = item.nextElementSibling;
+                if (submenu && submenu.classList.contains('submenu')) {
+                    const isOpening = submenu.style.display !== 'block';
+                    document.querySelectorAll('.submenu').forEach(sm => sm.style.display = 'none'); // Close all
+                    document.querySelectorAll('.menu-toggle').forEach(mt => mt.classList.remove('open')); // Remove open class from all
+                    if (isOpening) {
+                        submenu.style.display = 'block';
+                        item.classList.add('open');
+                    }
+                }
+            });
+        });
+        // Ensure the current page's submenu is open on load
+        document.addEventListener('DOMContentLoaded', () => {
+            const activeLink = document.querySelector('.sidebar .active');
+            if (activeLink) {
+                let parent = activeLink.closest('.submenu');
+                if (parent) {
+                    parent.style.display = 'block';
+                    const toggle = parent.previousElementSibling;
+                    if (toggle && toggle.classList.contains('menu-toggle')) {
+                        toggle.classList.add('open');
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+</html>

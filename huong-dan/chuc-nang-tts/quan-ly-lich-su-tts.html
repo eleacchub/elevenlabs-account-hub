@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quản lý Lịch sử TTS - Hướng dẫn ElevenLabs Account Hub</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <div class="logo-container">
+                <h2>ElevenLabs Hub Guide</h2>
+            </div>
+            <nav class="navigation-menu">
+                <h3>Mục lục</h3>
+                <ul>
+                    <li><a href="../index.html">Trang chủ</a></li>
+                    <li>
+                        <a href="#bat-dau" class="menu-toggle">Bắt đầu</a>
+                        <ul class="submenu">
+                            <li><a href="../bat-dau/cai-dat-va-khoi-dong.html">Cài đặt & Khởi động</a></li>
+                            <li><a href="../bat-dau/tong-quan-giao-dien.html">Tổng quan Giao diện</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#quan-ly-api" class="menu-toggle">Quản lý Khóa API</a>
+                        <ul class="submenu">
+                            <li><a href="../quan-ly-api/them-sua-xoa-api-key.html">Thêm/Sửa/Xóa Khóa API</a></li>
+                            <li><a href="../quan-ly-api/kiem-tra-tin-dung.html">Kiểm tra Tín dụng</a></li>
+                            <li><a href="../quan-ly-api/cau-hinh-proxy-cho-api-key.html">Cấu hình Proxy</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#chuc-nang-tts" class="menu-toggle open">Chức năng TTS</a>
+                        <ul class="submenu" style="display: block;">
+                            <li><a href="tao-giong-noi-co-ban.html">Tạo Giọng nói Cơ bản</a></li>
+                            <li><a href="tuy-chinh-tham-so-tts.html">Tùy chỉnh Tham số TTS</a></li>
+                            <li><a href="luu-ho-so-cai-dat-tts.html">Lưu Hồ sơ Cài đặt</a></li>
+                            <li><a href="quan-ly-lich-su-tts.html" class="active">Quản lý Lịch sử TTS</a></li>
+                        </ul>
+                    </li>
+                     <li>
+                        <a href="#xu-ly-hang-loat" class="menu-toggle">Xử lý Hàng loạt</a>
+                        <ul class="submenu">
+                            <li><a href="../xu-ly-hang-loat/gioi-thieu-xu-ly-hang-loat.html">Giới thiệu</a></li>
+                            <li><a href="../xu-ly-hang-loat/su-dung-xu-ly-hang-loat.html">Cách sử dụng</a></li>
+                            <li><a href="../xu-ly-hang-loat/nhap-hang-loat-api-key.html">Nhập hàng loạt Khóa API</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#proxy-pool" class="menu-toggle">Proxy Pool Chung</a>
+                        <ul class="submenu">
+                            <li><a href="../proxy-pool/gioi-thieu-proxy-pool.html">Giới thiệu</a></li>
+                            <li><a href="../proxy-pool/quan-ly-proxy-pool.html">Quản lý Proxy Pool</a></li>
+                            <li><a href="../proxy-pool/su-dung-proxy-pool-khi-tts.html">Sử dụng với TTS</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#quan-ly-giong-noi" class="menu-toggle">Quản lý Giọng nói</a>
+                        <ul class="submenu">
+                            <li><a href="../quan-ly-giong-noi/my-voices.html">My Voices</a></li>
+                            <li><a href="../quan-ly-giong-noi/voice-library.html">Voice Library</a></li>
+                            <li><a href="../quan-ly-giong-noi/su-dung-giong-noi-thu-vien-trong-tts.html">Sử dụng Giọng nói Thư viện</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#tai-khoan" class="menu-toggle">Tài khoản & VIP</a>
+                        <ul class="submenu">
+                            <li><a href="../tai-khoan/dang-nhap-dang-xuat.html">Đăng nhập/Đăng xuất</a></li>
+                            <li><a href="../tai-khoan/thong-tin-tai-khoan-vip.html">Thông tin VIP</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#cai-dat-chung" class="menu-toggle">Cài đặt Chung</a>
+                        <ul class="submenu">
+                            <li><a href="../cai-dat-chung/thay-doi-thu-muc-luu-mac-dinh.html">Thư mục Lưu trữ</a></li>
+                            <li><a href="../cai-dat-chung/thay-doi-ngon-ngu.html">Ngôn ngữ</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#sao-luu-phuc-hoi" class="menu-toggle">Sao lưu & Phục hồi</a>
+                        <ul class="submenu">
+                            <li><a href="../sao-luu-phuc-hoi/sao-luu-du-lieu.html">Sao lưu Dữ liệu</a></li>
+                            <li><a href="../sao-luu-phuc-hoi/phuc-hoi-du-lieu.html">Phục hồi Dữ liệu</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="../faq.html">Câu hỏi Thường gặp (FAQ)</a></li>
+                    <li><a href="../ho-tro.html">Hỗ trợ</a></li>
+                </ul>
+            </nav>
+        </aside>
+        <main class="content">
+            <header class="main-header">
+                <h1>Quản lý Lịch sử Text-to-Speech (TTS)</h1>
+            </header>
+            <p>Mỗi khi bạn thực hiện một tác vụ tạo giọng nói (TTS) bằng một Khóa API cụ thể, ElevenLabs Account Hub sẽ tự động lưu lại một bản ghi về tác vụ đó vào lịch sử. Lịch sử này giúp bạn theo dõi các lần tạo TTS trước đây, dễ dàng tìm lại các tệp âm thanh đã tạo và xem lại các cài đặt đã sử dụng.</p>
+            <p>Bảng lịch sử được hiển thị ở phần dưới của mỗi tab TTS trong Không gian Làm việc (Cột Giữa), và nó chỉ hiển thị lịch sử liên quan đến Khóa API của tab đó.</p>
+            <img src="../assets/images/tts-history-table-view.png" alt="Bảng Lịch sử TTS trong một tab" class="screenshot">
+            <em>(Hình ảnh: Bảng Lịch sử TTS hiển thị trong một tab làm việc)</em>
+
+            <section id="thong-tin-lich-su">
+                <h2>Thông tin Hiển thị trong Bảng Lịch sử</h2>
+                <p>Mỗi hàng trong bảng lịch sử đại diện cho một lần tạo TTS và cung cấp các thông tin sau:</p>
+                <ul>
+                    <li><strong>Time (Thời gian):</strong> Ngày và giờ chính xác khi tác vụ tạo giọng nói được thực hiện.</li>
+                    <li><strong>File Name (Tên Tệp):</strong> Tên của tệp âm thanh (.mp3) đã được tạo và lưu. Nếu việc lưu tệp gặp lỗi, cột này có thể hiển thị thông báo như "Lỗi lưu tệp".</li>
+                    <li><strong>Voice (Giọng nói):</strong> Tên của giọng nói (từ ElevenLabs hoặc từ thư viện cục bộ) đã được sử dụng cho lần tạo này.</li>
+                    <li><strong>Duration (Thời lượng):</strong> Thời lượng của tệp âm thanh được tạo, hiển thị dưới dạng <code>MM:SS</code> (phút:giây).</li>
+                    <li><strong>Credit Est. (Tín dụng Ước tính):</strong> Số lượng ký tự ước tính đã được sử dụng từ Khóa API cho lần tạo giọng nói này. Con số này có thể đã được điều chỉnh dựa trên mô hình TTS được chọn.</li>
+                    <li><strong>Status (Trạng thái):</strong> Cho biết kết quả của tác vụ tạo giọng nói:
+                        <ul>
+                            <li>"<strong>Thành công</strong>": Tác vụ hoàn tất và tệp âm thanh được lưu thành công.</li>
+                            <li>"<strong>Lỗi Lưu File</strong>": Tác vụ tạo giọng nói thành công nhưng có lỗi xảy ra khi lưu tệp âm thanh.</li>
+                            <li>"<strong>Lỗi API</strong>" (hoặc thông báo lỗi cụ thể khác): Có lỗi xảy ra trong quá trình tương tác với API của ElevenLabs.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Actions (Hành động):</strong> Cung cấp các nút để bạn tương tác với mục lịch sử đó.</li>
+                </ul>
+            </section>
+
+            <section id="hanh-dong-lich-su">
+                <h2>Các Hành động với Mục Lịch sử</h2>
+                <p>Đối với mỗi mục trong bảng lịch sử, bạn có thể thực hiện các hành động sau thông qua các nút ở cột "Actions":</p>
+                <ul>
+                    <li>
+                        <strong>Mở Thư mục chứa File <img src="../assets/icons/folder-open.svg" alt="Biểu tượng Mở thư mục" style="width:16px; height:16px; vertical-align:middle;">:</strong>
+                        <ul>
+                            <li>Nhấn vào biểu tượng này (thường là hình thư mục đang mở).</li>
+                            <li>Hành động này sẽ mở thư mục trên máy tính của bạn, nơi chứa tệp âm thanh .mp3 tương ứng với mục lịch sử đó.</li>
+                            <li>Nút này chỉ khả dụng nếu tệp âm thanh đã được lưu thành công (trạng thái "Thành công").</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <strong>Xóa Mục Lịch sử <img src="../assets/icons/trash.svg" alt="Biểu tượng Xóa" style="width:16px; height:16px; vertical-align:middle;">:</strong>
+                        <ul>
+                            <li>Nhấn vào biểu tượng này (thường là hình thùng rác).</li>
+                            <li>Hành động này sẽ xóa bản ghi lịch sử đó khỏi cơ sở dữ liệu của phần mềm ElevenLabs Account Hub.</li>
+                            <li><div class="note">
+                                <strong>Lưu ý quan trọng:</strong> Việc xóa mục lịch sử này <strong>CHỈ XÓA BẢN GHI TRONG ỨNG DỤNG</strong>. Nó <strong>KHÔNG XÓA TỆP ÂM THANH .mp3</strong> đã được lưu trên ổ cứng máy tính của bạn. Nếu bạn muốn xóa cả tệp âm thanh, bạn cần thực hiện thủ công trong trình quản lý tệp của hệ điều hành.
+                            </div></li>
+                            <li>Một hộp thoại xác nhận sẽ xuất hiện trước khi xóa để bạn chắc chắn về hành động của mình.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+
+            <section id="xoa-toan-bo-lich-su">
+                <h2>Xóa Toàn bộ Lịch sử cho một Khóa API</h2>
+                <p>Nếu bạn muốn dọn dẹp và xóa tất cả các mục lịch sử cho Khóa API đang hoạt động (tức là Khóa API của tab TTS hiện tại), bạn có thể sử dụng nút "<strong>Delete All</strong>" (Xóa Tất cả).</p>
+                <ol>
+                    <li>Nút "<strong>Delete All</strong>" thường nằm ở góc trên bên phải của khu vực bảng lịch sử trong mỗi tab TTS.</li>
+                    <li>Nhấn vào nút này.</li>
+                    <li>Một hộp thoại xác nhận sẽ xuất hiện, cảnh báo bạn rằng hành động này sẽ xóa toàn bộ lịch sử TTS của Khóa API hiện tại khỏi cơ sở dữ liệu của ứng dụng và không thể hoàn tác.</li>
+                    <li>Nếu bạn chắc chắn, nhấn "<strong>Yes</strong>" (Đồng ý) để tiếp tục. Tất cả các mục lịch sử liên quan đến Khóa API này sẽ bị xóa khỏi bảng hiển thị và cơ sở dữ liệu.</li>
+                </ol>
+                <div class="warning">
+                    <strong>Cảnh báo:</strong> Tương tự như xóa từng mục, hành động này cũng <strong>không xóa các tệp âm thanh .mp3</strong> đã lưu trên máy tính của bạn. Nó chỉ xóa các bản ghi lịch sử trong phần mềm.
+                </div>
+            </section>
+
+            <section id="tu-dong-don-dep">
+                <h2>Tự động Dọn dẹp Lịch sử Cũ (Tính năng Dự kiến)</h2>
+                <p>Trong các phiên bản tương lai, phần mềm có thể được trang bị tính năng tự động dọn dẹp các mục lịch sử đã quá cũ (ví dụ: những mục được tạo ra hơn 30 ngày trước) để giúp cơ sở dữ liệu luôn gọn gàng và tối ưu hiệu suất. Thông tin chi tiết về tính năng này sẽ được cập nhật khi nó được triển khai.</p>
+                <p>Việc quản lý lịch sử giúp bạn dễ dàng theo dõi công việc của mình và truy cập lại các kết quả TTS một cách nhanh chóng.</p>
+            </section>
+        </main>
+    </div>
+    <script>
+        document.querySelectorAll('.menu-toggle').forEach(item => {
+            item.addEventListener('click', event => {
+                event.preventDefault();
+                const submenu = item.nextElementSibling;
+                if (submenu && submenu.classList.contains('submenu')) {
+                    const isOpening = submenu.style.display !== 'block';
+                    document.querySelectorAll('.submenu').forEach(sm => sm.style.display = 'none'); // Close all
+                    document.querySelectorAll('.menu-toggle').forEach(mt => mt.classList.remove('open')); // Remove open class from all
+                    if (isOpening) {
+                        submenu.style.display = 'block';
+                        item.classList.add('open');
+                    }
+                }
+            });
+        });
+        // Ensure the current page's submenu is open on load
+        document.addEventListener('DOMContentLoaded', () => {
+            const activeLink = document.querySelector('.sidebar .active');
+            if (activeLink) {
+                let parent = activeLink.closest('.submenu');
+                if (parent) {
+                    parent.style.display = 'block';
+                    const toggle = parent.previousElementSibling;
+                    if (toggle && toggle.classList.contains('menu-toggle')) {
+                        toggle.classList.add('open');
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+</html>
