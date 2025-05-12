@@ -1,0 +1,278 @@
+:root {
+    --primary: #4f46e5;
+    --primary-dark: #4338ca;
+    --secondary: #06b6d4;
+    --dark: #1e293b;
+    --light: #f8fafc;
+    --gray: #64748b;
+    --success: #10b981;
+    --border-color: #e5e7eb; /* Màu viền nhẹ nhàng */
+    --sidebar-bg: #f9fafb; /* Màu nền cho sidebar */
+    --sidebar-width: 280px; /* Độ rộng của sidebar */
+    --header-height: 60px; /* Chiều cao của header nội dung */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: var(--light);
+    color: var(--dark);
+    line-height: 1.7;
+    font-size: 16px;
+    display: flex; /* Sử dụng flex để xếp sidebar và content */
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+}
+
+/* Sidebar Styles */
+.sidebar {
+    width: var(--sidebar-width);
+    background-color: var(--sidebar-bg);
+    border-right: 1px solid var(--border-color);
+    padding: 20px;
+    height: 100vh; /* Chiều cao đầy đủ */
+    position: fixed; /* Cố định sidebar */
+    left: 0;
+    top: 0;
+    overflow-y: auto; /* Cho phép cuộn nếu nội dung dài */
+    z-index: 1000;
+}
+
+.logo-container {
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid var(--border-color);
+    text-align: center;
+}
+
+.logo-container h2 {
+    color: var(--primary);
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.navigation-menu h3 {
+    font-size: 14px;
+    color: var(--gray);
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    font-weight: 600;
+    padding-left: 5px;
+}
+
+.navigation-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navigation-menu ul li a {
+    display: block;
+    color: var(--dark);
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 6px;
+    margin-bottom: 5px;
+    font-weight: 500;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.navigation-menu ul li a:hover,
+.navigation-menu ul li a.active {
+    background-color: var(--primary);
+    color: white;
+}
+
+.navigation-menu ul li a.menu-toggle {
+    position: relative;
+}
+
+.navigation-menu ul li a.menu-toggle::after {
+    content: '▸'; /* Mũi tên sang phải, hoặc dùng SVG icon */
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%) rotate(0deg);
+    transition: transform 0.2s ease;
+    font-size: 12px;
+}
+
+.navigation-menu ul li a.menu-toggle.open::after {
+    transform: translateY(-50%) rotate(90deg); /* Xoay mũi tên khi mở */
+}
+
+.navigation-menu .submenu {
+    list-style: none;
+    padding-left: 20px; /* Thụt vào cho submenu */
+    margin-top: 5px;
+    display: none; /* Ẩn mặc định */
+}
+
+.navigation-menu .submenu li a {
+    padding: 8px 15px;
+    font-size: 0.95em;
+    color: #4b5563; /* Màu chữ nhạt hơn cho submenu */
+}
+
+.navigation-menu .submenu li a:hover,
+.navigation-menu .submenu li a.active {
+    background-color: #e0e7ff; /* Màu nền nhạt hơn cho hover/active submenu */
+    color: var(--primary);
+}
+
+/* Content Area Styles */
+.content {
+    flex-grow: 1;
+    padding: 30px;
+    margin-left: var(--sidebar-width); /* Đẩy content sang phải bằng độ rộng sidebar */
+    background-color: white;
+    overflow-y: auto; /* Cho phép cuộn nội dung chính */
+}
+
+.main-header {
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.main-header h1 {
+    font-size: 28px;
+    color: var(--dark);
+    font-weight: 700;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+section h2 {
+    font-size: 24px;
+    color: var(--primary-dark);
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid var(--primary);
+    display: inline-block;
+}
+
+section h3 {
+    font-size: 20px;
+    color: var(--dark);
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+
+section p, section ul, section ol {
+    margin-bottom: 15px;
+    color: #374151;
+}
+
+section ul, section ol {
+    padding-left: 25px;
+}
+
+section ul li, section ol li {
+    margin-bottom: 8px;
+}
+
+a {
+    color: var(--primary);
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+a:hover {
+    color: var(--primary-dark);
+    text-decoration: underline;
+}
+
+code, pre {
+    font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, Courier, monospace;
+    background-color: #f3f4f6;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-size: 0.9em;
+}
+
+pre {
+    padding: 15px;
+    overflow-x: auto;
+    border: 1px solid var(--border-color);
+    margin-bottom: 20px;
+}
+
+img.screenshot {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border: 1px solid var(--border-color);
+}
+
+.note, .tip, .warning {
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 6px;
+    border-left-width: 5px;
+    border-left-style: solid;
+}
+
+.note {
+    background-color: #eef2ff; /* Lightest Indigo */
+    border-left-color: var(--primary);
+    color: #3730a3; /* Dark Indigo */
+}
+.note strong { color: #3730a3; }
+
+
+.tip {
+    background-color: #f0fdf4; /* Lightest Green */
+    border-left-color: var(--success);
+    color: #14532d; /* Dark Green */
+}
+.tip strong { color: #14532d; }
+
+.warning {
+    background-color: #fffbeb; /* Lightest Yellow */
+    border-left-color: #f59e0b; /* Amber */
+    color: #78350f; /* Dark Amber */
+}
+.warning strong { color: #78350f; }
+
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    body {
+        flex-direction: column;
+    }
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: static; /* Sidebar không còn fixed */
+        border-right: none;
+        border-bottom: 1px solid var(--border-color);
+    }
+    .content {
+        margin-left: 0;
+        padding: 20px;
+    }
+    .main-header h1 {
+        font-size: 24px;
+    }
+    section h2 {
+        font-size: 20px;
+    }
+    section h3 {
+        font-size: 18px;
+    }
+}
