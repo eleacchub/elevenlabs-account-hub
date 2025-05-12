@@ -21,6 +21,7 @@ const translations = {
         navFeatures: "Features",
         navBenefits: "Benefits",
         navPricing: "Pricing", // Added
+        navGuide: "Guide", // Added
         navContact: "Contact",
         headerButton: "Download Now",
         heroTitle: "Unleash the Power of Bulk Management!",
@@ -37,12 +38,14 @@ const translations = {
         challengesBox1Li3: "Easily getting accounts suspended due to overuse",
         challengesBox1Li4: "Process stops when one account runs out of credits",
         challengesBox1Li5: "Not fully utilizing free credits",
+        challengesBox1Li6: "Manually adding/deleting voices for each account is very time-consuming", // Added
         challengesBox2Title: "With ElevenLabs Account Hub",
         challengesBox2Li1: "Centrally manage <strong>unlimited</strong> accounts from one interface",
         challengesBox2Li2: "Automatically and visually track remaining credits",
         challengesBox2Li3: "Protect accounts with proxy system and random delays",
         challengesBox2Li4: "Automatically switch to another account when credits run out",
         challengesBox2Li5: "<strong>Optimize usage of 100% free credits</strong> from each account",
+        challengesBox2Li6: "Quickly add/delete voices for <strong>multiple accounts</strong>", // Added
         featuresTitle: "Key Features",
         featuresSubtitle: "ElevenLabs Account Hub provides comprehensive tools to manage and maximize your ElevenLabs accounts",
         feature1Title: "Bulk Account Management",
@@ -140,6 +143,7 @@ const translations = {
         navFeatures: "기능",
         navBenefits: "혜택",
         navPricing: "가격", // Added
+        navGuide: "가이드", // Added
         navContact: "문의하기",
         headerButton: "지금 다운로드",
         heroTitle: "대량 관리의 힘을 발휘하세요!",
@@ -156,12 +160,14 @@ const translations = {
         challengesBox1Li3: "과도한 사용으로 인한 계정 정지 용이",
         challengesBox1Li4: "한 계정의 크레딧 소진 시 프로세스 중단",
         challengesBox1Li5: "무료 크레딧 완전 미활용",
-        challengesBox2Title: "ElevenLabs 계정 허브 사용 시",
-        challengesBox2Li1: "하나의 인터페이스에서 <strong>무제한</strong> 계정 중앙 관리",
-        challengesBox2Li2: "남은 크레딧 자동 및 시각적 추적",
-        challengesBox2Li3: "프록시 시스템 및 랜덤 지연으로 계정 보호",
-        challengesBox2Li4: "크레딧 소진 시 다른 계정으로 자동 전환",
-        challengesBox2Li5: "각 계정의 <strong>무료 크레딧 100% 사용 최적화</strong>",
+        challengesBox1Li6: "각 계정에 대해 수동으로 음성을 추가/삭제하는 것은 매우 시간이 많이 걸립니다", // Added
+        challengesBox2Title: "With ElevenLabs Account Hub",
+        challengesBox2Li1: "Centrally manage <strong>unlimited</strong> accounts from one interface",
+        challengesBox2Li2: "Automatically and visually track remaining credits",
+        challengesBox2Li3: "Protect accounts with proxy system and random delays",
+        challengesBox2Li4: "Automatically switch to another account when credits run out",
+        challengesBox2Li5: "<strong>Optimize usage of 100% free credits</strong> from each account",
+        challengesBox2Li6: "Quickly add/delete voices for <strong>multiple accounts</strong>", // Added
         featuresTitle: "주요 기능",
         featuresSubtitle: "ElevenLabs 계정 허브는 ElevenLabs 계정을 관리하고 최대한 활용하기 위한 포괄적인 도구를 제공합니다",
         feature1Title: "대량 계정 관리",
@@ -199,7 +205,7 @@ const translations = {
         ctaButton: "무료로 다운로드",
         contactTitle: "지원 문의",
         contactSubtitle: "질문이 있거나 도움이 필요하신가요? 다음 채널을 통해 문의하세요",
-        contactTelegramTitle: "텔레그램",
+        contactTelegramTitle: "Telegram",
         contactFbPageTitle: "페이스북 페이지",
         contactFbPersonalTitle: "개인 페이스북",
         contactEmailTitle: "이메일",
@@ -244,6 +250,7 @@ const translations = {
         navFeatures: "คุณสมบัติ", // Placeholder
         navBenefits: "ประโยชน์", // Placeholder
         navPricing: "ราคา", // Placeholder
+        navGuide: "คู่มือ", // Added
         navContact: "ติดต่อ", // Placeholder
         headerButton: "ดาวน์โหลดเดี๋ยวนี้", // Placeholder
         heroTitle: "ปลดปล่อยพลังแห่งการจัดการจำนวนมาก!", // Placeholder
@@ -260,16 +267,18 @@ const translations = {
         challengesBox1Li3: "บัญชีถูกระงับได้ง่ายเนื่องจากการใช้งานมากเกินไป", // Placeholder
         challengesBox1Li4: "กระบวนการหยุดลงเมื่อบัญชีหนึ่งเครดิตหมด", // Placeholder
         challengesBox1Li5: "ไม่ได้ใช้เครดิตฟรีอย่างเต็มที่", // Placeholder
+        challengesBox1Li6: "การเพิ่ม/ลบเสียงด้วยตนเองสำหรับแต่ละบัญชีใช้เวลานานมาก", // Added Placeholder
         challengesBox2Title: "ด้วย ElevenLabs Account Hub", // Placeholder
         challengesBox2Li1: "จัดการบัญชี<strong>ไม่จำกัด</strong>จากส่วนกลางจากอินเทอร์เฟซเดียว", // Placeholder
         challengesBox2Li2: "ติดตามเครดิตที่เหลือโดยอัตโนมัติและมองเห็นได้", // Placeholder
         challengesBox2Li3: "ปกป้องบัญชีด้วยระบบพร็อกซีและการหน่วงเวลาแบบสุ่ม", // Placeholder
         challengesBox2Li4: "สลับไปยังบัญชีอื่นโดยอัตโนมัติเมื่อเครดิตหมด", // Placeholder
         challengesBox2Li5: "<strong>เพิ่มประสิทธิภาพการใช้เครดิตฟรี 100%</strong> จากแต่ละบัญชี", // Placeholder
+        challengesBox2Li6: "เพิ่ม/ลบเสียงอย่างรวดเร็วสำหรับ<strong>หลายบัญชี</strong>", // Added Placeholder
         featuresTitle: "คุณสมบัติหลัก", // Placeholder
         featuresSubtitle: "ElevenLabs Account Hub มีเครื่องมือที่ครอบคลุมเพื่อจัดการและใช้ประโยชน์สูงสุดจากบัญชี ElevenLabs ของคุณ", // Placeholder
         feature1Title: "การจัดการบัญชีจำนวนมาก", // Placeholder
-        feature1Desc: "จัดเก็บบัญชี ElevenLabs <strong>ไม่จำกัด</strong>อย่างปลอดภัย เพิ่ม ตั้งชื่อ แก้ไข ตรวจสอบ และจัดการทั้งหมดได้จากที่เดียว", // Placeholder
+        feature1Desc: "<strong>มิได้จำกัด</strong> ElevenLabs บัญชีไว้อย่างปลอดภัย เพิ่ม ตั้งชื่อ แก้ไข ตรวจสอบ และจัดการทั้งหมดได้จากที่เดียว", // Placeholder
         feature2Title: "การประมวลผลข้อความเป็นคำพูดจำนวนมาก", // Placeholder
         feature2Desc: "กระจายงาน TTS ไปยังหลายบัญชีโดยอัตโนมัติ <span style=\"color: #4338ca; font-weight: bold;\">เพิ่มประสิทธิภาพการใช้เครดิตฟรี</span> เพื่อประมวลผลข้อความจำนวนมากอย่างมีประสิทธิภาพ", // Placeholder
         feature3Title: "การติดตามเครดิตโดยรวม", // Placeholder
@@ -366,6 +375,7 @@ const translations = {
         navFeatures: "Tính năng",
         navBenefits: "Lợi ích",
         navPricing: "Giá", // Added
+        navGuide: "Hướng dẫn", // Added
         navContact: "Liên hệ",
         headerButton: "Tải ngay",
         heroTitle: "Giải Phóng Sức Mạnh Quản Lý Hàng Loạt!",
@@ -375,25 +385,27 @@ const translations = {
         challengesTitle1: "Thách Thức Khi Dùng Nhiều Tài Khoản?",
         challengesP1: "Phải chuyển đổi liên tục giữa các tài khoản? Khó theo dõi credit còn lại trên từng tài khoản miễn phí? Mất thời gian khi cần tạo giọng nói cho nhiều nội dung? Rủi ro bị khóa tài khoản khi sử dụng quá nhiều?",
         challengesTitle2: "ElevenLabs Account Hub Là Câu Trả Lời!",
-        challengesP2: "Công cụ lý tưởng để quản lý <strong>tất cả tài khoản tập trung</strong>, theo dõi credit tổng thể và thực hiện <strong>xử lý TTS hàng loạt</strong> một cách thông minh với <strong>hệ thống proxy và delay random</strong>, giúp bạn tiết kiệm thời gian và đảm bảo an toàn cho tài khoản.",
+        challengesP2: "Công cụ lý tưởng để quản lý <strong>tất cả tài khoản tập trung</strong>, theo dõi credit tổng thể và thực hiện <strong>bulk TTS processing</strong> một cách thông minh với <strong>hệ thống proxy và delay random</strong>, giúp bạn tiết kiệm thời gian và đảm bảo an toàn cho tài khoản.",
         challengesBox1Title: "Không Có ElevenLabs Account Hub",
         challengesBox1Li1: "Đăng nhập/đăng xuất liên tục giữa các tài khoản",
         challengesBox1Li2: "Theo dõi thủ công credit còn lại trên từng tài khoản",
         challengesBox1Li3: "Dễ bị khóa tài khoản do sử dụng quá nhiều",
         challengesBox1Li4: "Phải dừng quy trình khi một tài khoản hết credit",
         challengesBox1Li5: "Không tận dụng được toàn bộ credit miễn phí",
+        challengesBox1Li6: "Thêm/xóa voice thủ công cho từng tài khoản rất tốn thời gian", // Added
         challengesBox2Title: "Với ElevenLabs Account Hub",
         challengesBox2Li1: "Quản lý tập trung <strong>không giới hạn</strong> tài khoản từ một giao diện",
         challengesBox2Li2: "Theo dõi tự động và trực quan số credit còn lại",
         challengesBox2Li3: "Bảo vệ tài khoản với hệ thống proxy và delay random",
         challengesBox2Li4: "Tự động chuyển sang tài khoản khác khi hết credit",
         challengesBox2Li5: "<strong>Tối ưu sử dụng 100% credit miễn phí</strong> của mỗi tài khoản",
+        challengesBox2Li6: "Thêm/xóa voice nhanh chóng cho <strong>hàng loạt tài khoản</strong>", // Added
         featuresTitle: "Tính năng nổi bật",
         featuresSubtitle: "ElevenLabs Account Hub cung cấp đầy đủ công cụ để quản lý và tận dụng tối đa tài khoản ElevenLabs của bạn",
         feature1Title: "Quản lý hàng loạt tài khoản",
-        feature1Desc: "Lưu trữ an toàn <strong>không giới hạn</strong> tài khoản ElevenLabs, thêm, đặt tên, chỉnh sửa, kiểm tra và quản lý tất cả từ một nơi duy nhất.",
+        feature1Desc: "<strong>Không giới hạn</strong> ElevenLabs tài khoản, thêm, đặt tên, chỉnh sửa, kiểm tra và quản lý tất cả từ một nơi duy nhất.",
         feature2Title: "Xử lý Text-to-Speech hàng loạt",
-        feature2Desc: "Tự động phân phối tác vụ TTS qua nhiều tài khoản, <span style=\"color: #4338ca; font-weight: bold;\">tối ưu sử dụng credit miễn phí</span> để xử lý khối lượng văn bản lớn hiệu quả nhất.",
+        feature2Desc: "Tự động phân phối TTS nhiệm vụ qua nhiều tài khoản, <span style=\"color: #4338ca; font-weight: bold;\">tối ưu sử dụng credit miễn phí</span> để xử lý khối lượng văn bản lớn hiệu quả nhất.",
         feature3Title: "Theo dõi tổng thể credit",
         feature3Desc: "Hiển thị rõ ràng số ký tự còn lại trên từng tài khoản miễn phí, giúp bạn quyết định phân bổ nguồn lực hiệu quả nhất.",
         feature4Title: "Phân tích và lập kế hoạch",
@@ -439,7 +451,7 @@ const translations = {
         discountTag: "GIẢM GIÁ",
         tier1Name: "Trải nghiệm",
         tier1OriginalPrice: "9.9$ / tháng",
-        tier1PromoPrice: "$0", // Keep currency symbol consistent
+        tier1PromoPrice: "$0", // Changed to $0
         tier1TrialNote: "Cho giai đoạn thử nghiệm",
         tier1Feature1: "Quản lý tối đa <strong>10</strong> tài khoản",
         tier1Feature2: "Xử lý TTS hàng loạt cơ bản",
@@ -450,10 +462,10 @@ const translations = {
         tier2Popular: "ĐƯỢC ƯA CHUỘNG",
         tier2Name: "Chuyên nghiệp",
         tier2OriginalPrice: "150$ / vĩnh viễn",
-        tier2PromoPrice: "$0", // Keep currency symbol consistent
+        tier2PromoPrice: "$0", // Changed to $0
         tier2TrialNote: "Cho giai đoạn thử nghiệm",
-        tier2Feature1: "Quản lý <strong>không giới hạn</strong> tài khoản",
-        tier2Feature2: "Xử lý TTS hàng loạt <strong>nâng cao</strong>",
+        tier2Feature1: "<strong>Không giới hạn</strong> tài khoản",
+        tier2Feature2: "<strong>Nâng cao</strong> xử lý TTS hàng loạt",
         tier2Feature3: "Theo dõi tổng thể credit",
         tier2Feature4: "Phân tích và lập kế hoạch",
         tier2Feature5: "Tự động luân chuyển tài khoản",
@@ -468,11 +480,11 @@ const translations = {
 
 // List of all keys that need translation
 const translationKeys = [
-    "pageTitle", "navFeatures", "navBenefits", "navPricing", "navContact", "headerButton", // Added navPricing
+    "pageTitle", "navFeatures", "navBenefits", "navPricing", "navGuide", "navContact", "headerButton", // Added navGuide and navPricing
     "heroTitle", "heroSubtitle", "heroBtnDownload", "heroBtnExplore",
     "challengesTitle1", "challengesP1", "challengesTitle2", "challengesP2",
-    "challengesBox1Title", "challengesBox1Li1", "challengesBox1Li2", "challengesBox1Li3", "challengesBox1Li4", "challengesBox1Li5",
-    "challengesBox2Title", "challengesBox2Li1", "challengesBox2Li2", "challengesBox2Li3", "challengesBox2Li4", "challengesBox2Li5",
+    "challengesBox1Title", "challengesBox1Li1", "challengesBox1Li2", "challengesBox1Li3", "challengesBox1Li4", "challengesBox1Li5", "challengesBox1Li6", // Added Li6
+    "challengesBox2Title", "challengesBox2Li1", "challengesBox2Li2", "challengesBox2Li3", "challengesBox2Li4", "challengesBox2Li5", "challengesBox2Li6", // Added Li6
     "featuresTitle", "featuresSubtitle",
     "feature1Title", "feature1Desc", "feature2Title", "feature2Desc", "feature3Title", "feature3Desc",
     "feature4Title", "feature4Desc", "feature5Title", "feature5Desc", "feature6Title", "feature6Desc",
@@ -511,7 +523,7 @@ function setLanguage(lang) {
                 // Use innerHTML for keys that contain HTML tags like <strong>
                 // Add new keys with HTML content here
                 const keysWithHTML = [
-                    'heroSubtitle', 'challengesP2', 'challengesBox2Li1', 'challengesBox2Li5',
+                    'heroSubtitle', 'challengesP2', 'challengesBox2Li1', 'challengesBox2Li5', 'challengesBox2Li6', // Added challengesBox2Li6
                     'feature1Desc', 'feature2Desc', 'tier1Feature1', 'tier2Feature1', 'tier2Feature2'
                 ];
                 if (keysWithHTML.includes(key)) {
