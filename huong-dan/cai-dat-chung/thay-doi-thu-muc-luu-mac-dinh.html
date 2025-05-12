@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Thay đổi Ngôn ngữ Giao diện - Hướng dẫn ElevenLabs Account Hub</title>
+    <title>Thay đổi Thư mục Lưu trữ Mặc định - Hướng dẫn ElevenLabs Account Hub</title>
     <link rel="stylesheet" href="../style.css">
 </head>
 <body>
@@ -74,8 +74,8 @@
                     <li>
                         <a href="#cai-dat-chung" class="menu-toggle open">Cài đặt Chung</a>
                         <ul class="submenu" style="display: block;">
-                            <li><a href="thay-doi-thu-muc-luu-mac-dinh.html">Thư mục Lưu trữ</a></li>
-                            <li><a href="thay-doi-ngon-ngu.html" class="active">Ngôn ngữ</a></li>
+                            <li><a href="thay-doi-thu-muc-luu-mac-dinh.html" class="active">Thư mục Lưu trữ</a></li>
+                            <li><a href="thay-doi-ngon-ngu.html">Ngôn ngữ</a></li>
                         </ul>
                     </li>
                     <li>
@@ -92,60 +92,48 @@
         </aside>
         <main class="content">
             <header class="main-header">
-                <h1>Thay đổi Ngôn ngữ Giao diện Người dùng</h1>
+                <h1>Thay đổi Thư mục Lưu trữ Mặc định cho Tệp Âm thanh</h1>
             </header>
-            <p>ElevenLabs Account Hub được thiết kế để hỗ trợ nhiều ngôn ngữ cho giao diện người dùng, giúp bạn làm việc với phần mềm một cách thoải mái và thuận tiện hơn. Hiện tại, các ngôn ngữ chính được hỗ trợ bao gồm Tiếng Việt (<code>vi</code>) và Tiếng Anh (<code>en</code>). Nhà phát triển có thể bổ sung thêm các ngôn ngữ khác trong các bản cập nhật tương lai.</p>
+            <p>Mỗi khi bạn tạo giọng nói thành công bằng ElevenLabs Account Hub, tệp âm thanh (thường ở định dạng <code>.mp3</code>) sẽ được tự động lưu vào một thư mục trên máy tính của bạn. Phần mềm cho phép bạn tùy chỉnh thư mục lưu trữ mặc định này để phù hợp với quy trình làm việc và cách tổ chức tệp của bạn.</p>
 
-            <section id="cach-thay-doi-ngon-ngu">
-                <h2>1. Cách Thay đổi Ngôn ngữ qua Thanh Menu</h2>
-                <p>Đây là cách nhanh nhất và trực tiếp nhất để thay đổi ngôn ngữ hiển thị của phần mềm:</p>
+            <section id="cach-thay-doi">
+                <h2>1. Truy cập Cài đặt Ứng dụng</h2>
+                <p>Để thay đổi thư mục lưu trữ mặc định, bạn cần truy cập vào cửa sổ Cài đặt chung của ứng dụng:</p>
                 <ol>
-                    <li>Trong cửa sổ chính của ứng dụng ElevenLabs Account Hub, tìm đến <strong>Thanh Menu</strong> ở phía trên cùng.</li>
-                    <li>Nhấp vào mục menu "<strong>Language</strong>" (hoặc "Ngôn ngữ" nếu đang hiển thị tiếng Việt).</li>
-                    <li>Một danh sách các ngôn ngữ có sẵn sẽ hiện ra dưới dạng menu con. Ví dụ:
-                        <ul>
-                            <li>Tiếng Việt</li>
-                            <li>English</li>
-                            <li>(Các ngôn ngữ khác nếu có)</li>
-                        </ul>
-                        <img src="../assets/images/language-selection-menu.png" alt="Menu chọn ngôn ngữ hiển thị" class="screenshot">
-                        <em>(Hình ảnh: Menu "Language" với các tùy chọn ngôn ngữ)</em>
-                    </li>
-                    <li>Ngôn ngữ hiện tại đang được sử dụng sẽ có một dấu kiểm (checkmark ✔️) hoặc một chỉ báo tương tự bên cạnh tên của nó.</li>
-                    <li>Nhấp chuột vào tên của ngôn ngữ bạn muốn chuyển sang.</li>
-                    <li><strong>Cập nhật Giao diện:</strong> Ngay sau khi bạn chọn, toàn bộ giao diện của phần mềm (bao gồm các nhãn nút, tiêu đề cửa sổ, mục menu, thông báo, và các tooltip) sẽ được cập nhật và hiển thị bằng ngôn ngữ mới bạn đã chọn.</li>
-                    <li><strong>Lưu Lựa chọn:</strong> Lựa chọn ngôn ngữ của bạn sẽ được tự động lưu lại. Lần khởi động phần mềm tiếp theo, giao diện sẽ tự động hiển thị bằng ngôn ngữ bạn đã chọn gần nhất.</li>
-                </ol>
-            </section>
-
-            <section id="cai-dat-trong-settings-dialog">
-                <h2>2. Thay đổi Ngôn ngữ trong Cửa sổ Cài đặt (Cách khác)</h2>
-                <p>Ngoài việc thay đổi trực tiếp từ Thanh Menu, bạn cũng có thể điều chỉnh ngôn ngữ giao diện thông qua cửa sổ Cài đặt chung của ứng dụng:</p>
-                <ol>
-                    <li>Từ Thanh Menu, chọn "<strong>Settings</strong>" (Cài đặt).</li>
-                    <li>Trong menu con, chọn "<strong>Cài đặt Ứng dụng</strong>" (Application Settings).
+                    <li>Trên Thanh Menu của cửa sổ chính, chọn "<strong>Settings</strong>" (Cài đặt).</li>
+                    <li>Từ menu con xổ xuống, chọn "<strong>Cài đặt Ứng dụng</strong>" (Application Settings). Một số phiên bản cũ hơn có thể có tùy chọn trực tiếp như "<strong>Đặt thư mục đầu ra</strong>" (Set Output Directory) trong menu này.
                         <img src="../assets/images/menu-application-settings.png" alt="Menu Cài đặt Ứng dụng" class="screenshot">
-                        <em>(Hình ảnh: Truy cập Cài đặt Ứng dụng từ menu Settings)</em>
+                        <em>(Hình ảnh: Vị trí menu "Cài đặt Ứng dụng")</em>
                     </li>
-                    <li>Cửa sổ "<strong>Cài đặt</strong>" (Settings) sẽ xuất hiện.</li>
-                    <li>Trong cửa sổ "Cài đặt", tìm đến mục hoặc tab có nhãn "<strong>Ngôn ngữ</strong>" (Language) hoặc một tùy chọn tương tự.
-                        <img src="../assets/images/settings-dialog-language-option.png" alt="Tùy chọn ngôn ngữ trong cửa sổ Cài đặt" class="screenshot">
-                        <em>(Hình ảnh: Tùy chọn thay đổi ngôn ngữ trong cửa sổ Cài đặt)</em>
-                    </li>
-                    <li>Bạn sẽ thấy một danh sách thả xuống (combo box) hiển thị ngôn ngữ hiện tại và các ngôn ngữ khác có sẵn.</li>
-                    <li>Chọn ngôn ngữ mong muốn từ danh sách thả xuống này.</li>
-                    <li>Nhấn nút "<strong>Lưu</strong>" (Save) hoặc "<strong>OK</strong>" trong cửa sổ "Cài đặt" để áp dụng thay đổi.</li>
-                    <li>Giao diện của phần mềm sẽ được cập nhật sang ngôn ngữ mới. Tương tự như cách trên, lựa chọn này cũng sẽ được lưu lại cho các lần sử dụng sau.</li>
+                    <li>Cửa sổ "<strong>Cài đặt</strong>" (Settings) sẽ xuất hiện. Cửa sổ này chứa các tùy chọn cấu hình chung cho toàn bộ ứng dụng.</li>
                 </ol>
             </section>
 
-            <section id="luu-y-ngon-ngu">
-                <h2>Lưu ý về Tính năng Đa ngôn ngữ</h2>
+            <section id="chon-thu-muc">
+                <h2>2. Chọn Thư mục Lưu trữ Mới</h2>
+                <ol>
+                    <li>Trong cửa sổ "<strong>Cài đặt</strong>", tìm đến mục có nhãn liên quan đến thư mục lưu trữ, ví dụ: "<strong>Thư mục Lưu trữ Mặc định</strong>" (Default Output Directory) hoặc "<strong>Thư mục Lưu trữ Âm thanh TTS</strong>" (TTS Audio Output Directory).
+                        <img src="../assets/images/settings-dialog-output-directory.png" alt="Cài đặt Thư mục Lưu trữ Mặc định trong cửa sổ Settings" class="screenshot">
+                        <em>(Hình ảnh: Mục cài đặt Thư mục Lưu trữ Mặc định trong cửa sổ Cài đặt)</em>
+                    </li>
+                    <li>Bạn sẽ thấy một ô hiển thị đường dẫn đến thư mục hiện tại đang được sử dụng để lưu các tệp âm thanh.</li>
+                    <li>Bên cạnh ô đường dẫn này, nhấn nút "<strong>Browse...</strong>" (hoặc "Chọn Thư mục", "Thay đổi...").</li>
+                    <li>Một hộp thoại chọn thư mục chuẩn của hệ điều hành (Windows Explorer, Finder, v.v.) sẽ xuất hiện.</li>
+                    <li>Sử dụng hộp thoại này để duyệt đến vị trí thư mục trên máy tính mà bạn muốn sử dụng làm nơi lưu trữ mặc định cho tất cả các tệp âm thanh được tạo ra bởi ElevenLabs Account Hub.</li>
+                    <li>Sau khi chọn được thư mục mong muốn, nhấn nút "<strong>Select Folder</strong>" (hoặc "OK", "Chọn") trong hộp thoại chọn thư mục.</li>
+                    <li>Đường dẫn thư mục mới bạn vừa chọn sẽ được cập nhật vào ô hiển thị trong cửa sổ "Cài đặt" của ứng dụng.</li>
+                    <li>Cuối cùng, nhấn nút "<strong>Lưu</strong>" (Save) hoặc "<strong>OK</strong>" trong cửa sổ "Cài đặt" của ứng dụng để áp dụng thay đổi này.</li>
+                </ol>
+                <p>Từ thời điểm này trở đi, tất cả các tệp âm thanh mới được tạo ra sẽ được tự động lưu vào thư mục bạn vừa chọn.</p>
+            </section>
+
+            <section id="luu-y-thu-muc">
+                <h2>Lưu ý Quan trọng khi Chọn Thư mục Lưu trữ</h2>
                 <ul>
-                    <li><strong>Phạm vi Áp dụng:</strong> Việc thay đổi ngôn ngữ sẽ ảnh hưởng đến hầu hết các yếu tố văn bản trên giao diện người dùng của ứng dụng.</li>
-                    <li><strong>Nội dung do Người dùng Nhập liệu:</strong> Ngôn ngữ giao diện bạn chọn <strong>không</strong> ảnh hưởng đến nội dung văn bản bạn nhập vào ô TTS để tạo giọng nói. Bạn vẫn có thể nhập văn bản bằng bất kỳ ngôn ngữ nào mà mô hình ElevenLabs bạn chọn hỗ trợ. Tương tự, tên các Khóa API, tên Giọng nói tùy chỉnh, hoặc các ghi chú bạn tự đặt sẽ không bị dịch tự động.</li>
-                    <li><strong>Chất lượng Bản dịch:</strong> Các bản dịch được cung cấp với nỗ lực mang lại trải nghiệm tốt nhất. Tuy nhiên, nếu bạn phát hiện bất kỳ lỗi dịch thuật nào hoặc có đề xuất cải thiện, vui lòng <a href="../ho-tro.html">liên hệ với nhà phát triển</a>.</li>
-                    <li><strong>Đóng góp Bản dịch Mới:</strong> Nếu bạn muốn đóng góp bản dịch cho một ngôn ngữ mới mà phần mềm chưa hỗ trợ, hoặc muốn giúp cải thiện các bản dịch hiện có, sự đóng góp của bạn luôn được chào đón. Hãy liên hệ với nhà phát triển để biết thêm chi tiết về quy trình đóng góp.</li>
+                    <li><strong>Quyền Ghi (Write Permissions):</strong> Đảm bảo rằng ứng dụng ElevenLabs Account Hub có đủ quyền ghi (write permissions) vào thư mục bạn đã chọn. Nếu không, việc lưu tệp có thể thất bại và bạn sẽ nhận được thông báo lỗi. Điều này đặc biệt quan trọng nếu bạn chọn một thư mục nằm trong các khu vực được bảo vệ của hệ thống.</li>
+                    <li><strong>Tổ chức Tệp Hiệu quả:</strong> Việc chọn một thư mục lưu trữ riêng biệt, dễ nhớ và có cấu trúc (ví dụ: <code>D:\ElevenLabs_Audio\Project_A</code>) sẽ giúp bạn quản lý các tệp âm thanh đã tạo một cách hiệu quả hơn, thay vì để chúng lẫn lộn trong thư mục Downloads hoặc một thư mục tạm nào đó.</li>
+                    <li><strong>Thư mục Mặc định Ban đầu:</strong> Nếu bạn không thực hiện thay đổi này, phần mềm có thể lưu tệp vào một thư mục con mặc định bên trong thư mục cài đặt của ứng dụng (ví dụ: một thư mục tên là <code>data/output/</code> hoặc <code>audio_output/</code> nằm cùng cấp với tệp <code>.exe</code> của chương trình) hoặc thư mục "Downloads" của người dùng hiện tại. Kiểm tra cài đặt ban đầu để biết vị trí mặc định nếu bạn chưa thay đổi.</li>
+                    <li><strong>Không Ảnh hưởng đến Tệp Cũ:</strong> Việc thay đổi thư mục lưu trữ mặc định chỉ ảnh hưởng đến các tệp âm thanh được tạo <strong>sau khi</strong> bạn thực hiện thay đổi. Các tệp đã được tạo và lưu trước đó sẽ không tự động được di chuyển đến thư mục mới. Nếu bạn muốn di chuyển chúng, bạn cần thực hiện thủ công.</li>
                 </ul>
             </section>
         </main>
